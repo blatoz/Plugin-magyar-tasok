@@ -1,6 +1,6 @@
 Helló mindekinek!
 Aki ezt a repository-it látja 
-Azzal allá írja a szerződést amivel nem lehet árúsítani a magyarítást amit írtam!
+Azzal alá írja a szerződést amivel nem lehet árúsítani a magyarítást amit írtam!
 
 
 Kezdés
