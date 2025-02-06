@@ -5,7 +5,7 @@ Azzal alá írja a szerződést amivel nem lehet árúsítani a magyarítást am
 
 Kezdés
 Ha aternoson vagy akkor másold be a kódot!
-Ha gépen vagy más szerver szolgáltatót használd akkor tölsd fel a fájl vagy másold be a kódot!
+Ha gépen vagy más szerver szolgáltatót használsz akkor tölsd fel a fájlt vagy másold be a kódot!
 
 
 Folytatás 
@@ -15,5 +15,5 @@ Indisd el a szervert és írd be a parancsot /advancedban:check játékosnév a 
 
 
 Vége
-Ha szeretnéd hogy más pluginoknak a frodítását csináljam akkor discordon addoj be.
+Ha szeretnéd hogy más pluginoknak a fordítását csináljam akkor discordon addoj be.
 Nevem: Daniyt_th
