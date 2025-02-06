@@ -5,7 +5,7 @@ Azzal alá írja a szerződést amivel nem lehet árúsítani a magyarítást am
 
 Kezdés
 Ha aternoson vagy akkor másold be a kódot!
-Ha gépen vagy más szerver szolgáltatót használsz akkor tölsd fel a fájlt vagy másold be a kódot!
+Ha gépen vagy más szerver szolgáltatót használsz akkor töltsd fel a fájlt vagy másold be a kódot!
 
 
 Folytatás 
