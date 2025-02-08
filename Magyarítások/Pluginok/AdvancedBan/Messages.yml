@@ -7,7 +7,7 @@ General:
   TimeLayoutH: "%H%órá(k) %M%perc(ek) %S%másodperc(ek)"
   TimeLayoutM: "%M%perc(ek) %S%másodperc(ek)"
   TimeLayoutS: "%S% másodpercek"
-  FailedFetch: "&cNem sikerült lekérni az UUID-t a %NAME%! Nézd a konzolt a további infókért."
+  FailedFetch: "&cNem sikerült lekérni az UUID-t a %NAME%! Nézd a konzolt a további indókért."
 
 
 Ban:
@@ -22,7 +22,7 @@ Ban:
   - "&cIndok &8» &7%REASON%"
   - '&7'
   - '&8Unban kérelem a dc-én vagy a fórumon'
-  - "&eDc-Ip &8» &c&nhamarosan jön"
+  - "&eDc-Ip &8» &c&nhamarason jön"
   - "&eFórum &8» &c&nhamarosan jön"
   Notification:
   - "&c&o%NAME% &7bannolva lett &e&o%OPERATOR% által"
@@ -38,7 +38,7 @@ Ipban:
   - "&cIndok &8» &7%REASON%"
   - '&7'
   - '&8Unban kérelem a dc-én vagy fórumon'
-  - "&eDc-Ip &8» &c&nhamarosan jön"
+  - "&eDc-Ip &8» &c&nhamarason jön"
   - "&eFórum &8» &c&nhamarosan jön"
   Notification:
   - "&c&o%NAME% &7bannolva lett &e&o%OPERATOR% által"
@@ -56,7 +56,7 @@ Tempban:
   - "&cLejárata &8» &7%DURATION%"
   - '&7'
   - '&8Unban kérelem a dc-én vagy fórumon'
-  - "&eDc-Ip &8» &c&nhamarosan jön"
+  - "&eDc-Ip &8» &c&nhamarason jön"
   - "&eFórum &8» &c&nhamarosan jön"
   Notification:
   - "&c&o%NAME% &7bannolva lett &e&o%OPERATOR% által"
@@ -74,7 +74,7 @@ Tempipban:
   - "&cLejárata &8» &7%DURATION%"
   - '&7'
   - '&8Unban kérelem a dc-én vagy fórumon'
-  - "&eDc-Ip &8» &c&nhamarosan jön"
+  - "&eDc-Ip &8» &c&nhamarason jön"
   - "&eFórum &8» &c&nhamarosan jön"
   Notification:
   - "&c&o%NAME% &7bannolva lett &e&o%OPERATOR% által"
@@ -132,120 +132,120 @@ Tempwarn:
   - '%PREFIX% &cKaptál egy ideiglenes figyelmeztetést'
   - "&cIndok &8» &7%REASON%"
   - "&cLejár ennyi idő múlva &8» &7%DURATION%"
-  - '&7Ennyi &c&o%COUNT% &7figyelmeztetté(sek) összesen!'
+  - '&7Ennyi &c&o%COUNT% &7figyelmeztetté(sek) van összesen!'
   Notification:
   - "&c&o%NAME% &7kapott egy ideiglenes figyelmeztetést &e&o%OPERATOR% által"
   - "&7Indok &o%REASON%"
   - "&7Ez a figyelmeztettés lejár &o%DURATION% múlva"
 
 Kick:
-  Usage: "&cUsage &8» &7&o/kick (-s) [Name] [Reason/@Layout]"
-  Done: "&c&o%NAME% &7was successfully kicked!"
-  NotOnline: "&c&o%NAME% &7is not online!"
-  Exempt: "&7You are not able to kick &c&o%NAME%"
+  Usage: "&cHasználat &8» &7&o/kick (-s) [Name] [Reason/@Layout]"
+  Done: "&c&o%NAME% &7sikeresen kirúgva!"
+  NotOnline: "&c&o%NAME% &7nincsen online!"
+  Exempt: "&7Nem rúghatód ki &c&o%NAME% őt"
   Layout:
-  - '%PREFIX% &7You got kicked'
+  - '%PREFIX% &7Ki lettél rúgva'
   - '&7'
-  - "&cReason &8» &7%REASON%"
+  - "&cIndok &8» &7%REASON%"
   - '&7'
   Notification:
-  - "&c&o%NAME% &7got kicked by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
+  - "&c&o%NAME% &7ki lett rúgva &e&o%OPERATOR% áltak"
+  - "&7Indoka &o%REASON%"
 
 
 UnBan:
-  Usage: "&cUsage &8» &7&o/unban [Name/IP]"
-  NotPunished: "&c&o%NAME% is not banned!"
-  Done: "&a&o%NAME% &7was successfully unbanned!"
-  Notification: "&e&o%OPERATOR% &7unbanned &c&o%NAME%"
+  Usage: "&cHasználat &8» &7&o/unban [Name/IP]"
+  NotPunished: "&c&o%NAME% nincs is bannolva!"
+  Done: "&a&o%NAME% &7sikeresen unbannolva!"
+  Notification: "&e&o%OPERATOR% &7unbanolta &c&o%NAME%"
 
 UnMute:
-  Usage: "&cUsage &8» &7&o/unmute [Name]"
-  NotPunished: "&c&o%NAME% is not muted!"
-  Done: "&a&o%NAME% &7was successfully unmuted!"
-  Notification: "&e&o%OPERATOR% &7unmuted &c&o%NAME%"
+  Usage: "&cHasználat &8» &7&o/unmute [Name]"
+  NotPunished: "&c&o%NAME% nincs is el némitva!"
+  Done: "&a&o%NAME% &7sikeresen a némitás etávolítva!"
+  Notification: "&e&o%OPERATOR% &7némitását eltovította &c&o%NAME%"
 
 UnWarn:
-  Usage: "&cUsage &8» &7&o/unwarn [ID] or /unwarn clear [Name]"
-  NotFound: "&cCould not find warning #%ID%"
-  Done: "&7Warn &a&o#%ID% &7was successfully deleted!"
-  Notification: "&e&o%OPERATOR% &7unwarned &c&o%NAME%"
+  Usage: "&cHasználat &8» &7&o/unwarn [ID] or /unwarn clear [Name]"
+  NotFound: "&cNem található figyelmeztetés #%ID%"
+  Done: "&7Figyelmeztettés &a&o#%ID% &7sikeresen törölve!"
+  Notification: "&e&o%OPERATOR% &7eltávolította a figyelmeztettést &c&o%NAME% -nak/nek"
   Clear:
-    Empty: "&c&o%NAME% &7has no warnings!"
-    Done: "&7Cleared &a&o%COUNT% &7warnings"
+    Empty: "&c&o%NAME% &7nincsen figyelmeztetése!"
+    Done: "&7Törölve &a&o%COUNT% &7figyelmeztetés"
 
 UnNote:
-  Usage: "&cUsage &8» &7&o/unnote [ID] or /unnote clear [Name]"
-  NotFound: "&cCould not find note #%ID%"
-  Done: "&7Note &a&o#%ID% &7was successfully deleted!"
-  Notification: "&e&o%OPERATOR% &7unnoted &c&o%NAME%"
+  Usage: "&cHasználat &8» &7&o/unnote [ID] or /unnote clear [Name]"
+  NotFound: "&cNem sikerült megtalálni a jegyzetett #%ID%"
+  Done: "&7Jegyeztett &a&o#%ID% &7sikeresen törölve lett!"
+  Notification: "&e&o%OPERATOR% &7eltávolitotta a jegyzetett róla &c&o%NAME%"
   Clear:
-    Empty: "&c&o%NAME% &7has no notes!"
-    Done: "&7Cleared &a&o%COUNT% &7notes"
+    Empty: "&c&o%NAME% &7nincsen neki jegyzette!"
+    Done: "&7Kitörölve &a&o%COUNT% &7jegyeztet"
 
 UnPunish:
-  Usage: "&cUsage &8» &7&o/unpunish [ID]"
-  NotFound: "&cCould not find punishment #%ID%"
-  Done: "&7Punishment &a&o#%ID% &7was successfully deleted!"
+  Usage: "&cHasználat &8» &7&o/unpunish [ID]"
+  NotFound: "&cNem találtak büntetést #%ID%"
+  Done: "&7Büntetés &a&o#%ID% &7sikeresen eltávolitva!"
 
 
 Banlist:
-  Usage: "&cUsage &8» &7&o/banlist <Page>"
-  OutOfIndex: "&cThere is no page %PAGE%!"
-  NoEntries: "&c&oThere are no entries"
+  Usage: "&cHasználat &8» &7&o/banlist <Page>"
+  OutOfIndex: "&cNincs oldal %PAGE%!"
+  NoEntries: "&c&oNincs bejegyzések"
   Header:
-  - "%PREFIX% &7Banlist:"
-  - "&c&oPlayer/IP &8| &e&oDuration &8| &7&oBanned by"
-  - "&c&oType &8> &7&oReason"
+  - "%PREFIX% &7Banlista:"
+  - "&c&oJátékos/IP &8| &e&oLejárat &8| &7&oBannolta"
+  - "&c&oFajta &8> &7&oIndok"
   - "&7"
   Entry:
   - "&8[&e%DATE%&8]"
   - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
   - "&c%TYPE% &8> &7&o%REASON%"
   - "&7"
-  Footer: "&7Page &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Listed bans: &e&o%COUNT%"
-  PageFooter: "&7Use &e&o/banlist %NEXT_PAGE% &7to see the next page"
+  Footer: "&7Oldal &e&o%CURRENT_PAGE% &7ennyiből &e&o%TOTAL_PAGES% &8| &7Listázott bannok: &e&o%COUNT%"
+  PageFooter: "&7Használd &e&o/banlist %NEXT_PAGE% &7hogy lásd a következő oldalt"
 
 History:
-  Usage: "&cUsage &8» &7&o/history [Name/IP] <Page>"
-  OutOfIndex: "&cThere is no page %PAGE%!"
-  NoEntries: "&c&oCould not find the history of %NAME% :("
+  Usage: "&cHasználat &8» &7&o/history [Name/IP] <Page>"
+  OutOfIndex: "&cNincsen oldal %PAGE%!"
+  NoEntries: "&c&oNem sikerült megtalálni az előzményeket %NAME% -nak/nek :("
   Header:
-  - "%PREFIX% &7History for %NAME%:"
-  - "&c&oName &8| &e&oDuration &8| &7&oOperator"
-  - "&c&oType &8> &7&oReason"
+  - "%PREFIX% &7Előzményei %NAME% -nak/nek:"
+  - "&c&oNév &8| &e&oLejárat &8| &7&oOperátor"
+  - "&c&oFajta &8> &7&oIndok"
   - "&7"
   Entry:
   - "&8[&e%DATE%&8]"
   - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
   - "&c%TYPE% &8> &7&o%REASON%"
   - "&7"
-  Footer: "&7Page &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Total entries: &e&o%COUNT%"
-  PageFooter: "&7Use &e&o/history %NAME% %NEXT_PAGE% &7to see the next page"
+  Footer: "&7Oldal &e&o%CURRENT_PAGE% &7ennyiből &e&o%TOTAL_PAGES% &8| &7Összes bejegyzés: &e&o%COUNT%"
+  PageFooter: "&7Használat &e&o/history %NAME% %NEXT_PAGE% &7hogy lásd a következő oldalt"
 
 Warns:
-  Usage: "&cUsage &8» &7&o/warns [Name] <Page> &cor &7&o/warns <Page>"
-  OutOfIndex: "&cThere is no page %PAGE%!"
-  NoEntries: "&c&o%NAME% has no warnings yet"
+  Usage: "&cHasználat &8» &7&o/warns [Name] <Page> &cor &7&o/warns <Page>"
+  OutOfIndex: "&cNincsen oldal %PAGE%!"
+  NoEntries: "&c&o%NAME% nincsen figyelmeztéseid"
   Header:
-  - "%PREFIX% &7Warnings for %NAME%:"
-  - "&c&oName &8| &e&oDuration &8| &7&oWarned by"
-  - "&c&o#ID &8> &7&oReason"
+  - "%PREFIX% &7Figyelmeztetései %NAME% -nak/nek:"
+  - "&c&oNév &8| &e&oLejárata &8| &7&oFigyelmeztetve által"
+  - "&c&o#ID &8> &7&oIndok"
   - "&7"
   Entry:
   - "&8[&e%DATE%&8]"
   - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
   - "&c&l#%ID% &8> &7&o%REASON%"
   - "&7"
-  Footer: "&7Page &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Active warnings: &e&o%COUNT%"
-  PageFooter: "&7Use &e&o/warns %NAME% %NEXT_PAGE% &7to see the next page"
+  Footer: "&7Oldal &e&o%CURRENT_PAGE% &7ennyiből &e&o%TOTAL_PAGES% &8| &7Aktív figyelmeztetések: &e&o%COUNT%"
+  PageFooter: "&7Használat &e&o/warns %NAME% %NEXT_PAGE% &7hogy lásd a következő oldalt"
 
 WarnsOwn:
-  OutOfIndex: "&cThere is no page %PAGE%!"
-  NoEntries: "&c&oYou have no warnings yet"
+  OutOfIndex: "&cNincsen oldal %PAGE%!"
+  NoEntries: "&c&oNincsen figyelmeztetésed"
   Header:
-    - "%PREFIX% &7Your warnings:"
-    - "&e&oDuration &8| &7&oWarned by"
+    - "%PREFIX% &7Figyelmeztetéseid:"
+    - "&e&oLejárat &8| &7&ofigyelmeztetve által"
     - "&c&o#ID &8> &7&oReason"
     - "&7"
   Entry:
@@ -253,42 +253,42 @@ WarnsOwn:
     - "&e%DURATION% &8| &7%OPERATOR%"
     - "&c&l#%ID% &8> &7&o%REASON%"
     - "&7"
-  Footer: "&7Page &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Active warnings: &e&o%COUNT%"
-  PageFooter: "&7Use &e&o/warns %NEXT_PAGE% &7to see the next page"
+  Footer: "&7Oldal &e&o%CURRENT_PAGE% &7ennyiből &e&o%TOTAL_PAGES% &8| &7Aktív figyelmeztetések: &e&o%COUNT%"
+  PageFooter: "&7Használat &e&o/warns %NEXT_PAGE% &7hogy lásd a következő oldalt"
   
 Notes:
-  Usage: "&cUsage &8» &7&o/notes [Name] <Page> &cor &7&o/notes <Page>"
-  OutOfIndex: "&cThere is no page %PAGE%!"
-  NoEntries: "&c&o%NAME% has no notes yet"
+  Usage: "&cHasználat &8» &7&o/notes [Name] <Page> &cor &7&o/notes <Page>"
+  OutOfIndex: "&cNincsen oldal %PAGE%!"
+  NoEntries: "&c&o%NAME% még nincsen jegyzete"
   Header:
     - "&7"
-    - "%PREFIX% &7Notes for %NAME%:"
+    - "%PREFIX% &7Jegyzetek %NAME%-ról/ről:"
     - "&7"
   Entry:
     - "&7%DATE% &8| &7By &o%OPERATOR% &7(&c#%ID%&7)"
     - "&8> &e%REASON%"
     - "&7"
-  Footer: "&7Page &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Notes: &e&o%COUNT%"
-  PageFooter: "&7Use &e&o/notes %NAME% %NEXT_PAGE% &7to see the next page"
+  Footer: "&7Oldal &e&o%CURRENT_PAGE% &7ennyiből &e&o%TOTAL_PAGES% &8| &7Jegyezteid: &e&o%COUNT%"
+  PageFooter: "&7Használat &e&o/notes %NAME% %NEXT_PAGE% &7Hogy következő oldalt"
 
 NotesOwn:
-  OutOfIndex: "&cThere is no page %PAGE%!"
-  NoEntries: "&c&oYou have no notes yet"
+  OutOfIndex: "&cNincs oldal %PAGE%!"
+  NoEntries: "&c&oMég nincsen jegyzeted"
   Header:
     - "&7"
-    - "%PREFIX% &7Your notes:"
+    - "%PREFIX% &7Jegyzeteid:"
     - "&7"
   Entry:
     - "&7%DATE% &8| &7By &o%OPERATOR% &7(&c#%ID%&7)"
     - "&8> &e%REASON%"
     - "&7"
-  Footer: "&7Page &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Notes: &e&o%COUNT%"
-  PageFooter: "&7Use &e&o/notes %NEXT_PAGE% &7to see the next page"
+  Footer: "&7Oldal &e&o%CURRENT_PAGE% &7ennyiből &e&o%TOTAL_PAGES% &8| &7Jegyeztek: &e&o%COUNT%"
+  PageFooter: "&7Használat &e&o/notes %NEXT_PAGE% &7hogy lásd a következő oldalt"
 
 ChangeReason:
   Usage: "&cHasználat &8» &7&o/change-reason [ID or ban/mute USER] [New reason]"
-  Done: "&7Büntetés &a&o#%ID% &7sikeresen megváltoztatva!"
-  NotFound: "&cSorry we have not been able to find this punishment"
+  Done: "&7Büntetés &a&o#%ID% &7sikeresen frissítve!"
+  NotFound: "&cSajnos nem tudtuk megtalálni ezt a büntetést"
 
 Check:
   Usage: "&cHasználat &8» &7&o/check [Name]"
