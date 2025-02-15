@@ -1,0 +1,78 @@
+# SuperVanish v6.2.20 - Messages
+#
+# Information:
+# <..> means that .. is required; [..] means that .. is optional and can be left out; | inside [] or <> stands for 'OR'
+# You can use the & character for color codes; Example: '&cThe color of this text would be red!'
+# You can use #XXXXXX for HEX color codes. Example: '#663EF6This text would be purple!'
+# You can use %p% to get the player's name; Example: '&4&l%p%, you aren't allowed to execute this command!'
+# You can use %other% to get the name of the target or cause
+# You can use %d% to get the player's display name; if you use Essentials then the display name contains the prefix too
+# You can use %tab% to get the player's name in the player list (TAB)
+# You can use %prefix% to get the player's prefix (Requires Vault)
+# You can use %suffix% to get the player's suffix (Requires Vault)
+# You can use %group% to get the player's group (Requires Vault)
+# You can use %nick% to get the player's nickname (Requires Essentials)
+# Some messages allow different, unique variables too
+#
+# NOTE: You can get WAY more placeholders by installing PlaceholderAPI or MVdWPlaceholderAPI
+#
+# Empty messages will not be sent
+# Using \n starts a new line
+#
+# Important:
+# You must double single quotes if you want to use them inside a message.
+# You must NOT use any tab characters inside this file (indent key) otherwise YAML will spam your console with errors!
+# !! If there are errors in the console after editing this file paste it into an online YAML parser to see if
+# there are any YAML syntax errors !!
+Messages:
+  NoPermission: '&4Hozzáférés megtagadva! Ehhez nincs jogod hogy ezt tedd.'
+  InvalidUsage: '&cRossz használat, használhatód a &6/sv help&c parancsok lisztázásához.'
+  VanishMessage: '&e%p% Kilépett a játékból'
+  ReappearMessage: '&e%p% Csatlakozott a játékhoz'
+  VanishMessageWithPermission: '&a[SV] %p% eltüntetve.'
+  ReappearMessageWithPermission: '&a[SV] %p% Megjelenitve.'
+  OnVanish: '&aMost már láthatatlan vagy!'
+  OnReappear: '&aMost már nem vagy láthatatlan!'
+  OnVanishCausedByOtherPlayer: '&a%other% eltüntet téged, most már láthatatlan vagy!'
+  OnReappearCausedByOtherPlayer: '&a%other% megmutattot téged, most már látható vagy!'
+  AlreadyVanishedError: '&cMár láthatlan vagy!'
+  NotVanishedError: '&cNem vagy láthatatlan!'
+  SilentJoinMessageForAdmins: '&a[SV] %p% csedesen csatlakozott.'
+  SilentQuitMessageForAdmins: '&a[SV] %p% csedesen kilépett.'
+  SilentDeathMessage: '&a[SV] %deathmsg%'
+  RemindingMessage: '&aMég látható vagy!'
+  ListMessagePrefix: '&aLátható Játékosok:&f %l'
+  ActionBarMessage: '&aLáthatatlan vagy a többi játékos számára!'
+  HideOtherMessage: '&aJátékos &e%other%&a most már nem látható!'
+  ShowOtherMessage: '&aJátékos &e%other%&a most már látható!'
+  CannotHideOtherPlayer: '&cNem változtathatod meg %other% -nak/nek láthatóságát!'
+  AlreadyInvisibleMessage: '&cJátékos &e%other%&c már nem látható!'
+  AlreadyVisibleMessage: '&cJátékos &e%other%&c már látható!'
+  PluginReloaded: '&aSikeresen újratöltödöt a SuperVanish (%time%ms)!'
+  InvalidSender: '&cJátékosnak kell lenned mielőtt végre hajtód a parancsot!'
+  PlayerNotOnline: '&cEz a játékos nincs online!'
+  PlayerNonExistent: '&cA játékos nem létezik!'
+  ToggledPickingUpItemsOn: '&eA tárgyak felvétele mostantól &aBE&e.'
+  ToggledPickingUpItemsOff: '&eA tárgyak felvétele mostantól &cKI&e.'
+  UpdateWarning: '&cFIGYELMEZTETÉS! A  újrateremtés %updates% visszaállítások %changes%. Kérlek használd &e/sv recreatefiles confirm&c ha folytatni szeretné.'
+  RecreatedConfig: '&aSikeresen újralétre jöttek %updates%! Kérlek nézdmeg %changes%.'
+  NoConfigUpdateAvailable: '&eA SuperVanish-fájlok megújabb verzión van!'
+  RecreationRequiredMsg: '&c[SV] A SuperVanish-fájlok nem naprakészek, akkor használhatja a &e/sv recreatefiles&c hogy újralétre hozd őket
+  vagy használd /sv recreatefiles dismiss hogy figyemen kivül hagyod az üzenetet.
+  A SuperVanish''s fájlok újrateremtése hozzáférést biztosít a plugin újabb beállításaihoz és funkcióihoz..'
+  DismissedRecreationWarning: '&e.Már nem kap értesítést erről a rekreációról'
+  UndismissedRecreationWarning: '&eMost értesítést kap erről a rekreációról.'
+  PrintedStacktrace: '&eSikeresen létrehozott egy stacktrace-t, nézd meg a konzolt!'
+  EntityHitDenied: '&c[SV] Nem tudsz játékosokat vagy mobokat eltűnés közben eltalálni!'
+  BlockPlaceDenied: '&c[SV] Nem tudsz blokkokat elhelyezni az eltűnésben.!'
+  BlockBreakDenied: '&c[SV] Nem tudsz blokkokat törni az eltűnésben!'
+  PluginOutdated: '&c[SV] A jelenlegi verzió a SuperVanishnek régi verziója van bent a szerveren. Új verzió: ''%new%''; Mostani: ''%current%'''
+  DynmapFakeJoin: '%d% belépett'
+  DynmapFakeQuit: '%d% kilépett'
+  HelpHeader: "&a<---------------&e SuperVanish-Segítség &a--------------->"
+  HelpFormat: "&6%usage% &7- &b%description% &c(%permission%)"
+  PlaceholderIsVanishedYes: "Igen"
+  PlaceholderIsVanishedNo: "Nem"
+  PlaceholderVanishPrefix: '&a[V] &r'
+  PlaceholderVanishSuffix: ' &r&a[V]'
+MessagesVersion: 6.2.20
