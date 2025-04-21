@@ -297,7 +297,7 @@ Check:
   IP: "&cIP &8» &7%IP% &8(%CACHED%&8)"
   Geo: "&cOrszág &8» &7%LOCATION%"
   Mute: "&cNémitva &8» &7%DURATION%"
-  MuteReason: "  &cReason &8» &7%REASON%"
+  MuteReason: "  &cIndok &8» &7%REASON%"
   Ban: "&cBannolva &8» &7%DURATION%"
   BanReason: "  &cIndok &8» &7%REASON%"
   Warn: "&cFigyelmeztettés &8» &7%COUNT%"
