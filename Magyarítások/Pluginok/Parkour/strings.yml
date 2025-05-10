@@ -1,0 +1,233 @@
+Parkour: 
+   Prefix: '&0[&bParkour&0] &f'
+   SignHeader: '&0[&bParkour&0]'
+   ConfigReloaded: A config újratöltödöt.
+   SignRemoved: Parkour tábla sikeresen léttre jött!
+   SignCreated: '&b%VALUE% &ftábla létre jött.'
+   Heading: -- &9&l%VALUE% &r--
+   Join: Belépet &b%VALUE%
+   JoinLives: '&7Ennyi van neked  &3%VALUE% &7életed van befejezni a kurzust!'
+   JoinTime: '&7Ennyi van neked  &3%VALUE% &7hogy befejezed a kurzust!'
+   JoinLivesAndTime: '&7Ennyi &3%MAXTIME% &7és &3%LIVES% &7életed és időd befejezni a kurzust!'
+   TimerStarted: Stopperóra elinditva!
+   Restarting: Újrainditás a kurzust
+   Leave: Kiléptél &b%VALUE%
+   Created: '&b%VALUE% &fsikersen létre jött!'
+   CheckpointCreated: Előnőrzőpont &3%CHECKPOINT% &fsikeresen beállitva &b%COURSE%&f!
+   WhenReady: '&7Ha készen van a parkour akkor &b%VALUE%&7, írd be ezt &b/pa ready %VALUE%'
+   Delete: '&b%VALUE% &fsikeresen törölve lett!'
+   DeleteCheckpoint: Előnőrzőpont &b%CHECKPOINT% &fsikeresen törölve lett itt &b%COURSE%
+   Reset: '&b%VALUE% &fresetelve lesz!'
+   JoinBroadcast: '&3%PLAYER% &fbelépett &b%COURSE%&f!'
+   FinishBroadcast: '&3%PLAYER% &fbefejezte &b%COURSE% &fennyi &b%DEATHS% &fhalállal, és ennyi idővel
+      &b%TIME%&f!'
+   FinishCourse1: Befejeztted &b%VALUE%&f!
+   FinishCourse2: Befejeztte &b%TIME%&f, ennyi halállal &b%DEATHS%
+   JoinLocation: Te vissza lettél téve a eredeti helyedre.
+   Continue: Folyamatos előrelépés a &b%VALUE%
+   TimeReset: Az időd újraindult!
+   Teleport: El lettél teleportálva &b%VALUE%
+   MaxDeaths: 'Sajnálom, de elérted a maximum halál számot: &b%VALUE%'
+   MaxTime: Sajnálom, de elérte a maximális időkorlátot. %VALUE%!
+   Die1: Meghaltál! Vissza kerülsz a kezdéshez!
+   Die2: Meghaltál! Vissza kerülsza előnőrzőpontra &b%VALUE%
+   Die3: Meghaltál! Vissza kerülsz a útólsó elért előnőrzőpontra.
+   LifeCount: '&b%VALUE% &féleted maradt!'
+   Playing: ' &b%PLAYER% &f- &8C: &7%COURSE% &8D: &7%DEATHS% &8T: &7%TIME%'
+   RewardLevel: A te rangod erre lett álltiva &b%LEVEL% &fmert megcsináltad a &b%COURSE%&fkurzust!
+   RewardRank: A te rangod erre lett állitva %VALUE%
+   RankInfo: '* ParkourSzintet nőt &b%LEVEL% &fennyit szereztél: %RANK%'
+   RewardParkoins: '&b%AMOUNT% &fParkoursok nyerményt kaptak! Új engyeleged: &7%TOTAL%'
+   Countdown: Indult ennyi &b%VALUE% &fmásodperc múlva...
+   Go: Indulj!
+   BestTime: A legjobb időd!
+   CourseRecord: Új kurzus idő!
+   LeaderboardHeading: '%COURSE% : Top %AMOUNT% results'
+   LeaderboardEntry: '%POSITION%) &b%PLAYER% &fin &3%TIME%&f, meghalt &7%DEATHS% &fennyiszer'
+   QuietOn: 'Csöndes Mód: &bBE'
+   QuietOff: 'Csöndes Mód: &bKI'
+   TestModeOn: 'Test Mód: &bBE&f. Simulálva &b%VALUE%&f ParkourKit.'
+   TestModeOff: 'Test Mód: &bKI'
+   AlreadyCompleted: Te már megcsináltad már ezt a kurzust.
+   Question: Kérlek írd be &a/pa yes &fhogy elfogad, vagy &c/pa no &fhogy elutasísd.
+   Challenge: 
+      Created: Kíhívás &b%VALUE% &flétrehozodott
+      StartCommand: Akkor lesz kész ha ezt be írod &b/pa challenge start
+      Wager: ', &fA fogdás &b%VALUE%&f!'
+      InviteSent: A kíhívás elküdve &b%VALUE%&f!
+      InviteReceived: Kihívást kaptál, hogy &b%COURSE% &fkészítette &b%PLAYER%&f!
+      InviteReceivedWager: A fogadás összege &b%VALUE%&f!
+      AcceptDecline: Hogy elfogad &a/pa accept &fvagy &c/pa decline &fhogy elutiszd.
+      Joined: Te felfogadtad a kíhívást &b%VALUE%&f. Kérjük, várjon, amíg a host elindul.
+      Terminated: '&b%VALUE% &fbefejezte a kihívást!'
+      Forfeited: '&b%VALUE% &ffeladta a kihívást. Teljesítse a pályát a győzelemhez!'
+      Quit: Te kiléptél a kíhívásból. Egy másik játékos bejefezi a kurzust!
+      Winner: Gartulálok! megnyerted a kíhívást &b%VALUE%!
+      WinnerWager: Megkaptod a jutalmad &b%VALUE% &fa fogadás megnyeréséért!
+      Loser: '&b%PLAYER% &fhamarabb bejezete &b%COURSE% &fmint te '
+      LoserWager: Bejeződőtt a parkour &b%VALUE% &fés levetünk kicsit a pénzedből :)!
+Event: 
+   Join: Ez a szerver a használja &bParkour &3%VALUE%
+   Checkpoint: Előnőrzőpont beállitva &b%CURRENT% &8/ &7%TOTAL%
+   FreeCheckpoints: Előnőrzőpont ellérve
+   AllCheckpoints: Az összes előnőrzőpontot megszereted!
+   HideAll1: Az összes játékos mágikusan megjelenttek!
+   HideAll2: Az összes játékos mágikusan eldöntek!
+   Chat: '&0[&b%RANK%&0] &f%PLAYER%&0:&f %MESSAGE%'
+   DefaultRank: Newbie
+Error: 
+   NotOnCourse: Ön nem ezen a kurzuson van!
+   NotOnAnyCourse: Te nem vagy ebbe kurzusba!
+   TooMany: Túl sok argumentumok! (%VALUE%)
+   TooLittle: Nincs elég argumentumok! (%VALUE%)
+   Exist: Ez a kurzus már létezik!
+   NoExist: '&b%VALUE% &fnem létezik!'
+   Command: Nem-Parkour parancsok le lesznek tiltva!
+   Sign: Nem-Parkour táblák le lesznek tiltva!
+   WrongWorld: Te a rossz világ!
+   WorldTeleport: A másik világba való teleportálást megakadályozták!
+   RequiredLvl: Neked ennyi szintű kell lenned &b%VALUE% &fhogy belépj!
+   NotReady: Ez a kurzus nincs kész még hogy te tudjál játszani!
+   NotReadyWarning: Ez a kurzus még nem áll készen.
+   SignProtected: Ez a tábla védett!
+   Syntax: '&cNem jó Syntax: &3/pa &b%COMMAND% &e%ARGUMENTS%'
+   UnknownSignCommand: Ismeretlen tábla parancs!
+   UnknownCommand: Ismeretelen parancs!
+   UnknownPlayer: Ismeretlen Parkour játékos!
+   UnknownMaterial: 'Ismeretlen angyag: &4%VALUE%&c'
+   UnknownPotionEffectType: 'Ismeretle Poti Effect típus: &4%VALUE%&c'
+   UnknownLobby: '%VALUE% lobby nem létezik!'
+   UnknownWorld: A kért világ nem létezik.
+   UnknownParkourKit: Ismeretlen ParkourKit.
+   UnknownCheckpoint: Ismeretlen vagy nem létező elenőrpont.
+   Cheating1: Kérlek ne cheat-ei.
+   Cheating2: '&lEl kell érnie az összes &4&l%VALUE% &f&lelenőrpontot!'
+   MissedCheckpoints: Kihagytál &4%VALUE% &fellenőrző pontok!
+   Cooldown: Lassaban írj! Kérlek várj &b%VALUE% &fmore seconds.
+   PrizeCooldown: Várj &b%VALUE% &fmielőtt átveszed újra!
+   NoQuestion: Nem írtál kérdést!
+   JoiningAnotherCourse: Nem tudsz csatlakozni egy másik kurzushoz mert már benne vagy kurzusba.
+   PluginNotLinked: '&b%VALUE% &fnincs hozzás kötve.'
+   NoPermission: 'Nincsen neked jogod: &b%VALUE%'
+   InvalidAmount: Az összegnek numerikusnak kell lennie.
+   InvalidQuestionAnswer: Nem jó kérdés válasz.
+   QuestionAnswerChoices: Kérlek ezt használd &a/pa yes &for &c/pa no
+   LimitExceeded: A pálya játékosainak száma elérte a limitet.
+   InvalidSession: A te ParkourSession az nem jó.
+   ChallengeOnly: Ez a kurzus csak a Kihívásokra korlátozódik.
+   OnChallenge: Már benne vagy kíhívásba.
+   InvalidValue: Kérlek írjbe valid értéket.
+   DisabledCommand: Ez a parancs levan tiltva.
+Help: 
+   Command: Használd &b/pa help &9%VALUE% &fhogy tud tannulni a parancsról.
+   Commands: Hogy kimutatsa az parancsot menű írd be ezt &b/pa cmds
+   ConsoleCommands: Hogy kimutatsa az összes parancsot írd be ezt &f/pac cmds
+   SignCommands: Hogy kimutatsa a tábla parancsokat írd be ezt &b/pa cmds signs
+   CommandSyntax: '&7Syntax: &f/pa %VALUE%'
+   ConsoleCommandSyntax: '&7Syntax: &f%VALUE%'
+   CommandExamples: '&7Példák:'
+   CommandUsage: '&3/pa &b%COMMAND%&e%ARGUMENTS% &0: &f%TITLE%'
+   SignUsage: '&b%COMMAND% &e%SHORTCUT% &0: &f%DESCRIPTION%'
+   DisplayValue: '%TITLE%: &b%VALUE%'
+ParkourTool: 
+   LastCheckpoint: 
+      Info: '&7SHIFT + &6Jobb kattintás to go back to last checkpoint'
+   HideAll: 
+      Info: '&7SHIFT + &6Jobb kattintás a láthatóság bekapcsolásához'
+   HideAllEnabled: 
+      Info: '&7SHIFT + &6Jobb kattintás a láthatóság bekapcsolásához'
+   Leave: 
+      Info: '&7SHIFT + &6Jobb kattintás hogy kilépj a kurzusból'
+   Restart: 
+      Info: '&7SHIFT + &6Jobb kattintás újrainditja a kurzust'
+   RestartConfirmation: Kérlek használd a újrainditás eszközt.
+   Freedom: 
+      Info: '&6Szabádság eszköz'
+   Rockets: 
+      Info: '&6Jobb kattintás hogy kilöd magad'
+      Cooldown: '&b%VALUE% &fmásodpercek maradtak a rakéta újratöltéséhez.'
+Other: 
+   Kit: '&b%VALUE% &fParkourKit megkaptad!'
+   PropertySet: A &3%PROPERTY% &fez &3%COURSE% &ferre lett állitva &b%VALUE%&f!
+Lobby: 
+   Joined: Te beléptél a lobbyba
+   JoinedOther: Te beléptél ebbe &b%VALUE% &flobbyba
+   Created: '&b%VALUE% &fA lobby létrjött.'
+   RequiredLevelSet: Beállitotad a parkour szintet erre &b%VALUE%&f.
+Scoreboard: 
+   MainHeading: '&b&l== Parkour =='
+   TitleFormat: '&b%VALUE%'
+   TextFormat: '&f%VALUE%'
+   NotCompleted: Nincs megcsinálva
+   CourseNameTitle: 'Kurzus:'
+   BestTimeEverTitle: 'Legjobb idő:'
+   BestTimeEverNameTitle: 'Legjobb játékos:'
+   MyBestTimeTitle: 'Saját megjobb idő:'
+   CurrentDeathsTitle: 'Mostani halálok:'
+   RemainingDeathsTitle: 'Maradt halálook:'
+   CheckpointsTitle: 'Ellenőrző pontok:'
+   LiveTimerTitle: 'Mostani idő:'
+   TimeRemainingTitle: 'Idő maradt:'
+Economy: 
+   Insufficient: Megalább ennyi pénzed legyen &b%AMOUNT% &fmielőtt becsatlakozol &b%COURSE%
+   Fee: '&b%AMOUNT% &flevonták az egyenlegéből a csatlakozásért &b%COURSE%'
+   Reward: Te szereztél &b%AMOUNT% &fhogy megcsináltad &b%COURSE%&f!
+Kit: 
+   Speed: '&bGyositó Blokk'
+   Climb: '&bMászás Blokk'
+   Launch: '&bKilövés Blokk'
+   Finish: '&bBejezés Blokk'
+   Norun: '&bNincs futtás Blokk'
+   Nofall: '&bNincs leesés Blokk'
+   Nopotion: '&bNincsPoti Blokk'
+   Sign: '&bTábla'
+   Death: '&bMeghalsz Blokk'
+   Bounce: '&bPattabás Blokk'
+   Repulse: '&bRepulse Blokk'
+   Potion: '&bPozició Blokk'
+Mode: 
+   Freedom: 
+      JoinText: '&6Szabadság eszköz &f- Jobb Kattintás: &2Mentés&f, Bal kattintás: &5Betöltés'
+      Save: Pozició elmentve
+      Load: Pozició betöltve
+   Rockets: 
+      JoinText: Használd Rocket Launcher-t hogy kilőd magad
+PlaceholderAPI: 
+   UnknownCourse: Ismeretlen Kurzusok
+   InvalidSyntax: Nem jó syntax
+   NoTimeRecorded: Nem lett felvéve idő
+   CurrentCourseCompleted: Igen
+   CurrentCourseNotCompleted: Nem
+   TopTenResult: '&f%POSITION%) &b%PLAYER%&f belül &a%TIME%'
+   CourseActive: Aktív
+   CourseInactive: Nem aktív
+   CheckpointHologram: Ellenőrző pont &b%VALUE%
+   NoPrizeCooldown: Nyermény elérhető
+   PlayerNotFound: Player not found
+   TopFirstPlaceResult: '&f%POSITION%) &b%PLAYER%&f - &a%AMOUNT%'
+GUI: 
+   JoinCourses: 
+      Heading: Parkour Kurzusok
+      Setup: 
+         Line1: '         '
+         Line2: ' GGGGGGG '
+         Line3: '  12 34  '
+      Description: '&fBelépés &b%VALUE%'
+      Players: 'Játékosok: &b%VALUE%'
+      Checkpoints: 'Ellenőrző pontok: &b%VALUE%'
+      Completed: 'Befejeződött: &b%VALUE%'
+   CourseSettings: 
+      Heading: '%VALUE% Beállitások'
+      Setup: 
+         Line1: 'qwertyui '
+         Line2: asdfghjkl
+         Line3: 'zxcvbnm  '
+Display: 
+   Day: '%VALUE% nap'
+   Days: '%VALUE% napok'
+   Hour: '%VALUE% óra'
+   Hours: '%VALUE% órák'
+   Minute: '%VALUE% perc'
+   Minutes: '%VALUE% percek'
+   Second: '%VALUE% másodperc'
+   Seconds: '%VALUE% másodpercek'
