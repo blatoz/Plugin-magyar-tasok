@@ -1,0 +1,122 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axvaults.html
+# ITEM BUILDER: https://docs.artillex-studios.com/item-builder.html
+
+guis:
+  selector:
+    title: '&0Széfek'
+    item-owned:
+      # players can change the material if they have permission, this is the default value
+      material: BARREL
+      name: '&#55ff00&lSzéf #%num%'
+      glow: false
+      lore:
+      - ' '
+      - ' &7- &fSlots: &#aaffaa%used%&7/&#55ff00%max%'
+      - ' '
+      - '&#55ff00&l(!) &#55ff00Kattints - Széf megnyitása'
+      - '&#55ff00&l(!) &#55ff00Shift + Kattintás - Csere'
+    item-locked:
+      material: RED_STAINED_GLASS_PANE
+      name: '&#FF0000&lSzéf #%num%'
+      glow: false
+      lore:
+      - ' '
+      - ' &7- &fNincs megvásárolva &fez a széf'
+      - ' '
+      - '&#FF0000&l(!) &#FF0000Zárolt széf'
+  item-picker:
+    title: '&0Item választó'
+  vault:
+    title: '&0Széf #%num%'
+
+gui-items:
+  close:
+    material: BARRIER
+    name: '&#FF3333&lBezárás'
+  back:
+    material: BARRIER
+    name: '&#FF3333&lVissza'
+  previous-page:
+    material: ARROW
+    name: '&#FF6600&lElőző oldal'
+  next-page:
+    material: ARROW
+    name: '&#FFCC00&lKövetkező oldal'
+
+help:
+- '&#55ff00&lAxVaults &7» &#AAFFAASúgó:'
+- ' '
+- '  &7⋆ &f/axvaultsadmin view <player> <vault> &7| &#AAFFAAEgy másik játékos széfének megnyitása'
+- '  &7⋆ &f/axvaultsadmin forceopen <player> &7| &#AAFFAASzéf kiválasztó megnyitása játékosnak'
+- '  &7⋆ &f/axvaultsadmin set [number] &7| &#AAFFAASzéf hozzáadása blokkhoz'
+- '  &7⋆ &f/axvaultsadmin reload &7| &#AAFFAAKonfiguráció újraindítása'
+- '  &7⋆ &f/axvaultsadmin delete <player> <vault> &7| &#AAFFAASzéf törlése játékosnak'
+- '  &7⋆ &f/axvaultsadmin stats &7| &#AAFFAASzéf statisztikák'
+- '  &7⋆ &f/axvaultsadmin converter <plugin> &7| &#AAFFAAMásik pluginról való átalakítás'
+- ' '
+
+# you can disable any messages by setting it to ""
+vault:
+  not-unlocked: '&#FF0000Még nincs meg a széf!'
+  opened: '&fSzéf &#55FF00#%num% &fmegnyitva!'
+  closed: '&fSzéf &#55FF00#%num% &fbezárva!'
+
+reload:
+  success: '&#33FF33Plugin sikeresen újraindítva!'
+  failed: '&#FF3333Sikertelen a plugin újraindítása! Valami hiba van a &f%file%&#FF3333 fájlban, nézd meg a konzolt vagy használd a yaml validátort a hibák javításához!'
+
+set:
+  success: '&#00FF00Sikeresen hozzáadtam a széfet ehhez a blokkhoz!'
+  already: '&#FF0000Ez a blokk már egy széfön!'
+  no-block: '&#FF0000Nézd meg a blokkot!'
+  removed: '&#FF0000Eltávolítottad a széfed a blokkból!'
+
+save:
+  manual: '&#00FF00Manuálisan mentettem a széföket! &f%time%ms&#00FF00! &#DDDDDD(ez a parancs célja a tesztelésre és előfordulhat, hogy okoz szükségtelen lagot)'
+
+no-permission: '&#FF0000Nincs engedélyed ehhez a parancsra!'
+force-open: '&#00FF00A széf kiválasztót megnyitottam &f%player%&#55FF00!'
+force-open-vault: '&#00FF00A széf &f#%num% &#00FF00megnyitva &f%player%&#55FF00!'
+delete: '&fA széf &f#%num% &f törölve &f%player%&#55FF00!'
+banned-item: '&#FF0000Ezt az elemet nem lehet a széfbe rakni!'
+
+view:
+  open: '&#55FF00%player%&fnak/neki a széf &f#%num% &fmegnyitva!'
+  info: '&fA széfek &f%player%&f: &#AAFFAA%vaults%'
+  not-found: '&#FF0000Nem található játékos vagy széf!'
+
+# you can disable sounds by setting the sections to ""
+# for example: open: ""
+# list of sounds: https://www.digminecraft.com/lists/sound_list_pc.php
+# format: <sound>|[volume]|[pitch] (volume and pitch is optional)
+sounds:
+  open: block.barrel.open|1.0|1.0
+  close: block.barrel.close|1.0|1.0
+  select-icon: block.barrel.close|1.0|1.0
+
+stats:
+- ' '
+- '&#55ff00&lAxVaults &#aaff55Szerver statisztikák &7»'
+- ' &7- &fBetöltött játékosok: &#55ff00%players%'
+- ' &7- &fBetöltött széfök: &#55ff00%vaults%/%vaults2%'
+- ' &7- &fUtolsó automatikus mentés hossza: &#55ff00%auto-save% ms'
+- ' &7- &fUtolsó automatikus mentés mentett széfeknél: &#55ff00%saved-vaults% széf'
+- ' '
+
+converter:
+  started: '&#55FF00A konvertálás elkezdődött! Nézd meg a konzolt a jelenlegi állásért!'
+
+commands:
+  invalid-value: '&#FF0000Érvénytelen paraméter: &#BB0000%value%'
+  invalid-command: '&#FF0000Érvénytelen parancs vagy alparancs!'
+  missing-argument: '&#FF0000Hiányzik a paraméter! Meg kell adnod egy értéket a &#BB0000%value%&#FF0000.'
+  no-permission: '&#FF0000Nincs engedélyed ehhez a parancsra!'
+  out-of-range: '&#FF0000A &#BB0000%number% &#FF0000kell legyen a &#BB0000%min% &#FF0000és a &#BB0000%max%&#FF0000 között!'
+  player-only: '&#FF0000Ezt a parancsot csak játékosnak lehet használni!'
+  invalid-player: '&#FF0000A játékos &#BB0000%player% &#FF0000nem található!'
+  invalid-selector: '&#FF0000Ezt a kiválasztót nem lehet ebben a parancsban használni!'
+
+update-notifier: '&#BBFF88Van egy új verziója a AxVaults-nak! &#DDDDDD(&#FFFFFFjelenlegi: &#FF0000%current% &#DDDDDD| &#FFFFFFutolsó: &#00FF00%latest%&#DDDDDD)'
+
+# do not change this
+version: 10

@@ -1,0 +1,100 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axvaults.html
+
+prefix: '&#55ff00&lAxVaults &7» '
+
+# this setting is not reloadable, you have to restart the server
+# how often should the plugin save vaults from ram to the database?
+# this is in minutes
+auto-save-minutes: 5
+
+# how many rows should the /axvault selector menu have?
+vault-selector-rows: 6
+
+# how many rows should the vault icon picker have?
+item-picker-rows: 6
+
+# how many rows should vaults have?
+# you can override this with the axvaults.rows.# permission
+# you should keep this on 6 and only /change it with permissions
+vault-storage-rows: 6
+
+database:
+  # h2, sqlite, mysql
+  # for single server setups we recommend h2
+  type: h2
+  
+  # you only need to touch these when using mysql/postgresql
+  address: 127.0.0.1
+  port: 3306
+  database: admin
+  username: admin
+  password: admin
+  pool:
+    maximum-pool-size: 10
+    minimum-idle: 10
+    maximum-lifetime: 1800000
+    keepalive-time: 0
+    connection-timeout: 5000
+
+# when using mysql/postgresql, how should data be sent between servers?
+# values: none, sql
+# multi server is currently experimental, there might be some issues
+multi-server-support: none
+
+# modes:
+# 0 - every vault needs a separate permission (axvaults.vault.10 will only give access to vault #10)
+# 1 - the highest permission will give all the previous vaults (axvaults.vault.10 will give access to vaults #1-#10)
+permission-mode: 0
+
+# should vaults that the player can't access be shown in the selector gui?
+show-locked-vaults: true
+
+# how many items should be shown in the vault selector
+# modes:
+# 1 - the number of the vault, it will restart once it reaches 64
+# 2 - always show 1
+# 3 - show the slots filled in the vault
+selector-item-amount-mode: 1
+
+# how many vaults should be shown in the vault gui
+# this only has an effect if show-locked-vaults is false
+# set to -1 to show an unlimited amount of vaults
+max-vault-amount: -1
+
+# if enabled, the icon picker will not close after selecting an item
+selector-stay-open: false
+
+# list of items that CAN'T be put in vaults
+# note: the name-contains string shouldn't include any color codes
+blacklisted-items:
+  '1':
+    material: barrier
+    name-contains: Kitiltott tárgy neve
+
+# you must define at least 1
+# requires a restart to update
+player-command-aliases:
+- axvault
+- vault
+- pv
+- axpv
+- axvaults
+- vaults
+
+# you must define at least 1
+# requires a restart to update
+admin-command-aliases:
+- axvaultsadmin
+- axvaultadmin
+- vaultadmin
+- vaultsadmin
+
+# should be plugin notify you if there is a new update?
+update-notifier:
+  # if enabled, it will display the message in the console
+  enabled: true
+  # if enabled, it will broadcast the update message to all players who have the <plugin-name>.update-notify permission
+  on-join: true
+
+# do not change this
+version: 6

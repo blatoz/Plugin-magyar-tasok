@@ -1,0 +1,53 @@
+Prefix: "&8[&1F&3S&8] &f"
+#Time between the messages appear and the game starts (in seconds)
+Time: 300
+#Should the games be randomized?
+Random: true
+#How many players until the games start
+Required-Players: 1
+#What worlds shouldn't get the games?
+Disabled-Worlds:
+- "a world"
+- "another world"
+#If the option above is false put here the order:
+Order:
+- Add
+- Subtract
+- Multiply
+- Random
+- Shuffle
+Add:
+  min: 1
+  max: 50
+  message: "&aOld meg a feladványt &f%number1% + %number2% &ajutalmat lehet szerezni."
+Subtract:
+  min: 1
+  max: 50
+  message: "&aOld meg a feladványt &f%number1% - %number2% &ajutalmat lehet szerezni."
+Multiply:
+  min: 1
+  max: 15
+  message: "&aOld meg a feladványt &f%number1% * %number2% &ajutalmat lehet szerezni."
+Random:
+  length: 8
+  message: "&aÍrj chaten &f%solution% &ajutalmat lehet szerezni."
+Shuffle:
+  words:
+  - minecraft
+  - world
+  - tree
+  - word
+  - hello
+  - music
+  - grass
+  - bruh
+  - Facebook SMP
+  - Tulajdonos
+  - Fejlesztő
+  message: "&aFejtsd ki a szót &f%word% &ajutalmat kapj."
+Reward:
+  message1: "&aTe el találtad a választ: &f%answer%&a."
+  message2: "&f%player% &aEl találta a választ: &f%answer%&a."
+  #Reward types: [money], [consolecommand], [playercommand], [message]
+  rewards:
+  - "[money] 10000"

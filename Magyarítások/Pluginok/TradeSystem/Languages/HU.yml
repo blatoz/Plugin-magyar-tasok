@@ -1,0 +1,153 @@
+No_Permissions: '&cNincsen jogod ehez az akcióhoz!'
+Only_for_Player: '&cCask má játékosoknak!'
+No_Money: '&cNincs pénzed!'
+Enter_Correct_Amount: '&cAdj meg egy valós mennyiséget.'
+Only_X_Amount: '&7Neked csak ennyi pénzed van &c%amount% %type%&7!'
+Trade_Was_Cancelled: '&cA trade le lett mondva.'
+Trade_Was_Finished: '&7A trade &abejeződött&7.'
+Cannot_Trade_With_Yourself: '&cNem tudsz saját magaddal tradelni.'
+Player_Not_Online: '&cA jáétkos nincs online.'
+Want_To_Trade: '&7A játékos &c%player% &7szeretne trade veled. &8[%accept% &8|
+  %deny%&8]'
+Want_To_Trade_Bedrock: '&7A játékos &c%player% &7szeretne trade veled. &8[&7/trade
+  &8<&aaccept&8, &cdeny&8> &7%player%&8]'
+Want_To_Trade_Accept: '&aElfogadás'
+Want_To_Trade_Deny: '&cElutasitás'
+Want_To_Trade_Hover: '&8» Kattints «'
+Player_Is_Invited: '&7A játékos &c%player% &7meghívtad.'
+Command_How_To: '&7Használd: /trade <player, accept, deny, toggle>'
+Command_How_To_Accept: '&7Használd: /trade accept <Player>'
+Command_How_To_Deny: '&7Használd: /trade deny <Player>'
+Player_Of_Request_Not_Online: '&cA játékos akinek külted trade kérést már ő nincs online!'
+Request_Accepted: '&7te &aelfogatad &7a trade felkérést&7.'
+Request_Was_Accepted: '&7A te kérésedet &c%player% &aelfogadta&7.'
+Request_Denied: '&7Te &celutasitottad &7a trade kérést.'
+Request_Was_Denied: '&7A te kérésedet &c%player% &celutasitotta&7.'
+No_Request_Found: '&cNem kaptál tradekérdést ettől a játékostól!'
+No_Requests_Found: '&cTe nem kaptál semmi felkérést!'
+Too_many_requests: '&cTöbb kérése is van&7, kérjük, adja meg a játékos nevét.'
+GUI_Title: '&cTrade vele %player%%tradesystem_countdown_fancy%'
+Money_Amount: Mennyiség a pénzből
+Coin: Érme
+Coins: Érmék
+PlayerPoint: JátékosPont
+PlayerPoints: JátékosPontok
+Token: Token
+Tokens: Tokenek
+ClaimBlock: ClaimBlock
+ClaimBlocks: ClaimBlocks
+Status: Státus
+Ready: Készen áll
+Not_Ready: Nem készen áll
+Wait_For_Other_Player: Várokozás a másik játékosra...
+Trade_Only_With_Objects: Valamit fel kell ajánlanod a kereskedés befejezéséhez.
+Click_To_Change: Kattints hogy megváltoztatsd
+Cancel_Trade: Kattints hogy mégsem küldesz trade
+Not_Able_To_Trade: Neked nincs jogod tradelni.
+Player_Is_Not_Able_Trade: Ez a játékosnak nincs engedélyezve a trade.
+TRADE_EDITOR: Szerkeztő- trade GUI
+TRADE_EDITOR_FUNCTIONS: Szerkeztő- Funkció
+EDITOR_RESET: A te minimálisan mented guid a visszaálltitodot.
+Editor_Command_How_To: '&7Használd: /tradeEditor [reset]'
+Editor_Not_Empty: Nincs üres slot!
+Editor_No_Item: Nincs Item!
+Layout_Name: Layout-Név
+Layout_Name_Already_Exists: Ez a layout név már fogalt!
+Layout_Finished: A layout &asikeresen&7létre jött.
+Layout_Edited: A layout &asikeresen&7 módusult.
+Layout_Editor: '&9Layout &8- &9Szerkeztés'
+Save: mentés
+Not_Ready_For_Saving: '&cEz a layout nem lehet menteni még'
+Items: Itemek
+Set: Beállitás
+Not_Set: Nincs beállitva
+Functions: Funkciók
+Name: Név
+Ambiguous_Functions: Kétértelmű funkciók
+Layout_Set_Items: Töltse ki a szabványos trade gui
+Layout_Set_Functions: Funkciók beállitása
+Layout_Set_Name: Layout neve beállitása
+Layout_Set_Ambiguous_Functions: Kétértelmű függvények beállítása
+Layout_Editor_Set_Items: '&cZárd be hogy folytasd'
+Back: Vissza
+Trader: Trader
+Other: Más
+Layout_Set_Own_Slots: Saját kereskedelmi rések beállítása
+Layout_Set_Other_Slots: Kereskedelmi rések beállítása a partnertől
+Layout_Set_Cancel: Megszakítás ikon beállítása
+Layout_Set_Other_Not_Ready: „Nem kész” ikon beállítása a partnertől
+Layout_Set_Status: Saját státus ikon beállitása
+Layout_Set_Money: Saját pénz ikon beállítása
+Layout_Set_Other_Money: Pénz ikon beállítása a partnertől
+Help_TradeSystem: '&7Használd &e/%label% <layout, reload>'
+Help_TradeSystem_Layout: '&7Használd &e/%label% layout <create, edit, delete, activate>'
+Help_TradeSystem_Layout_Create: '&7Használd &e/%label% layout create <name> [9..54]'
+Help_TradeSystem_Layout_Activate: '&7Használd &e/%label% layout activate <name>'
+Help_TradeSystem_Layout_Delete: '&7Használd &e/%label% layout delete <name>'
+Help_TradeSystem_Layout_Edit: '&7Használd &e/%label% layout edit <name>'
+Layout_Does_Not_Exist: '&cA layout nem létezik!'
+Layout_Activated: '&7A layout ''&b%name%&7'' &aaktiválva lett&7.'
+Layout_Deleted: '&7A layout ''&b%name%&7'' &ctörölve lett&7.'
+Enter_Correct_Name_Space: '&cKérlek ne használj szóközt.'
+Sure_That_You_Want_To_Loose_Your_Data: '&7Te tényleg &cnem akkarod &celmenteni a
+  save &7a változásokat?'
+Close: Bezárás
+Layout_Already_Activated: '&7Ez a layout &cez van használatban&7!'
+Layout_Set_Replacement_For_Money: '&7Ikon, ami a &ecserélve lesz a pénz ikon&7, akkor
+&e a economy plugin nem lesz &7érzélkelve.'
+Layout_Hint_Same_Slot_Amount: '&7Mindakettő tradernek &cugyan annyi &chely legyen a leltárában&7!'
+Current_Amount: Mostani mennyiség
+Trade_Spam: '&7Ez a játékos &cmár kapott egy trade felkérést&7!'
+Plugin_Reloading: '&cA plugin most újra van töltve...'
+Success_Plugin_Reloaded: '&aA plugin újralesz töltve.'
+Player_is_not_in_range: '&7A játékos&c%player% &cnincs kölzeben&7!'
+Cannot_trade_in_that_GameMode: '&7Te &cnem tradelhetsz &7ebbe a játékmódban!'
+Other_cannot_trade_in_that_GameMode: '&7Ez a játékos &cnem tradelhet &7ebbe a játékmódban!'
+Trade_cancelled_by_attack: '&cA trade nem lehet lemondani miközben harcolsz.'
+Trade_Partner_No_Space: '&7Te trade partnerednek &cnincsen hely &7a leltárában!'
+Trade_Offline: '&7Neked most már &cnem elérhető &7a trade felkéréseket!'
+Trade_Online: '&7Te most &aelérhetővé tetted &7a trade felkéréseket!'
+Trade_Partner_is_Offline: '&7Ez a játékosnak &cnem elérhető &7a trade felkérések!'
+Trade_You_are_Offline: '&7Használd "%command%&e/trade be-kikapcsolása%command%&7" tradehez.'
+Trade_Placed_Blocked_Item: '&7Ez a item &cnem &7tradelhető!'
+Cannot_trade_in_bed: '&cTe nem tradelhetsz&7, miközben ágyba vagy.'
+Cannot_trade_in_world: '&7Te &cnem tradelhetsz &7ebbe világba!'
+Other_cannot_trade_in_world: '&7Ez a játékos &cnem tradelhet &7mert olyan világban van!'
+Cannot_trade_while_invisible: '&7Te &cnem tradehetsz &7miközben &cláthatlan vagy&7!'
+Cannot_trade_in_region: '&7Te &cnem tradelhetsz &7ebben a országban!'
+Other_cannot_trade_in_region: '&7Ez a játékos &cnem tradelhet &7mert a országában!'
+Other_is_already_trading: '&7Ez a játékos &cpont most tradel &7!'
+Online: Online
+Offline: Offline
+Your_request_expired: '&7A te trade felkérésed &e%player% &7tőle &clejárt&7.'
+Request_expired: '&7A trade felkérés tőle &e%player% &lejárt&7.'
+Fancy_Countdown: ' &7- &e%seconds%s'
+Economy_Error: '&7A trade &cabba lett hagyva mert&7 egy &ceconomy hiba miatt&7.'
+Items_Dropped: '&7A leltárad &ctele van&7, valamelyik itemek &cKilesznek dobva a földre&7!'
+Sign_Enter_Amount: |-
+  ^^^^^^^^
+  Írj be egy összeget
+  felette
+Leftclick: Balkattintás
+Rightclick: Jobbkattintás
+Shift_Leftclick: Shift-Balkattintás
+Shift_Rightclick: Shift-Jobbkattintás
+Select: Választás
+Select_Foreign_Preview: Előnézet kiválasztása
+Edit: Szerkeztés
+Edit_Variant: Szerkesztés variáns
+Variant: Variáns
+Cancel: Mégsem
+Finish: Kész
+Levels: Szintek
+Level: Szint
+Too_Little_Exp: '&cNeked nincs elég &cxp-d a tradehez&7.'
+Exp_Points: Xp pontok
+Exp_Point: Xp pont
+Reset: Reset
+Balance_limit_reached: '&7Az Ön egyenlege &cnem elegendő&7.'
+Economy_Offer_Title: 'Az Ön ajánlata:'
+Shulker_Box: Shulker Box
+Trade_Finish_Report_Receive: '  &a+ &7%object%'
+Trade_Finish_Report_Give: '  &c- &7%object%'
+Trade_Finish_Report_Object_Item: '%amount%x %item%'
