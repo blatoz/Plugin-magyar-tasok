@@ -1,17 +1,17 @@
 General:
   Prefix: "&c&lAdvancedBan &8&l»"
-  NoPerms: "&cNincsen jogod hozzá!"
-  LayoutNotFound: "&cNincs olyan elrendezés, amelynek neve %NAME%"
-  # This will be the replacement for the %DURATION% variable
-  TimeLayoutD: "%D%nap(ok) %H%órá(k) %M%perc(ek) és %S%másodperc(ek)"
-  TimeLayoutH: "%H%órá(k) %M%perc(ek) %S%másodperc(ek)"
-  TimeLayoutM: "%M%perc(ek) %S%másodperc(ek)"
-  TimeLayoutS: "%S% másodpercek"
-  FailedFetch: "&cNem sikerült lekérni az UUID-t a %NAME%! Nézd a konzolt a további indókért."
+NoPerms: "&cNincsen jogod hozzá!"
+LayoutNotFound: "&cNincs olyan elrendezés, amelynek neve %NAME%"
+# This will be the replacement for the %DURATION% variable
+TimeLayoutD: "%D%nap(ok) %H%órá(k) %M%perc(ek) és %S%másodperc(ek)"
+TimeLayoutH: "%H%órá(k) %M%perc(ek) %S%másodperc(ek)"
+TimeLayoutM: "%M%perc(ek) %S%másodperc(ek)"
+TimeLayoutS: "%S% másodpercek"
+FailedFetch: "&cNem sikerült lekérni az UUID-t a %NAME%! Nézd a konzolt a további infókért."
 
 
 Ban:
-  Usage: "&cHasználat &8» &7&o/ban (-s) [Name] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/ban (-s) [Név] [Indok/@Layout]"
   Done: "&c&o%NAME% &7sikeresen bannolva!"
   AlreadyDone: "&c&o%NAME% &7már bannolva van!"
   Exempt: "&7Nem tudod bannolni őt &c&o%NAME%"
@@ -22,7 +22,7 @@ Ban:
   - "&cIndok &8» &7%REASON%"
   - '&7'
   - '&8Unban kérelem a dc-én vagy a fórumon'
-  - "&eDc-Ip &8» &c&nhamarason jön"
+  - "&eDc-Ip &8» &c&nhamarosan jön"
   - "&eFórum &8» &c&nhamarosan jön"
   Notification:
   - "&c&o%NAME% &7bannolva lett &e&o%OPERATOR% által"
@@ -30,7 +30,7 @@ Ban:
   UndoNotification: "&e&o%OPERATOR% &7unbannolta &c&o%NAME%"
 
 Ipban:
-  Usage: "&cHasználat &8» &7&o/banip (-s) [Name/IP] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/banip (-s) [Név/IP] [Indok/@Layout]"
   Layout:
   - '%PREFIX% &7Véglegesen kitiltva'
   - '&7'
@@ -38,7 +38,7 @@ Ipban:
   - "&cIndok &8» &7%REASON%"
   - '&7'
   - '&8Unban kérelem a dc-én vagy fórumon'
-  - "&eDc-Ip &8» &c&nhamarason jön"
+  - "&eDc-Ip &8» &c&nhamarosan jön"
   - "&eFórum &8» &c&nhamarosan jön"
   Notification:
   - "&c&o%NAME% &7bannolva lett &e&o%OPERATOR% által"
@@ -46,7 +46,7 @@ Ipban:
   IpNotCashed: "&cNincs mentett IP cím a %NAME%!"
 
 Tempban:
-  Usage: "&cHasználat &8» &7&o/tempban (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/tempban (-s) [Név] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Indok/@Layout]"
   MaxDuration: "&cNem tilthatsz meg több mint %MAX%másodpercben"
   Layout:
   - '%PREFIX% &7Ideiglenesen kitiltva'
@@ -56,7 +56,7 @@ Tempban:
   - "&cLejárata &8» &7%DURATION%"
   - '&7'
   - '&8Unban kérelem a dc-én vagy fórumon'
-  - "&eDc-Ip &8» &c&nhamarason jön"
+  - "&eDc-Ip &8» &c&nhamarosan jön"
   - "&eFórum &8» &c&nhamarosan jön"
   Notification:
   - "&c&o%NAME% &7bannolva lett &e&o%OPERATOR% által"
@@ -64,7 +64,7 @@ Tempban:
   - "&7&oEzt a játékost eltiltották ennyi időre &e&o%DURATION%"
 
 Tempipban:
-  Usage: "&cHasználat &8» &7&o/tempipban (-s) [Name/IP] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/tempipban (-s) [Név/IP] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Indok/@Layout]"
   MaxDuration: "&cNem tilthatsz meg több mint %MAX%másodpercben"
   Layout:
   - '%PREFIX% &7Ideiglenesen kitiltva'
@@ -74,7 +74,7 @@ Tempipban:
   - "&cLejárata &8» &7%DURATION%"
   - '&7'
   - '&8Unban kérelem a dc-én vagy fórumon'
-  - "&eDc-Ip &8» &c&nhamarason jön"
+  - "&eDc-Ip &8» &c&nhamarosan jön"
   - "&eFórum &8» &c&nhamarosan jön"
   Notification:
   - "&c&o%NAME% &7bannolva lett &e&o%OPERATOR% által"
@@ -82,7 +82,7 @@ Tempipban:
   - "&7&oEzt a játékost eltiltották ennyi időre &e&o%DURATION%"
 
 Mute:
-  Usage: "&cHasználat &8» &7&o/mute (-s) [Name] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/mute (-s) [Név] [Indok/@Layout]"
   Done: "&c&o%NAME% &7sikeresen némitva lett!"
   AlreadyDone: "&c&o%NAME% &7már levan némitva!"
   Exempt: "&7Nem tudod le némitani őt &c&o%NAME%"
@@ -95,7 +95,7 @@ Mute:
   UndoNotification: "&e&o%OPERATOR% &7eltávolitotta a némitását &c&o%NAME%"
 
 Tempmute:
-  Usage: "&cHasználat &8» &7&o/tempmute (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/tempmute (-s) [Név] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Indok/@Layout]"
   MaxDuration: "&cNem némithatsz meg több mint %MAX%másodpercben"
   Layout:
   - '%PREFIX% &7Némitva lettél %DURATION%'
@@ -106,7 +106,7 @@ Tempmute:
   - "&7&oEzt a játékost elnémították ennyi időre &e&o%DURATION%"
 
 Warn:
-  Usage: "&cHasználat &8» &7&o/warn (-s) [Name] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/warn (-s) [Név] [Indok/@Layout]"
   Done: "&c&o%NAME% &7sikeresen figyelmeztettve!"
   Exempt: "&7Nem tudod figyelmeztettni őt &c&o%NAME%"
   Layout:
@@ -118,7 +118,7 @@ Warn:
   - "&7Indok &o%REASON%"
 
 Note:
-  Usage: "&cHasználat &8» &7&o/note (-s) [Name] [Reason]"
+  Usage: "&cHasználat &8» &7&o/note (-s) [Név] [Indok]"
   Done: "&c&o%NAME% &7sikeresen feljegyezték!"
   Exempt: "&7Nem tudsz feljegyzést tenni rá &c&o%NAME%"
   Notification:
@@ -126,7 +126,7 @@ Note:
   - "&7Indok &o%REASON%"
 
 Tempwarn:
-  Usage: "&cHasználat &8» &7&o/tempwarn (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/tempwarn (-s) [Név] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Indok/@Layout]"
   MaxDuration: "&cNem figyelmeztetthetsz meg több mint %MAX%másodpercben "
   Layout:
   - '%PREFIX% &cKaptál egy ideiglenes figyelmeztetést'
@@ -139,7 +139,7 @@ Tempwarn:
   - "&7Ez a figyelmeztettés lejár &o%DURATION% múlva"
 
 Kick:
-  Usage: "&cHasználat &8» &7&o/kick (-s) [Name] [Reason/@Layout]"
+  Usage: "&cHasználat &8» &7&o/kick (-s) [Név] [Indok/@Layout]"
   Done: "&c&o%NAME% &7sikeresen kirúgva!"
   NotOnline: "&c&o%NAME% &7nincsen online!"
   Exempt: "&7Nem rúghatód ki &c&o%NAME% őt"
@@ -154,19 +154,19 @@ Kick:
 
 
 UnBan:
-  Usage: "&cHasználat &8» &7&o/unban [Name/IP]"
+  Usage: "&cHasználat &8» &7&o/unban [Név/IP]"
   NotPunished: "&c&o%NAME% nincs is bannolva!"
   Done: "&a&o%NAME% &7sikeresen unbannolva!"
   Notification: "&e&o%OPERATOR% &7unbanolta &c&o%NAME%"
 
 UnMute:
-  Usage: "&cHasználat &8» &7&o/unmute [Name]"
+  Usage: "&cHasználat &8» &7&o/unmute [Név]"
   NotPunished: "&c&o%NAME% nincs is el némitva!"
   Done: "&a&o%NAME% &7sikeresen a némitás etávolítva!"
   Notification: "&e&o%OPERATOR% &7némitását eltovította &c&o%NAME%"
 
 UnWarn:
-  Usage: "&cHasználat &8» &7&o/unwarn [ID] or /unwarn clear [Name]"
+  Usage: "&cHasználat &8» &7&o/unwarn [ID] vagy /unwarn clear [Név]"
   NotFound: "&cNem található figyelmeztetés #%ID%"
   Done: "&7Figyelmeztettés &a&o#%ID% &7sikeresen törölve!"
   Notification: "&e&o%OPERATOR% &7eltávolította a figyelmeztettést &c&o%NAME% -nak/nek"
@@ -175,7 +175,7 @@ UnWarn:
     Done: "&7Törölve &a&o%COUNT% &7figyelmeztetés"
 
 UnNote:
-  Usage: "&cHasználat &8» &7&o/unnote [ID] or /unnote clear [Name]"
+  Usage: "&cHasználat &8» &7&o/unnote [ID] vagy /unnote clear [Név]"
   NotFound: "&cNem sikerült megtalálni a jegyzetett #%ID%"
   Done: "&7Jegyeztett &a&o#%ID% &7sikeresen törölve lett!"
   Notification: "&e&o%OPERATOR% &7eltávolitotta a jegyzetett róla &c&o%NAME%"
@@ -190,7 +190,7 @@ UnPunish:
 
 
 Banlist:
-  Usage: "&cHasználat &8» &7&o/banlist <Page>"
+  Usage: "&cHasználat &8» &7&o/banlist <Oldal>"
   OutOfIndex: "&cNincs oldal %PAGE%!"
   NoEntries: "&c&oNincs bejegyzések"
   Header:
@@ -207,7 +207,7 @@ Banlist:
   PageFooter: "&7Használd &e&o/banlist %NEXT_PAGE% &7hogy lásd a következő oldalt"
 
 History:
-  Usage: "&cHasználat &8» &7&o/history [Name/IP] <Page>"
+  Usage: "&cHasználat &8» &7&o/history [Név/IP] <Page>"
   OutOfIndex: "&cNincsen oldal %PAGE%!"
   NoEntries: "&c&oNem sikerült megtalálni az előzményeket %NAME% -nak/nek :("
   Header:
@@ -224,7 +224,7 @@ History:
   PageFooter: "&7Használat &e&o/history %NAME% %NEXT_PAGE% &7hogy lásd a következő oldalt"
 
 Warns:
-  Usage: "&cHasználat &8» &7&o/warns [Name] <Page> &cor &7&o/warns <Page>"
+  Usage: "&cHasználat &8» &7&o/warns [Név] <Oldal> &cor &7&o/warns <Oldal>"
   OutOfIndex: "&cNincsen oldal %PAGE%!"
   NoEntries: "&c&o%NAME% nincsen figyelmeztéseid"
   Header:
@@ -257,7 +257,7 @@ WarnsOwn:
   PageFooter: "&7Használat &e&o/warns %NEXT_PAGE% &7hogy lásd a következő oldalt"
   
 Notes:
-  Usage: "&cHasználat &8» &7&o/notes [Name] <Page> &cor &7&o/notes <Page>"
+  Usage: "&cHasználat &8» &7&o/notes [Név] <Oldal> &cor &7&o/notes <Oldal>"
   OutOfIndex: "&cNincsen oldal %PAGE%!"
   NoEntries: "&c&o%NAME% még nincsen jegyzete"
   Header:
@@ -286,12 +286,12 @@ NotesOwn:
   PageFooter: "&7Használat &e&o/notes %NEXT_PAGE% &7hogy lásd a következő oldalt"
 
 ChangeReason:
-  Usage: "&cHasználat &8» &7&o/change-reason [ID or ban/mute USER] [New reason]"
+  Usage: "&cHasználat &8» &7&o/change-reason [ID vagy ban/mute USER] [Új indok]"
   Done: "&7Büntetés &a&o#%ID% &7sikeresen frissítve!"
   NotFound: "&cSajnos nem tudtuk megtalálni ezt a büntetést"
 
 Check:
-  Usage: "&cHasználat &8» &7&o/check [Name]"
+  Usage: "&cHasználat &8» &7&o/check [Név]"
   Header: "&7Megnézés &e&o%NAME% &8(%CACHED%&8)"
   UUID: "&cUUID &8» &7%UUID% &8(%CACHED%&8)"
   IP: "&cIP &8» &7%IP% &8(%CACHED%&8)"
