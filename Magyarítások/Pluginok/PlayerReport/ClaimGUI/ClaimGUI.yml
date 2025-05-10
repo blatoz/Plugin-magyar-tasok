@@ -1,0 +1,6 @@
+gui:
+  '1':
+    Item:
+      Material: CHEST
+      Name: '&c❤'
+      Amount: 1

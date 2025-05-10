@@ -1,0 +1,10 @@
+{
+  "embed": {
+    "thumbnail": {
+      "url": "[user.effectiveAvatarUrl]"
+    },
+    "color": "orange",
+    "description": "**Összes:** [invites.totalInvites]\n**Maradt:** [invites.stayedInvites]\n**Kilépett:** [invites.leftInvites]",
+    "title": "[user.name]-nak/nek meghívásai"
+  }
+}

@@ -1,0 +1,139 @@
+messages:
+    Prefix: '&8(&b!&8) &3&l»'
+    Header: '  &f&m+----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----+'
+    Footer: '  &f&m+----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----+'
+    Note: '%prefix% &fAz összes jelentés törléséhez írja be &e/reports clear&f.'
+    Reports-Cleared: '%prefix% &fAz összes jelentés &asikersen &fetávolitva.'
+    Args-Error: '%prefix% &fSajnálom, de ez az alparancs nem létezik..'
+    No-Permission: '%prefix% &fBocsi nincs jogod hozzá.'
+    Reloaded: '%prefix% &aSikeresen &fújratöltödöt a konfiguráció.'
+    Reported-Format: '%prefix% &c%player% &fjelentette &a%reporter% &fezért &a%reason%&f.'
+    Report-Submitted: '%prefix% &a%player% &fjelentést nyújtott be. &8(&e/reports&8)'
+    Click-To-Info: '&7(Kattintson erre a gombra a Jelentések felhasználói felület megnyitásához)'
+    Reports-Empty: '%prefix% &fSajnáljuk, de nem érkezett jelentés.'
+    Specify-Reason: '%prefix% &fKérjük, adja meg a jelentés okát.'
+    Confirm: '%prefix% &fKérlek írd be &e/reports clear &fújra hogy elfogad.'
+    Cant-Report-Yourself: '%prefix% &fSajnálom, de nem készíthetsz jelentést magadról.'
+    Cant-Report-That-Player: '%prefix% &fSajnálom, de nem jelentheted %player%.'
+    Max-Reports-Reached: '%prefix% &fSajnálom, de nem lehet több mint %max%x jelentést egyszere küldeni.'
+    Nothing-To-Clear: '%prefix% &fSajnálom, de nincsenek jelentések, amiket tisztázni lehetne.'
+    Please-Wait: '%prefix% &fSorry, but you must wait another &c%cooldown%s&f.'
+    Report-Usage: '%prefix% &e/report (name) (reason)'
+    Teleport-Message: '%prefix% &fA következő helyre teleportáltál &a%player%&f.'
+    Player-Has-To-Be-Online: '%prefix% &fSajnálom, de nem jelentheted &c%player% &famikor nincs obline.'
+    Claim-GUI-Not-Set-Up: '%prefix% &fSajnálom, de ezt a játékost nem jutalmazták, mivel offline van, és nem állítottad be a Reports ClaimGUI-t.. &8(&e/reports setupclaimgui)'
+    On-ClaimGUI-Open-Note: '%prefix% &fHelyezd el a jutalmakat, amelyeket a játékosok a kitöltött jelentésért kapnak, ha a jelentés befejezésekor offline állapotban vannak.'
+    Claim-GUI-Saved: '%prefix% &fA &bClaim GUI &f el lett mentve.'
+    Report-Is-Already-Complete: '%prefix% &fSajnálom, de ez a jelentés már &aBefejezve van ként megjelölve.&f.'
+    Report-Must-Be-Complete-To-Delete: '%prefix% &fSajnálom, de a jelentéseket úgy kell megjelölni, hogy ''&aBefejezve&f'' mielőtt törölnéd öket.'
+    Nothing-To-Claim: '%prefix% &fSajnálom, de nincs mit állítania..'
+    Report-Is-Not-Complete: '%prefix% &fSajnálom, de a jelentések, de legyen &aComplete-nek &f kell lennie eltávolítani őket.'
+    Not-In-The-Image-Proof-URL-Whitelist: '%prefix% &fBocsi, de &e%link% &cnem &fegy támogatott weboldalt küldtél. Támogatottak&8: &fImgur, PrntScr, Gyazo, Ibb & Pasteboard.'
+    No-Image-Attached: '%prefix% &fSajnálom, de nincs képi bizonyíték a jelentéshez csatolva..'
+    Proof-Added: '%prefix% &fÖn össze kell kapcsolnia a bizonyító képét a jelentésével..'
+    Added-URL-To-Whitelist: '%prefix% &aHozzá adtad &e%link% &fa URL-t a fehérlistához .'
+    Canceled-Providing-Proof-Image: '%prefix% &f.Törölted a jelentést. Meg kell adnia egy linket minden jelentéshez, amit tesz, hogy az említett személy, akiről jelentést tesz, ne tudja azt állítani, hogy hazudott..'
+    Your-Report-Was-Denied: '%prefix% &fEgyik bejelentésed ami mostani &celutasították&f.'
+    Link-Format: '%prefix% &e%link%'
+    Provide-Image-Proof:
+    - '%prefix% &fKérjük, adjon meg egy linket egy bizonyíték képére a jelentéséhez a csevegésben..'
+    - '%prefix% &fÍrd be hogy ''cancel'' hogy ne küldj jelentést.'
+    Player-Reported:
+    - ''
+    - '%header%'
+    - '  %prefix% &aSikeresen &fbejelentetted &c%player%&f.'
+    - '  &fIndok &3&l» &b%reason%&f.'
+    - '%footer%'
+    - ''
+    You-Have-Report-Rewards: '%prefix% &b&lHé! &fEgy jelentésből jutalmaztak meg! &e/reports claim'
+settings:
+    Inform-Operators: true
+    Max-Reports-Per-Player: 3
+    # Reports that are marked as 'Complete' are not counted.
+    Command-Format: ' &3&l» &e%command% &3&l» &f%usage%'
+    Require-Reported-Player-To-Be-Online: true
+    Save-Reporters-Location: false
+    # This needs to be true to use the %reporter% placeholder in the 'Player-Commands' option
+    Tell-Players-They-Have-Rewards-In-Their-ClaimGUI: true
+    Perform-Commands-On-Report: false
+    Commands-Upon-Reports:
+    - 'staffchat %reporter% bejelentve %reported% ezért %reason%'
+    Use-Header-&-Footer: true
+    Require-Image-Proof-Link-Before-Report-Creation: false
+    Tell-Reporter-Their-Report-Was-Denied: true
+    # The reporter will only receive a message if they're online at the time of the report being removed.
+    Open-Reports-GUI-Sound:
+        Enabled: false
+        Sound: BLOCK_CHEST_OPEN
+    Open-Claim-GUI-Sound:
+        Enabled: false
+        Sound: BLOCK_CHEST_OPEN
+    Clear-Reports-Timer: 3
+    Submit-Report-Timer: 60
+    # Timers are in seconds
+    Reports-Must-Be-Confirmed-To-Delete: false
+    Remove-Reports:
+        Click-Type: RIGHT
+    Change-Status:
+        Click-Type: MIDDLE
+    Open-Proof-Link:
+        Click-Type: DROP
+    # RIGHT, LEFT, SHIFT_LEFT, SHIFT_RIGHT, MIDDLE, DROP, DOUBLE_CLICK, NUMBER_KEY
+    Statuses:
+        New: '&fÚj'
+        WIP: '&eVizsgálat alatt'
+        Complete: '&aBefejezve'
+    Give-Reporter-Rewards-On-Report-Complete:
+        Enabled: true
+        Reporter-Is-Online:
+        - 'm %reporter% &fKöszönjük! &fA jelentést elkészítettél sikeresen megfelelő gondozásban részesültél.&fSzeretnénk megköszönni, hogy hűséges játékos vagy!'
+        - 'give %reporter% diamond_block 1 name:&c❤'
+        Reporter-Is-Offline:
+        - 'mail send %reporter% Sikeresen elintéztük az Ön által tett bejelentését. Szeretnénk megköszönni, hogy hűséges játékos voltál! Ellenőrizze a jelentés begyűjtéseit! /reports claim'
+        # Offline players can receive items by setting up /reports setupclaimgui
+    Image-Proof-URL-Whitelist:
+        - 'imgur.com'
+        - 'i.imgur.com'
+        - 'prntscr.com'
+        - 'gyazo.com'
+        - 'i.gyazo.com'
+        - 'i.ibb.co'
+        - 'ibb.co'
+        - 'pasteboard.co'
+sounds:
+    Enabled: false
+    Report-Submitted: ENTITY_PLAYER_LEVELUP
+    Player-Reported-Notification: BLOCK_ANVIL_FALL
+GUI:
+    Name: '&cBejelentések'
+    Size: 54
+    Default-Item:
+        Player-Commands:
+        - 'teleport %player%'
+        # Here's the format for when you want to where the report was created.
+        # Note: Does require the setting "Save-Reporters-Location" to be enabled. (!Disabled by default!)
+        # - 'teleport %reporter%
+        Material: PAPER
+        Name: '&a%reported%'
+        Lore:
+        - ''
+        - ' &e» &fStátusz &6» %status%'
+        - ''
+        - ' &e» &fBeküldve által &6» &b%reporter%'
+        - ' &e» &fBejelntve &6» &c%reported%'
+        - ''
+        - '&7(Balra kattintás a teleportáláshoz %reported%)'
+        - '&7(Kattintson a jobb gombbal a jelentés eltávolításához)'
+        - '&7(Középső kattintás a jelentés állapotának frissítéséhez)'
+        - '&7(Dobja le, hogy lássa, van-e csatolva egy próbakép)'
+        - ''
+        - ' &e» &fIndok &6»'
+        - ''
+        Report-Reason-Color: '&b'
+        # The reports reason is listed below. (No longer a placeholder due to bugs)
+ClaimGUI:
+    Name: '&bClaim GUI'
+    Size: 27
+    Players-View:
+        Name: '&fAz Ön jelentésének jutalmai'
+        Size: 27

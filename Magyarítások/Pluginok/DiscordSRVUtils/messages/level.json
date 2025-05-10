@@ -1,0 +1,10 @@
+{
+  "embed": {
+    "thumbnail": {
+      "url": "https://api.creepernation.net/avatar/[stats.name]"
+    },
+    "color": "cyan",
+    "description": "**Szint:** [stats.level]\n**XP:** [stats.xp] / [stats.totalXpRequired] ([stats.xpPercentage]%)\n**Rang:** #[stats.rank]",
+    "title": "[stats.name] Szintje"
+  }
+}

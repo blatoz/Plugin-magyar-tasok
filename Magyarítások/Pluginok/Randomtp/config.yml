@@ -1,0 +1,329 @@
+#_____                 _                   _______ _____
+#|  __ \               | |                 |__   __|  __ \
+#| |__) |__ _ _ __   __| | ___  _ __ ___      | |  | |__) |
+#|  _  // _` | '_ \ / _` |/ _ \| '_ ` _ \     | |  |  ___/
+#| | \ \ (_| | | | | (_| | (_) | | | | | |    | |  | |
+#|_|  \_\__,_|_| |_|\__,_|\___/|_| |_| |_|    |_|  |_|
+#By: Kubajsa
+#Need help with the plugin? Feel free to join the Discord server
+#https://discord.gg/M83rMvrG6H
+
+
+#Default border
+#If you don't have a set border for a specific world it will use this
+border: 1000
+
+#Always RTP Players to this world
+Force-default-world:
+  enabled: false
+  #Name of the world you want your players to be ALWAYS RTP'd to
+  world-name: world
+
+
+#Check for claimed areas before teleporting with these plugins
+#When modifying these values you will need to restart the server (not just /rtplugin reload)!
+Claim-protection:
+  #MC: Tested Spigot 1.16.3 & PaperMC 1.16.5
+  #Plugin: Griefprevention v16.17.1
+  #Link: https://www.spigotmc.org/resources/griefprevention.1884/
+  Griefprevention: false
+  #MC: Tested PaperMC 1.16.5
+  #Plugin: WorldGuard v7.2.4 & WorldEdit v7.2.4
+  #Link: https://dev.bukkit.org/projects/worldguard
+  Worldguard: false
+  #MC: Tested PaperMC 1.16.5
+  #Plugin: Towny v0.96.7.0
+  #Link: https://www.spigotmc.org/resources/towny-advanced.72694/
+  Towny: false
+  #MC: Tested PaperMC 1.16.5
+  #Plugin: RedProtect v7.7.2
+  #Link: https://www.spigotmc.org/resources/redprotect-anti-grief-server-protection-region-management-1-7-1-16.15841/
+  Redprotect: false
+  #!! When using ProtectionStones you need to have the Worldguard Claim-protection ENABLED !!
+  #MC: Tested PaperMC 1.16.5
+  #Plugin: ProtectionStones v2.8.1
+  #Link: https://www.spigotmc.org/resources/protectionstones-updated-for-1-13-1-16-wg7.61797/
+  Protectionstones: false
+
+
+#Cooldown for the /rtp command
+#Set to 0 for no cooldown
+Cooldown:
+  #Cooldown in seconds
+  seconds: 600
+  #In what format should be the remaining cooldown displayed
+  #HOURS - Shows in hours if possible
+  #MINUTES - Shows in minutes if possible
+  #SECONDS - Always shows in seconds
+  #AUTO - Automatically decides the best type to use (recommended)
+  msg-format-type: AUTO
+  Messages:
+    hour: "órá(k)"
+    minute: "perce(k)"
+    second: "másodperce(k)"
+
+Countdown:
+  enabled: true
+  seconds: 5
+  #Should the plugin count down in chat when RTP'ing
+  #ie.
+  #Teleporing in 5 seconds
+  #Teleporing in 4 seconds
+  #...........
+  countdown-message: true
+
+Rtp-settings:
+  #Maximum Y level players will be teleported to
+  max-height: 256
+  #Max attempts to generate location
+  max-attempts: 30
+  Confirm-gui:
+    #Set to true if you want players to confirm their /rtp command in a GUI
+    enabled: false
+    #Title of the GUI
+    #Make sure to use color codes (&<color code>) in the title. or else...
+    title: "&aRTP elfogadása"
+    #Confirm item material
+    confirm-item: EMERALD_BLOCK
+    #Cancel item material
+    cancel-item: REDSTONE_BLOCK
+
+  World-gui:
+    #If enabled, when a player executes /rtp the plugin will show a GUI with the option to pick the world
+    enabled: false
+    #Title of the World GUI
+    #Make sure to use color codes (&<color code>) in the title. or else...
+    gui-title: "§aVálasz egy világot"
+    #Item slot settings
+    Slots:
+      #You have three slots in the World GUI
+      one:
+        #enabled - If it should appear in the World GUI
+        enabled: true
+        #world-name - The name of the world
+        world-name: world
+        #title - The title of the Item
+        title: "§aRTP ide világ: world"
+        #The item material
+        material: GRASS_BLOCK
+      two:
+        enabled: true
+        world-name: world
+        title: "§aRTP ide világ: world"
+        material: GRASS_BLOCK
+      three:
+        enabled: true
+        world-name: world
+        title: "§aRTP ide világ: world"
+        material: GRASS_BLOCK
+  TierGUI:
+    #This *no longer* needs the world GUI to be turned on :)
+    enabled: true
+    #Title of the Tier GUI
+    title: "§aVálasz RTP Tiert"
+    #Lore (the text under) under each one of the Tiers
+    #Up to THREE lines, supports color codes with the '&' sign
+    #Placeholders:
+    # %price% - The tier price
+    # %border% - The tier border
+    # %world% - The world name
+    item-lore:
+      - "&aBorder: %border%"
+      - "&aÁr: $%price%"
+      - "&aVilág: %world%"
+    one:
+      enabled: true
+      border: 500
+      min-radius: 0
+      price: 0
+      title: "§7Szén Tier"
+      material: COAL_BLOCK
+    two:
+      enabled: true
+      border: 3000
+      min-radius: 1000
+      price: 400
+      title: "§fVas Tier"
+      material: IRON_BLOCK
+    three:
+      enabled: true
+      border: 5000
+      min-radius: 3000
+      price: 650
+      title: "§6Arany Tier"
+      material: GOLD_BLOCK
+    four:
+      enabled: true
+      border: 7500
+      min-radius: 5000
+      price: 1900
+      title: "§bGyémánt Tier"
+      material: DIAMOND_BLOCK
+    five:
+      enabled: true
+      border: 10000
+      min-radius: 7500
+      price: 2900
+      title: "§cNetherit Tier"
+      material: NETHERITE_BLOCK
+
+
+#RTP Settings for specific worlds
+
+#--Template--
+#Worlds:
+#  world-name:
+#    disabled: false
+#    border: 10000
+#  another-world:
+#    disabled: true
+#    border: 100
+Worlds:
+  #Nether World name: world_nether
+  #End World name: world_the_end
+  world:
+    #disabled - Should RTP be disabled in this world
+    disabled: false
+    #border - Border in this world
+    border: 1000
+    #This will disable players executing this command to RTP out of this world
+    #Note: People with the permission randomTp.rtp.others *CAN* still RTP other people
+    disable-command: false
+#  pvp:
+#    disabled: true
+#    border: 10
+#  build:
+#    disabled: false
+#    border: 10000
+
+#Should the plugin rtp players that joined for their first time
+rtp-on-first-join: false
+
+
+#If players that have the permission randomTp.rtp.onDeath should be rtp'd on death
+rtp-on-death: false
+
+
+#If the plugin should check for updates on startup, this is recommended to be enabled
+update-checker: true
+
+
+#Vault settings
+Vault:
+  enabled: false
+  #Default price
+  rtp-price: 100
+
+
+
+#Biome blacklist settings
+Biome-blacklist:
+  enabled: true
+  #Full list of biomes https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html (1.16.5)
+  biomes:
+    - OCEAN
+
+
+#--Signs--
+Signs:
+  #If you want to enable RTP signs
+  enabled: true
+  Lines:
+    #What text should be on the signs
+    #!!! If you don't use color codes (ex: &a &b &e) on signs players without the permission could create RTP signs !!!
+    one: "&a[RandomTP]"
+    two: "&bKattints hogy RTP-s!"
+    three: ""
+    four: ""
+
+
+#--Titles--
+Titles:
+  #Should players see titles when being teleported
+  enabled: true
+  #Title message
+  generating-title: "&bTeleportálás egy random területre"
+  #Subtitle message
+  generating-subtitle: "&6Biztonságos területet generálása"
+
+
+#If enabled the plugin will give the player resistance after rtp'ing
+Invincibility:
+  enabled: true
+  potion-seconds: 5
+  potion-amplifier: 3
+
+
+#Should the plugin play a sound when teleporting a player
+Sounds:
+  enabled: true
+  #Full list of sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html (1.16.5)
+  sound: BLOCK_NOTE_BLOCK_CHIME
+
+
+#Should the plugin spawn particles upon teleportation
+Particles:
+  enabled: true
+  #Full list of particles: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html (1.16.5)
+  particle: FIREWORKS_SPARK
+  count: 1
+
+
+#--Messages--
+#Placeholders:
+# %player% - Player's name
+# %left% - Time left
+#You can only use placeholders in some messages
+Messages:
+  #The message you see when you get teleported
+  tp-message: "&6El lettél teleportálva egy random helyre"
+  #Message that the player that executed the command /rtp <player> will receive.
+  tp-message-sender: "&6El teleportáltad a &c%player% &6egy random helyre"
+  #Message when you RTP someone to a specific biome
+  tp-message-sender-biome: "&6El teleportáltad a &c%player% &6egy random helyre a &c%biome%&6 biómában"
+  #The message you see when you execute the /rtp @everyone command
+  tp-everyone-message: "&6Mindenkit teleportáltunk egy random helyre"
+  #Message when the world you try to rtp in is disabled
+  world-disabled-message: "&cRTP letiltva ezen a világon"
+  #Unknown command message
+  unknown-command: "&cIsmeretlen parancs, próbáld meg /rtplugin help"
+  #Not enough permission
+  no-permission: "&cNincs elég jogosultságod"
+  #If player doesn't have enough money to /rtp
+  not-enough-money: "&cNincs elég pénzed"
+  #Successful transaction message
+  took-money-message: "&a$%amount% el lett rúgva a számládól"
+  #RTP Sign creation message
+  sign-create: "&6Sikeresen létrehoztad egy RTP jelölőt"
+  #When an RTP sign is broken
+  sign-break: "&6Sikeresen eltávolítottad a RTP jelölőt"
+  #Cooldown message, %left% is for example 8 hour(s), 13 second(s), 1 minute(s) etc.
+  cooldown-message: "&6A cooldown van, %left%!"
+  #Message when the plugin couldn't generate a location
+  couldnt-generate-message: "&cNem tudtam generálni egy biztonságos helyet! Próbáld újra"
+  #Player tries to remove a sign while not shifting
+  need-to-shift: "&cShiftelned kell, hogy eltávolítsd a jelölőt"
+  #Message the player sees when the countdown starts
+  #Use %count% as a placeholder for the countdown timer lenght in seconds
+  countdown-message: "&6%count% másodpercen belül teleportálunk"
+  #Counting down message when RTP'ing
+  #Use %time% as a placeholder for seconds remaining
+  counting-down-message: "&6%time% másodpercen belül teleportálunk"
+  #Message when RTP gets cancelled
+  teleportation-cancelled-message: "&4Teleportálás megszakítva!"
+  #Wrong biome name was used when /rtp'ing
+  wrong-biome-name: "&cNem találtam ezt a biómát!"
+  #Wrong world name was used when /rtp'ing
+  wrong-world-name: "&cNem találtam ezt a világot!"
+  #Wrong tier or biome name was used when /rtp'ing
+  wrong-tier-or-biome-name: "&cRossz Tier vagy biom név"
+  #When player executes /rtp and is in countdown
+  in-countdown-message: "&cKérlek várj mielőtt használod a parancsot"
+
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!!!!!!!!!!!!! don't touch pls :) !!!!!!!!!!!!!!!!!!!
+config-version: 2.19.6
+#! don't change this if you don't know what you're doing !
+config-version-checker: true
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

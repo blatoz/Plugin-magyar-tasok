@@ -1,0 +1,51 @@
+Prefix: '&8[&1F&3S&8] &f'
+
+#Selection:
+#BOTH: Allows players to use the command and gui.
+#GUI: Only allows players to use the GUI.
+#COMMAND: Only allows players to use the command.
+Selection: BOTH
+
+#StorageType:
+#YAML: Stores users colors in YAML/YML.
+#MySQL: Stores users colors in MySQL/MariaDB.
+StorageType: YAML
+
+#Cache
+#true: Cache colors. **MySQL is required. This will break syncing if you use MySQL on more than one server**
+#false: Do not cache colors.
+Cache: false
+
+#RainbowType:
+#NORMAL: Each character gets a different color.
+#SPACE: Each space gets a different color.
+RainbowType: NORMAL
+
+#GUIType:
+#NORMAL: Don't close the gui when selecting a color.
+#CLOSE: Close the gui when selecting a color.
+#CLOSE_RESET: Close the gui when selecting a color AND when resetting your color to default.
+GUIType: NORMAL
+
+#ChatListener:
+#HIGHEST, HIGH, NORMAL, LOW, LOWEST, NORMAL, MONITOR: The priority of the chat listener. Default is HIGHEST.
+ChatListener: HIGHEST
+
+#DownloadLocales:
+#Download the latest locales from the web.
+DownloadLocales: true
+
+#MySQL Settings
+#If EZColors cannot connect,
+#the settings will default to YML.
+#-------------------------------------
+#You can change the database and port
+#if you would like, but..........
+#MAKE SURE THE PORT IS AN INT
+MySQL:
+  host: ''
+  port: 3306
+  database: 'ezcolors'
+  table: 'colors'
+  username: ''
+  password: ''

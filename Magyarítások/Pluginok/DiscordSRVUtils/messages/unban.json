@@ -1,0 +1,11 @@
+{
+  "embed": {
+    "title": "Visszavont bűntetés",
+    "description": "Játékos `[punishment.name]` vissza lett vonva a banja `[punishment.reason]`",
+    "color": 10771377,
+    "footer": {
+      "icon_url": "https://i.imgur.com/9IkDPIr.png",
+      "text": "[punishment.operator]"
+    }
+  }
+}

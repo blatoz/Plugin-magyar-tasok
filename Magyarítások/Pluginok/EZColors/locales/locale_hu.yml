@@ -1,0 +1,108 @@
+Name: 'Hungarian'
+
+#MAIN GUI
+GUI_COLOR_TITLE: 'Chat Színek'
+GUI_SET_COLOR: '&7Kattintson a Chat színének megvoltoztatására {Color}&7!'
+GUI_SET_COLOR_DEFAULT: '&7Kattintson erre a gombra, ha vissza szeretné állítani a csevegő színét az alapértelmezettre!'
+GUI_SET_COLOR_DEFAULT_HAS_ACCESS: '&aKattints hogy az legyen az alap chat szín!'
+GUI_SET_COLOR_DEFAULT_NO_ACCESS: '&cNincs hozzáférésed az alapértelmezett chat színre való visszaállításhoz!'
+GUI_HAS_ACCESS: '&aKattints hogy használd!'
+GUI_NO_ACCESS: '&cNincs hozzáférésed ehhez a színhez!'
+GUI_SELECTED_COLOR_TITLE: '&e&lKiválasztott szín'
+GUI_SELECTED_COLOR_LORE: '&7A kiválasztott színed:||||{SelectedColor}'
+
+#CUSTOM COLOR GUI
+GUI_COLOR_CUSTOM_TITLE: 'Chat Szín Készítő'
+GUI_CUSTOM_COLOR_ITEM_TITLE: '&e&lEgyedi Szín'
+GUI_CUSTOM_COLOR_ITEM_LORE_HAS_ACCESS: '&7Kattintson ide az egyedi szín kiválasztásához.'
+GUI_CUSTOM_COLOR_ITEM_LORE_NO_ACCESS: '&cSajnálom, de nincsen jogod egyedi színt készíteni.'
+GUI_COLOR_FINISH: 'Befejezés'
+GUI_COLOR_FINISH_LORE: '&7Kattintson a gombra az egyedi szín létrehozásának befejezéséhez!||||{CustomColor}'
+COLOR_ADDED_MSG: '%prefix%&7Sikeresen hozzáadva a {Color} &7Színt a egyedi színekhez!'
+GUI_ADD_CUSTOM_COLOR:  '&7Kattints hogy hozzáadjad {Color} a egyedi színekhez&7!'
+GUI_HAS_ACCESS_CUSTOM: '&aKattints hogy hozzáadjad!'
+#You can add || to add new lines!
+GUI_CUSTOM_COLOR_LORE: 'Kattintson erre a gombra, ha szeretné eltávolítani ezt a színt az egyedi színből!'
+GUI_CUSTOM_COLOR_EXAMPLE: 'Igy fogkinézni a egyedi szín a chaten.'
+RESET_CUSTOM_COLORS_LIST: '&7Kattintson a gombra az egyedi szín visszaállításához.'
+GUI_FINISH_CUSTOM_COLOR: '%prefix%&7Sikeresen létrehozta az Egyedi csevegőszínt! Írja be a chatbe, hogy megnézze!'
+GUI_COLOR_BACK: 'Vissza'
+GUI_COLOR_BACK_LORE: 'Kattints hogy vissza menj.'
+
+#COLORS
+COLOR: 'Szín'
+COLOR_DARK_RED: 'Sötét Piros'
+COLOR_GREEN: 'Zöld'
+COLOR_BLUE: 'Kék'
+COLOR_CYAN: 'Cián'
+COLOR_PURPLE: 'Lila'
+COLOR_GOLD: 'Arany'
+COLOR_DARK_GRAY: 'Sötét Szürke'
+COLOR_RED: 'Piros'
+COLOR_LIME: 'Világos Zöld'
+COLOR_LIGHT_BLUE: 'Világos Kék'
+COLOR_BLACK: 'Fekete'
+COLOR_PINK: 'Rózsaszín'
+COLOR_YELLOW: 'Sárga'
+COLOR_GRAY: 'Szürke'
+COLOR_AQUA: 'Aqua'
+COLOR_WHITE: 'Fehér'
+COLOR_RAINBOW: 'Szivárvány'
+COLOR_CLEAN_RAINBOW: 'Tiszta Szivárvány'
+COLOR_HEX_RAINBOW: 'Hex Szivárvány'
+COLOR_RESET: 'Visszaállítás'
+
+COLOR_RESET_NO_PERM: '%prefix%&cNem tudod vissza állítani a chat színt.'
+
+COLOR_RAINBOW_SELECT: '&7Kattintson a csevegés színének beállításához a Szivárványra!'
+
+COLOR_HEX_SELECT_TITLE: 'Egyedi Hex Érték (1.16+)'
+COLOR_HEX_SELECT_LORE: '&7Kattintson a szín beállításához egy hex értékre!'
+COLOR_HEX_CUSTOM: 'Egyedi Hex Szín'
+COLOR_HEX_CUSTOM_VALUE: 'Hex Érték'
+COLOR_HEX_CUSTOM_INCORRECT: 'Érvénytelen Hex'
+
+NO_COLOR_SET: '&cNincs szín beállítva'
+COLOR_SELECTED: '%prefix%&7Sikeresen beállítva {Color} &7Szín!'
+COLOR_SELECTED_DEFAULT_SUCCESSFUL: '%prefix%&7Sikeresen visszaállította a színt az alapértelmezettre(fehérre).'
+COLOR_SELECTED_DEFAULT_NO_COLOR: '%prefix%&cNem választottál színt.'
+
+#RAINBOW GUI
+RAINBOW_GUI_TITLE: 'Szivárvány Chat Színek'
+
+RAINBOW_GUI_RAINBOW1_TITLE: 'Szivárvány'
+RAINBOW_GUI_RAINBOW1_LORE: '&7Kattints a szín beállításához Szivárványra!'
+
+RAINBOW_GUI_RAINBOW2_TITLE: 'Tiszta Szivárvány'
+RAINBOW_GUI_RAINBOW2_LORE: '&7Kattins a szín beállításához Tiszta Szivárványra!'
+
+RAINBOW_GUI_RAINBOW3_TITLE: 'Hex Szivárvány'
+RAINBOW_GUI_RAINBOW3_LORE: '&7Kattints a szín beállításához Hex Szivárványra!'
+
+#LANGUAGE GUI
+GUI_LANGUAGE_TITLE: 'Nyelvek'
+GUI_LANGUAGE_LANGUAGE_ENABLED_DESC: 'Ez a nyelv van most kiválasztva'
+GUI_LANGUAGE_LANGUAGE_DISABLED_DESC: 'Kattints hogy kiválasztjad {Language} plugin nyelvét.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_TITLE: 'Nyelvek újratöltése'
+GUI_LANGUAGE_LANGUAGE_REFRESH_DESC: 'Kattintson az összes nyelv frissítéséhez.||Ez új nyelveket is kereshető.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_MSG: '%prefix%&aA nyelvek újratöltötek.'
+GUI_LANGUAGE_LANGUAGE_NOT_FINISHED_MSG: '%prefix%&cA nyelv nincs tejesen befejezve, igy nem lehet betölteni!'
+
+#OTHER
+PLAYER_NOT_FOUND: '%prefix%&c{Player} játékos nincsen megtalálva! A játékos online van?'
+COLOR_SELECTED_OTHER: '%prefix%&7Sikeresen beállítva {Player}-nak/nek színe erre {Color}&7!'
+COLOR_SELECTED_OTHER_DEFAULT_SUCCESSFUL: '%prefix%&7Sikeresen beállítva {Player}-nak/nek színe vissza let állítva az alapértelmezettre(fehérre)!'
+COLOR_SELECTED_OTHER_DEFAULT_NO_COLOR: '%prefix%&c{Player} nincsen chat szín kiválasztva.'
+
+#COMMANDS
+COMMAND_NO_PERMS: '%prefix%&cNincs elég jogosultsága ennek a parancsnak a használatához!'
+COMMAND_NO_PERMS_LANGUAGES: '%prefix%&cNincsen jogod a nyelv menű megnyitni.'
+COMMAND_NO_ACCESS: '%prefix%&cNincsen jogod ehhez a színhez!'
+COMMAND_NO_ACCESS_CUSTOM: '%prefix%&cNincsen jogod hogy egyedi színt hozzá létre!'
+COMMAND_SPECIFY_COLOR: '%prefix%&cKérjük, adja meg a színt!'
+COMMAND_NOT_COLOR: '%prefix%&c{Color} nem szín!'
+COMMAND_ONLINE_PLAYER: '%prefix%&cA parancs futtatásához online játékosnak kell lenned!'
+COMMAND_TOGGLE: '%prefix%&7Sikeresen átállította a csevegés színét. &8({Value}&8)'
+
+COMMAND_RAINBOW: '&4Sz&ci&6v&eár&2v&aá&bny'
+COMMAND_RAINBOW_2: '&4Sz&ci&6v&eár&2v&aá&bny &92'

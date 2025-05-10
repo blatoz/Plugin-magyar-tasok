@@ -1,0 +1,9 @@
+{
+  "embed": {
+    "thumbnail": {
+      "url": "[user.effectiveAvatarUrl]"
+    },
+    "color": "cyan",
+    "description": "🔸 **Üdvzőllek [user.name] a szerveren!**\n\n\n🔸 **Szerver ip** | Facebook_SzerverSMP.aternos.me:14001\n\n\n Meghívta **${#inviter == null ? \"Ismeretlen\" : #inviter.getAsTag()}**"
+  }
+}

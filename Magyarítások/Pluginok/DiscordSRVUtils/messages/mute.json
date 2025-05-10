@@ -1,0 +1,11 @@
+{
+  "embed": {
+    "title": "Új büntetés",
+    "description": "Játékos `[punishment.name]` lelett **némitva** ezért `[punishment.reason]`\nLejárat: `[punishment.duration]`",
+    "color": 14169911,
+    "footer": {
+      "icon_url": "https://i.imgur.com/YzMFeax.png",
+      "text": "[punishment.operator]"
+    }
+  }
+}
