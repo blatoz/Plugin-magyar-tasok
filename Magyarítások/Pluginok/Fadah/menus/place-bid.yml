@@ -1,0 +1,59 @@
+title: '&9&lAuckiósház &8> &aKölcsönzés'
+
+lang:
+  input:
+    title: "&9&lAuckiósház &8> &fKölcsönzés összege"
+    placeholder: "Ex: 10k"
+  adjust-bid:
+    icon: ANVIL
+    model-data: 0
+    name: '&3Kölcsönzés összegének módosítása'
+    lore:
+      - '&fJelenlegi kölcsönzés: &3$%current%'
+      - '&fA kölcsönzésed: &a$%bid%'
+      - ''
+      - '&7Kattints a módosításhoz'
+  confirm:
+    icon: LIME_CONCRETE
+    model-data: 0
+    name: '&a&lMEGERŐSÍTÉS'
+    lore:
+      - '&7Kattints a kölcsönzéshez'
+  cancel:
+    icon: RED_CONCRETE
+    model-data: 0
+    name: '&c&lCANCEL'
+    lore:
+      - '&7Click to cancel'
+
+size: 5
+
+layout:
+  '0': "FILLER"
+  '1': "FILLER"
+  '2': "FILLER"
+  '3': "FILLER"
+  '4': "FILLER"
+  '5': "FILLER"
+  '6': "FILLER"
+  '7': "FILLER"
+  '8': "FILLER"
+  '9': "FILLER"
+  '13': "ITEM_TO_PURCHASE"
+  '17': "FILLER"
+  '18': "FILLER"
+  '20': "CANCEL"
+  '24': "CONFIRM"
+  '26': "FILLER"
+  '27': "FILLER"
+  '31': "ADJUST_BID"
+  '35': "FILLER"
+  '36': "FILLER"
+  '37': "FILLER"
+  '38': "FILLER"
+  '39': "FILLER"
+  '40': "FILLER"
+  '41': "FILLER"
+  '42': "FILLER"
+  '43': "FILLER"
+  '44': "FILLER"

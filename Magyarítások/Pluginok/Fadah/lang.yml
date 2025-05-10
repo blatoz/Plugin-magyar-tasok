@@ -1,0 +1,196 @@
+# #########################################
+# #                  Fadah                #
+# #          Language Configuration       #
+# #########################################
+
+prefix: '&#9555FF&lFadah &r'
+category-selected: '&e&lKIVÁLASZTOTT'
+notifications:
+  advert:
+  - '&f--------------------------------------------------'
+  - '&f%player% &emost egy új listázást készített a kereskedőházban!'
+  - '&fItem: &e%item%'
+  - '&fÁr: &a$%price%'
+  - '&7&n<click:run_command:''/ah view-listing %listing_id%''><hover:show_text:''Click
+    to view!''>(Kattints ide a listázás megtekintéséhez!)</hover></click>'
+  - '&f--------------------------------------------------'
+  new-listing:
+  - '&f------------------------------------------------'
+  - '&eSikeresen listáztál egy áruat a kereskedőházban!'
+  - '&fÁru: &e%item%'
+  - '&fÁr: &a$%price%'
+  - '&fTeljesítés idő: &6%time%'
+  - '&fAktív listázások: &d%current_listings%&f/&5%max_listings%'
+  - '&fAdót kell fizetned: &9%tax%% &7(&a$%price_after_tax%&7)'
+  - '&f------------------------------------------------'
+  new-item:
+  - '&f-------------------------------------------'
+  - '&eYou have a new item in your collection box!'
+  - '&f             /ah redeem!'
+  - '&f-------------------------------------------'
+  expired-item:
+  - '&f-----------------------------------'
+  - '&eYou have expired items to collect!'
+  - '&f          /ah expired!'
+  - '&f-----------------------------------'
+  bid-placed:
+  - '&f-------------------------'
+  - '&eYou have placed a bid!'
+  - '&fItem: &e%item%'
+  - '&fBid Amount: &a$%price%'
+  - '&f-------------------------'
+  out-bid:
+  - '&f-------------------------'
+  - '&eYou have been out-bid!'
+  - '&fItem: &e%item%'
+  - '&fBid Amount: &a$%price%'
+  - '&f-------------------------'
+  sale:
+  - '&f----------------------------------------------'
+  - '&eYou have sold an item on the Auction House!'
+  - '&fItem: &e%item%'
+  - '&fMoney Made: &a$%price%'
+  - '&fBuyer: &a$%buyer%'
+  - '&f----------------------------------------------'
+  watched:
+  - '&f-------------------------------------------------------'
+  - '&eA listing meeting your criteria has come on the market!'
+  - '&fItem: &e%item%'
+  - '&fPrice: &a$%price%'
+  - '&7&n<click:run_command:''/ah view-listing %listing_id%''><hover:show_text:''Click
+    to view!''>(Click here to view the listing!)</hover></click>'
+  - '&f-------------------------------------------------------'
+  cancelled: '&cListing Cancelled!'
+commands:
+  main:
+    aliases:
+    - auctionhouse
+    - ah
+    - auctions
+    - auction
+  sell:
+    description: Create a new listing on the auction house
+    usage: ah sell <price>
+    aliases:
+    - new-listing
+    - create-listing
+    must-hold-item: '&cYou must have an item in your hand to sell!'
+    must-be-number: '&cThe price must be a number!'
+    max-listings: '&cYou have reached your max listings! (%current%/%max%)'
+    listing-price:
+      max: '&fPrice must be less than &a$%price%'
+      min: '&fPrice must be at least &a$%price%'
+  view:
+    description: View another players active listings
+    usage: ah view <player>
+    aliases:
+    - visit
+  watch:
+    description: Watch for listings and get notified when one gets listed
+    aliases:
+    - listen
+  profile:
+    description: View your auction profile
+    aliases: []
+  active-listings:
+    description: View your active listings
+    aliases:
+    - active
+  expired-items:
+    description: View your expired items
+    aliases:
+    - expired
+  collection-box:
+    description: View your collection box
+    aliases:
+    - redeem
+  history:
+    description: View your listing history
+    aliases:
+    - hist
+  help:
+    description: This command!
+    aliases: []
+    header: '&#9555FF&lAuctionHouse &eHelp'
+    format: '&b/ah %command% &8&l| &f%description%'
+  reload:
+    description: Reload fadah
+    aliases:
+    - rl
+    success: '&aAll configuration files reloaded successfully!'
+    fail: '&cSome configuration files failed to reload! &7(Check console)'
+    remote: '&aA global configuration reload has been received!'
+  toggle:
+    description: Toggle whether people can use the auction house
+    aliases: []
+    message: '&fFadah has been %status%&r&f!'
+    remote: '&fAuction House has been %status%&r&f from a remote server!'
+    enabled: '&a&lENABLED'
+    disabled: '&c&lDISABLED'
+  about:
+    description: Get information about fadah
+    aliases: []
+  view-listing:
+    description: View a specific listing
+    usage: ah view-listing <uuid>
+    aliases: []
+  search:
+    description: Search active listings
+    usage: ah search <query...> [(-cat|--category)=tools, (-p|--player)=player_name,
+      (-sort|--sorting-method)=price, (-direction|--sorting-direction)=ascending)]
+    aliases:
+    - s
+advert-actions:
+  post: Post Advert
+  silent: No Advert
+log-actions:
+  listing-started: Listing Started
+  listing-purchased: Listing Purchased
+  listing-sold: Listing Sold
+  listing-cancelled: Listing Cancelled
+  listing-expired: Listing Expired
+  expired-item-claimed: Expired Listing Claimed
+  collection-box-claimed: Collection Box Item Claimed
+  listing-cancelled-admin: Listing Cancelled by Admins
+  expired-item-claimed-admin: Expired Listing Claimed by Admins
+  collection-box-claimed-admin: Collection Box Item Claimed by Admins
+sort:
+  age:
+    name: Sort By Listing Age
+    descending: Oldest First
+    ascending: Newest First
+  name:
+    name: Sort Alphabetically By Name
+    descending: Descending (Z-A)
+    ascending: Ascending (A-Z)
+  price:
+    name: Sort By Listing Price
+    descending: Cheapest First (Low to High)
+    ascending: Most Expensive First (High to Low)
+errors:
+  disabled: '&cThe Auction House is currently disabled!'
+  command-not-found: '&cThis command does not exist!'
+  must-be-player: '&cOnly players can run this command!'
+  restricted: '&cYou cannot sell this item!'
+  no-permission: '&cYou do not have permission to execute this command!'
+  player-not-found: '&c%player% was not found!'
+  invalid-usage: '&cUsage: /%command%'
+  invalid-argument: '&cArgument %arg% is not the required type of %type%!'
+  does-not-exist: '&cThis listing does not exist!'
+  own-listings: '&cYou cannot buy your own listing!'
+  too-expensive: '&cYou cannot afford this item!'
+  inventory-full: '&cYou don''t have any free room in your inventory!'
+  advert-expense: '&cYour advert failed to post because you did not have enough money!'
+  database-loading: '&cDatabase not connected! Please Wait'
+  cooldown: '&cPlease wait &f%time%&c!'
+  other: '&cListing this item failed! (%ex%)'
+  already-highest-bidder: '&cYou are already the highest bidder!'
+  bid-too-low: '&cThe current bid is higher than your bid!'
+  mcmmo-blocking: '&cYou cannot list an item while using an mcMMO ability!'
+words:
+  your: your
+  none: None
+  starting-bid: Starting Bid
+  modes:
+    buy-it-now: BIN
+    bidding: Bidding

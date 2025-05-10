@@ -1,0 +1,64 @@
+title: "&9&lAuction House &8> &bWatch"
+
+lang:
+  search:
+    icon: OAK_SIGN
+    model-data: 0
+    placeholder: 'Search Query...'
+    name: '&3Search'
+    lore:
+      - '&fClick to add a search!'
+      - '&7Current: &e%current%'
+  min-price:
+    icon: IRON_NUGGET
+    model-data: 0
+    placeholder: 'Ex: 100'
+    name: '&3Minimum Price'
+    lore:
+      - '&fClick to add a minimum price'
+      - '&7Current: &e$%current%'
+  max-price:
+    icon: GOLD_NUGGET
+    model-data: 0
+    placeholder: 'Ex: 10k'
+    name: '&3Maximum Price'
+    lore:
+      - '&fClick to add a maximum price'
+      - '&7Current: &e$%current%'
+  start:
+    icon: EMERALD
+    model-data: 0
+    name: "&aStart Watching"
+    lore:
+      - "&fClick to start watching for these settings."
+
+size: 3
+
+layout:
+  '0': "FILLER"
+  '1': "FILLER"
+  '2': "FILLER"
+  '3': "FILLER"
+  '4': "FILLER"
+  '5': "FILLER"
+  '6': "FILLER"
+  '7': "FILLER"
+  '8': "FILLER"
+  '9': "FILLER"
+  '10': "FILLER"
+  '11': "SEARCH"
+  '12': "MIN_PRICE"
+  '13': "MAX_PRICE"
+  '14': "FILLER"
+  '15': "LISTING_START"
+  '16': "FILLER"
+  '17': "FILLER"
+  '18': "FILLER"
+  '19': "FILLER"
+  '20': "FILLER"
+  '21': "FILLER"
+  '22': "FILLER"
+  '23': "FILLER"
+  '24': "FILLER"
+  '25': "FILLER"
+  '26': "FILLER"

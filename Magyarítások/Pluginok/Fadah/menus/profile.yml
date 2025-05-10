@@ -1,0 +1,75 @@
+# %dynamic% = "Your" or the players name if in management mode, %username% = the players username
+
+title: '&9&lAuction House &8> &b%dynamic% Profile'
+
+lang:
+  profile-button:
+    icon: PLAYER_HEAD
+    model-data: 0
+    name: '&e&l%dynamic% Profil'
+    lore:
+      - '&fEz a %dynamic% profil!'
+      - '&fItt megtalálod a auckiósházban kapcsolódó elemeket %username%.'
+  your-listings:
+    icon: EMERALD
+    model-data: 0
+    name: '&1%dynamic% Listázások'
+    lore:
+      - '&fKattints a nézéshez & kezeléshez'
+      - '&f%dynamic% %amount% aktív listázás!'
+  collection-box:
+    icon: CHEST_MINECART
+    model-data: 0
+    name: '&e%dynamic% Gyűjtemény'
+    lore:
+      - '&fKattints a nézéshez & behúzáshoz'
+      - '&f%dynamic% %amount% várakozó vásárlás!'
+  expired-items:
+    icon: ENDER_CHEST
+    model-data: 0
+    name: '&c%dynamic% Expired Listings'
+    lore:
+      - '&fClick to view & claim'
+      - '&f%dynamic% %amount% expired listings!'
+  historic-items:
+    icon: WRITABLE_BOOK
+    model-data: 0
+    name: '&c%dynamic% History'
+    lore:
+      - '&fClick to view'
+      - '&f%dynamic% history!'
+
+size: 6
+
+layout:
+  '0': "FILLER"
+  '1': "FILLER"
+  '2': "FILLER"
+  '3': "FILLER"
+  '4': "FILLER"
+  '5': "FILLER"
+  '6': "FILLER"
+  '7': "FILLER"
+  '8': "FILLER"
+  '9': "FILLER"
+  '17': "FILLER"
+  '18': "FILLER"
+  '20': "PROFILE_SUMMARY"
+  '22': "PROFILE_ACTIVE_LISTINGS"
+  '23': "PROFILE_COLLECTION_BOX"
+  '24': "PROFILE_EXPIRED_LISTINGS"
+  '26': "FILLER"
+  '27': "FILLER"
+  '31': "PROFILE_HISTORY"
+  '35': "FILLER"
+  '36': "FILLER"
+  '44': "FILLER"
+  '45': "BACK"
+  '46': "FILLER"
+  '47': "FILLER"
+  '48': "FILLER"
+  '49': "FILLER"
+  '50': "FILLER"
+  '51': "FILLER"
+  '52': "FILLER"
+  '53': "FILLER"
