@@ -1,4 +1,4 @@
-Helló mindekinek!
+# **Helló mindekinek!**
 Aki ezt a repository-it látja 
 Azzal alá írja a szerződést amivel nem lehet árúsítani a magyarítást amit írtam!
 
