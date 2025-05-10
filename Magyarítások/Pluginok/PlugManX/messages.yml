@@ -1,0 +1,88 @@
+###
+# Custom Messaging File.
+#
+# Messaging can include any of the formatting codes found on http://minecraft.gamepedia.com/Formatting_codes and must use the '&' character to denote them.
+# Make sure to include the single quotes around the custom messages.
+# With new updates, this is subject to change and previous versions might not display information properly. Changes will be noted in the changelog.
+###
+
+prefix: '&8[Plugman] '
+check:
+  header: '&9A plugin verziók lekérdezése...'
+  not-found: '&9Plugin nincs telepítve - a legfrissebb elérhető verzió "{0}".'
+  not-found-spigot: '&cNem sikerült lekérni a plugin adatokat - A plugin Spigot erőforrásból van?'
+  out-of-date: '&cMostani verzió (&4{0}&c) nem egyezik a legújabb verzióval (&2{1}&c).'
+  out-of-date-player: '&cLehet hogy nem a legfrissebb (Telepítve -> Legújabb): {0}'
+  up-to-date: '&9Plugin úgy tűnik, hogy naprakész a következő verzióval "{0}".'
+  up-to-date-player: '&aSzerintem ami a legújabb verzión van (Telepítve): {0}'
+  file-done: '&9Fájlürítés kész: {0}'
+  unknown: '&cVerzió információja az ismeretlen.'
+  unknown-player: '&cIsmeretlen (Telepítve): {0}'
+  not-available: '&cVerzió információja {0} nem lehet elérni.'
+disable:
+  all: '&9Az összes plguin le lett tiltva (kivétel PlugMan).'
+  already-disabled: '&c{0} már le van tiltva.'
+  disabled: '&9{0} letiltva.'
+dump:
+  dumped: '&9A pluginok sikeresen egy fájlba vannak {0}.'
+  error: '&4Nem lehet fájlba tenni.'
+enable:
+  all: '&9Az összes plugin engedélyezve.'
+  already-enabled: '&c{0} már engedélyezve van.'
+  enabled: '&9{0} engedélyezve van.'
+error:
+  ignored: '&cA PlugMan ugy konfigolva hogy ignorálja azt a plugint.'
+  invalid-plugin: '&cEz nem egy valid plugin.'
+  no-permission: '&cNincsen neked jogod ehhez.'
+  specify-plugin: '&cMeg kell adnod egy plugint.'
+  specify-command: '&cMeg kell adnod egy parancsot.'
+  paper-plugin: "&cPaper pluginok nem támogatotak, bocsi."
+  usage:
+    command: '&7- &9Parancs: &7{0}'
+    description: '&7- &9Leírás: &7{0}'
+    usage: '&7- &9Használat: &7{0}'
+help:
+  header: '&7--------------------- [&a PlugMan &7] ---------------------'
+  help: '&7- &a/plugman help &f- &7 Mutatja ezt.'
+  list: '&7- &a/plugman list [-v] &f- &7Összes plugin kilistázása (-v mutatja a verziókat).'
+  dump: '&7- &a/plugman dump &f- &7Dump plugin nevek és verziók fájlba töltése.'
+  info: '&7- &a/plugman info <plugin> &f- &7Egy megadott plugin információjának lekérdezése.'
+  usage: '&7- &a/plugman usage <plugin> &f- &7A plugin által regisztrált parancsok listája.'
+  lookup: '&7- &a/plugman lookup <parancs> &f- &7A plugin megkeresése, amelyhez egy parancs regisztrálva van.'
+  enable: '&7- &a/plugman enable <plugin|összes> &f- &7Egy megadott plugin engedélyezése.'
+  disable: '&7- &a/plugman disable <plugin|összes> &f- &7Egy megadott plugin letiltása.'
+  restart: '&7- &a/plugman restart <plugin|összes> &f- &7Egy megadott plugin újrainditása.'
+  load: '&7- &a/plugman load <plugin> &f- &7Egy megadott plugin betöltése.'
+  reload: '&7- &a/plugman reload <plugin|összes> &f- &7Plugin újratöltése vagy az összes plugin újratöltése.'
+  unload: '&7- &a/plugman unload <plugin> &f- &7Egy megadott plugin unloadolása.'
+  check: '&7- &a/plugman check <plugin|összes> [-f] &f- &7Ellenőrzi, hogy egy plugin naprakész-e (-f Beteszi egy fájlba).'
+info:
+  header: 'Plugin Információ: {0}'
+  version: '&7- Verzió: &a{0}'
+  authors: '&7- Készítő(k): &a{0}'
+  status: '&7- Státusz: {0}'
+  depends: '&7- Dependek: {0}'
+  softdepends: '&7- SoftDependek: &a{0}'
+list:
+  list: '&9Pluginok ({0}): {1}'
+load:
+  already-loaded: '&c{0} már ben van töltve.'
+  cannot-find: '&cNem lehet találni a fájlt és nem sikerült keresni a leírások között.'
+  invalid-description: '&cEnnek a pluginak nem jó a leírása.'
+  invalid-plugin: '&cEz a fájl nem egy valid plugin.'
+  loaded: '&9{0} be van töltve és engedélyezve van.'
+  plugin-dir: '&cPlugin mappa nem lehet megtalálni.'
+lookup:
+  found: '&9/{0} van registrálva {1}.'
+  not-found: '&cParancs "/{0}" nem regisztráltak semmilyen plugin.yml'
+reload:
+  all: '&9Az összes plugin újratöltése.'
+  reloaded: '&9{0} újratöltve.'
+restart:
+  all: '&9Az összes plugin újrainditása.'
+  restarted: '&9{0} újrainditva.'
+unload:
+  failed: '&cNem sikerült az unload {0}.'
+  unloaded: '&9{0} sikerült unloadolni.'
+usage:
+  usage: '&9Használat: &7{0}'
