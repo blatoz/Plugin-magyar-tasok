@@ -1,0 +1,45 @@
+landclaiming:
+  message:
+    permission: '&4 Nincsen ehhez jogod.'
+    interactblock: '&4 Nem érsz el a következő blokkhoz: %block%.'
+    claimland: '&c Sikeresen lefoglaltad ezt a területet.'
+    lockchest: '&c Ez a készülék zárva van.'
+    unlockchest: '&c Ez a készülék megnyitva van.'
+    alreadylockchest: '&c Ez a készülék már lefoglalt.'
+    lockedchest: '&c Ez a készülék zárva van.'
+    notlockedchest: '&c Ez a készülék nem zárva van.'
+    claimedchest: '&c Ez a készülék lefoglalt.'
+    addguest: '&c Sikeresen hozzáadtad %player%'
+    removeguest: '&c Sikeresen eltávolítottad %player%'
+    unclaimland: '&c Sikeresen eltávolítottad %name%'
+    claimcorner: '&c Sikeresen lefoglaltad ezt a sarkot.'
+    notclaim: '&c Nem tudsz lefoglalni ezt a területet. Már van egy terület lefoglalva ezen a területen.'
+    maxclaims: '&c Túl sok területet lefoglaltál! A maximálisan lefoglalható terület %maxblocks%, és jelenleg lefoglaltál &cblocks& területet.'
+  options:
+    maxclaimedblocks:
+      group:
+        Default: 5000
+        Member: 10000
+        op: -1
+    maxclaimedblocksDEFAULT: 500
+    enableInteractWithinClaims: false
+    InteractWithinClaimsExceptions:
+    - LEVER
+    - CHEST
+    - TRAPPED_CHEST
+    - WOOD_DOOR
+    - ACACIA_DOOR
+    - SPRUCE_DOOR
+    - BIRCH_DOOR
+    - DARK_OAK_DOOR
+    - JUNGLE_DOOR
+    - TRAP_DOOR
+    - STONE_BUTTON
+    - WOOD_BUTTON
+    - ENDER_CHEST
+    - DISPENSER
+    - DROPPER
+    - FURNACE
+  claimed:
+  - f7a0ec89-ff59-3f19-b002-4c59e51e7d13@@#world@@#225@@#188@@#320@@#262@@#spawn@@#NoGuests
+  locked: []
