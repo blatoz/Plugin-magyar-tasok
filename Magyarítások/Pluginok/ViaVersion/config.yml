@@ -11,7 +11,7 @@
 # Should ViaVersion check for updates?
 check-for-updates: true
 # Send the supported versions with the Status (Ping) response packet
-send-supported-versions: false
+send-supported-versions: true
 # Easier to configure alternative to 'block-protocols'. Uses readable version strings with possible '<' and '>' prefixes.
 # An example to block 1.16.4, everything below 1.16, as well as everything above 1.17.1 would be: ["<1.16", "1.16.4", ">1.17.1"]
 # You can use both this and the block-protocols option at the same time as well.
