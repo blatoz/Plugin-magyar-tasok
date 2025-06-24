@@ -6,3 +6,4 @@
 | GrimAC      | :white_check_mark: |
 | ViaVersion  | :white_check_mark: |
 | LandClaiming | :white_check_mark: |
+| AutoSellChest | Fordítás alatt van |
