@@ -35,9 +35,9 @@ alerts:
   click-alert-command-commands:
     - 'tp %player%'
   # The message that will be sent when you toggle on alerts. Valid placeholder are %prefix%.
-  toggled-on-message: '%prefix% &7Vulcan alerts &aenabled&7!'
+  toggled-on-message: '%prefix% &7Vulcan értesítések &aengedélyezve&7!'
   # The message that will be sent when you toggle off alerts. Valid placeholder are %prefix%.
-  toggled-off-message: '%prefix% &7Vulcan alerts &cdisabled&7!'
+  toggled-off-message: '%prefix% &7Vulcan értesítések &cletilva&7!'
   # Whether or not alerts will be printed to the console.
   print-to-console: true
   # The format for printing to the console
