@@ -14,7 +14,3 @@ Indisd el a szervert és írd be a parancsot /admin admin gui megnyitásához
 
 Indisd el a szervert és írd be a parancsot /advancedban:check játékosnév a parancs használatához
 
-
-Vége
-Ha szeretnéd hogy más pluginoknak a fordítását csináljam akkor discordon addoj be.
-Nevem: Daniyt_th
