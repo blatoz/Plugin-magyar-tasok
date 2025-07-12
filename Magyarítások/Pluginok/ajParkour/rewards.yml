@@ -1,0 +1,23 @@
+# This is the rewards file.
+# Here is a guide for this: https://wiki.ajg0702.us/ajparkour/configs/Rewards
+
+intervals:
+  '10':
+    message: '&a&lGratulálok!&r&7 Elérted a {SCORE} ugrást! &bKaptál egy gyémántot!'
+    commands:
+    - give {PLAYER} diamond 1
+exceptions:
+  '1':
+    message: '&a&lGratulálok!&r&7 Elérted a {SCORE} ugrást!'
+    first-time-only: true
+specials:
+  beat-server-record:
+    message: '&a&lGratulálok!&r&7 Elérted a szerver rekordot!'
+    commands:
+    - give {PLAYER} emerald 1
+  start:
+    message: ''
+    commands: []
+  end:
+    message: ''
+    commands: []

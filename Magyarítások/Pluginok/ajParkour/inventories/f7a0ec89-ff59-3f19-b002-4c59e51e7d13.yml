@@ -1,0 +1,102 @@
+inventory:
+  armor:
+  - null
+  - null
+  - null
+  - null
+  content:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"📖
+        "},{"italic":false,"color":"aqua","text":"| Elérhetőségek"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"JOBB
+        KATT, hogy lásd az elérhetőségeket!"}],"text":""}'
+      internal: H4sIAAAAAAAA/+NiYOBg4MrIL0lKLPIsSc1l4MjMS8tPys/PZgAA6i1uEhsAAAA=
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: BLAZE_ROD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"ꜰᴜɴɢᴜɴ
+        "},{"bold":false,"italic":false,"color":"gray","text":"(ʀɪɢʜᴛ-ᴄʟɪᴄᴋ)"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"text":""}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Use
+        the FunGun and have"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"fun
+        on the server!"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"text":""}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ:
+        ꜱʜᴏᴏᴛ"}],"text":""}'
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: NETHER_STAR
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"🧭
+        "},{"italic":false,"color":"aqua","text":"| Szerver Választó"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"JOBB
+        KATT, hogy tudj szervereket választani!"}],"text":""}'
+      internal: H4sIAAAAAAAA/+NiYOBg4MrIL0lKLPIsSc1l4C9OLSpLLYovTs1JTS7JL2IAAD+emnsiAAAA
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: POPPED_CHORUS_FRUIT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"🛒
+        "},{"italic":false,"color":"aqua","text":"| ShopMenu"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"JOBB
+        KATT, hogy tudj vásárolni!"}],"text":""}'
+      internal: H4sIAAAAAAAA/+NiYOBg4MrIL0lKLPIsSc1lYCnOyC9gAABnPHBwFwAAAA==
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: DIAMOND
+    amount: 28
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: EMERALD
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null

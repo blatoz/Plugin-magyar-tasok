@@ -1,0 +1,51 @@
+Candy:
+  CommonCandy:
+    name: '&7&lKözönséges Cukorka'
+    lore:
+      - '&7Használd ezt a cukorkát bármelyik kedvenceden'
+      - '&7és adj neki &f&l{xp} XP&7!'
+    material: PLAYER_HEAD
+    base64: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRiY2E3MzQ5NTE3MDUxMTM1NDA0ZTliNDhlZWYzNmViZWJjYjZlODIxZjdhYTc1ZTBlOGI1ODM3ZmUwNDg5NiJ9fX0='
+    xp-amount: 10-30
+    message: '&2&l[!] &aKözönséges Cukorkát használtál, és {amount} xp-t kaptál a kedvencedre '
+  RareCandy:
+    name: '&b&lRitka Cukorka'
+    lore:
+      - '&7Használd ezt a cukorkát bármelyik kedvenceden'
+      - '&7és adj neki &f&l{xp} XP&7!'
+    material: PLAYER_HEAD
+    base64: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWNhZTI5MjBhMTllYWQ1ZGNlOTYzYTMwMTE2NGU5NWE1YTJmNWZlMmEzYjdiOWJmYjBlYjVkZWI1NTlmMDA0MCJ9fX0='
+    xp-amount: 50-200
+    message: '&2&l[!] &aRitka Cukorkát használtál, és {amount} xp-t kaptál a kedvencedre '
+  EpicCandy:
+    name: '&d&lEpikus Cukorka'
+    lore:
+      - '&7Használd ezt a cukorkát bármelyik kedvenceden'
+      - '&7és adj neki &f&l{xp} XP&7!'
+    material: PLAYER_HEAD
+    base64: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTE0Y2ZkOGRjY2M5ZDk4NzM1M2EwNGM3M2U0NGVmM2Q2MzFjNTFkMWFkZmIxNjU0YzVjNTZhN2ZiZTJjNmU3MyJ9fX0='
+    xp-amount: 200-500
+  LegendaryCandy:
+    name: '&6&lLegendás Cukorka'
+    lore:
+      - '&7Használd ezt a cukorkát bármelyik kedvenceden'
+      - '&7és adj neki &f&l{xp} XP&7!'
+    material: PLAYER_HEAD
+    base64: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJmODhhZjk2ZDMwMDg1YTZkMDg0Mzc2ZjEwMTg2MjdiN2I0NTEyZDI2YWYyMWU3NTBlNGQwOWNkMjYxZDZiZSJ9fX0='
+    xp-amount: 500-1000
+  MythicalCandy:
+    name: '&9&lMitikus Cukorka'
+    lore:
+      - '&7Használd ezt a cukorkát bármelyik kedvenceden'
+      - '&7és adj neki &f&l{xp} XP&7!'
+    material: PLAYER_HEAD
+    base64: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2EzMTMwYzg4OGI4OTZlZWY2OTc4ZTE4YTE1NjU0ZDIyMDczODQxYTFmZWI5MzA3YjM0OWVlZTg1OGIwZjdmYiJ9fX0='
+    xp-amount: 1000-2000
+  DivineCandy:
+    name: '&5&lIsteni Cukorka'
+    lore:
+      - '&7Használd ezt a cukorkát bármelyik kedvenceden'
+      - '&7és adj neki &f&l{xp} XP&7!'
+    material: PLAYER_HEAD
+    base64: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzJiNjVhMjA2YjJlYTkzMWY5NmMxY2YxOGUwZTBjY2VmYjI3NzFmNGVjYWU1NTBjODBjNDI5ZmU0NzdjODAzNiJ9fX0='
+    xp-amount: 2000-5000

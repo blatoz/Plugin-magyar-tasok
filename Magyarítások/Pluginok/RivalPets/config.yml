@@ -1,0 +1,71 @@
+Database:
+  # SQLite or MySQL
+  database-type: SQLite
+  mysql:
+    host: localhost
+    port: 3306
+    database: dbName
+    username: dbUser
+    password: dbPassword
+Settings:
+  plugin-type: VIRTUAL # or INVENTORY
+  display-mode: "MODE-1" # MODE-1, MODE-2, MODE-3
+  give-to-storage: true
+Commands:
+  main-command: 'pets'
+  aliases:
+    - 'rivalpets'
+    - 'pet'
+Features:
+  Pet-Slots:
+    default-slots: 1
+    max-slots: 4
+  Pet-Storage:
+    default-storage: 50
+    max-storage: 100
+time-placeholders:
+  day: 'nap'
+  days: 'napok'
+  hour: 'óra'
+  hours: 'órák'
+  minute: 'perc'
+  minutes: 'percek'
+  second: 'másodperc'
+  seconds: 'másodpercek'
+default-settings:
+  pets-seeing-himself: true
+  pets-seeing-others: true
+decimal-formats:
+  chance-format: "###,###.##"
+  cost-format: "###,###.##"
+on-join:
+  item:
+    pet-menu:
+      slot:
+        enabled: true
+        slot: 8
+      block-movement: true
+      block-dropping: true
+      remove-item-in-slot: true
+      enabled: true
+      item-settings:
+        material: TURTLE_EGG
+        name: '&3&lKisállat &b&lTárolás &7 (Jobb kattintás)'
+        glow: true
+        lore:
+          - '&7Kattintson a jobb gombbal a megtekintéséhez és'
+          - '&7kezelje &3minden &a házi kedvenceit'
+          - '&7az Ön &btárolójában&7!'
+tier-sorting:
+  - 'Ultimate'
+  - 'Legendary'
+  - 'Rare'
+  - 'UnCommon'
+  - 'Common'
+default-sorting: 'level' # level, name, tier, usage
+World-Blacklist:
+  # Prevents floating pets from being displayed in these worlds, they are still active just not displayed.
+  enabled: false
+  player-only: false
+  other-player: true
+  worlds: []

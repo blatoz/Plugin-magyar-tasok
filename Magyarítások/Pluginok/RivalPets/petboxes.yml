@@ -1,0 +1,35 @@
+Boxes:
+  CommonPetBox:
+    name: '&a&lGyakori Kisállat Doboz'
+    lore:
+      - '&8Ez egy &f&lGyakori Kisállat Doboz'
+      - ''
+      - '&aÁllatok:'
+      - ' * Dragon Pet'
+    material: PLAYER_HEAD
+    base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUyZTU2MWZkNjNiNDIzOGExNzEzOWQ1NzNhMTMxY2Y3MjJhMWU5NmY0Nzk1NTc1NTI4ZTZlZDQyNzU2ZDRhIn19fQ==
+    # Amount of random pets from list
+    amount: 1
+    pets:
+      - DragonPet:1:50
+      - DragonPet:2:50
+      # PetType, Amount, Chance
+    hologram:
+      enabled: true
+      value:
+        - '&f&lGyakori Kisállat Doboz'
+        - '&8* &7Kinyitotta &f{player}'
+    message:
+      enabled: true
+      value: '&b&lHáziállatdoboz &8» &7Találtál egy {pet}t &7a &f&lgyakori háziállatdobozból&7!'
+    broadcast:
+      enabled: true
+      value:
+        - '&r'
+        - '&b&lHáziállatfoboz &8» &f{player} &7kinyitott egy &f&lGyakori állatdobozt &7és talált benne egy: {pet}'
+        - '&r'
+
+
+Settings:
+  #Opens instantly skipping the animation
+  quick-open: false

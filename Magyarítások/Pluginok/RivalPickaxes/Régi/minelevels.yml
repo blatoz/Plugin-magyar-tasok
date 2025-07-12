@@ -1,0 +1,208 @@
+Enabled: true
+GUI-Size: 27
+GUI-Name: '&8Bányászat szintek'
+prestige-requirements: false
+Mine-Levels:
+  '1':
+    pickaxe-level: 1
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU3OGQ4ZWI1ODgzYTExMDY2N2I1MWVlMjBhM2IyMWQ1MmQwODlhMGQ0YzkxYmUzY2I3ODZjMzE4MjhhMjA5NyJ9fX0='
+    slot: 10
+    actions:
+      - '[close]'
+      - '[message]&5&l[&d&lMINES&5&l] &7Ugrás a szén bányához...'
+      - '[player]warp coalmine'
+    name: '&8&l[!] &7&lSzén bánya'
+    lore:
+      - ''
+      - '&7Bányák amiket bányászhatsz:'
+      - '&8▎ &7Szén bánya'
+      - ''
+      - '&7&lStatisztikák'
+      - '&8▎ &7Szint: &f{current-level}'
+      - '&8▎ &7Blokk kiszedve: &f{blocks-broken}'
+      - '&8▎ &7Mostani Csákány XP szint: &f{current-xp}'
+    mines:
+      - coal_mine
+  '2':
+    pickaxe-level: 3
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTAxODQzZWM0M2YwODhjOTYzZmZjM2UyZjcxYzY2ZTMxNTU5NDNiMTc3YTFhMzU5ODJiMTIwZjZmNjQ4MjJiYyJ9fX0='
+    slot: 11
+    name: '&8&l[!] &7&lVas bánya'
+    lore:
+      - ''
+      - '&7Bányák amiket bányászhatsz:'
+      - '&8▎ &7Szén bánya'
+      - '&8▎ &7Vas bánya'
+      - ''
+      - '&8&lElőrehaladás'
+      - '{progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&8&lStatisztikák'
+      - '&8▎ &7Szint: &f{current-level}'
+      - '&8▎ &7Blokk kiszedve: &f{blocks-broken}'
+      - '&8▎ &7Mostani Csákány XP szint: &f{current-xp}'
+    mines:
+      - iron_mine
+  '3':
+    pickaxe-level: 6
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiYzk2NWQ1NzljM2M2MDM5ZjBhMTdlYjdjMmU2ZmFmNTM4YzdhNWRlOGU2MGVjN2E3MTkzNjBkMGE4NTdhOSJ9fX0='
+    slot: 12
+    name: '&6&l[!] &e&lArany bánya'
+    lore:
+      - ''
+      - '&7Bányák amiket bányászhatsz:'
+      - '&8▎ &7Szén bánya'
+      - '&8▎ &7Vas bánya'
+      - '&8▎ &7Arany bánya'
+      - ''
+      - '&6&lElőrehaladás'
+      - '{progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&6&lStatisztikák'
+      - '&8▎ &7Szint: &f{current-level}'
+      - '&8▎ &7Blokk kiszedve: &f{blocks-broken}'
+      - '&8▎ &7Mostani Csákány XP szint: &f{current-xp}'
+    mines:
+      - gold_mine
+  '4':
+    pickaxe-level: 9
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTEyNzMyNTI3OGYzOWI5YWRmYjVjNzEwZGQ2ODViMWVjNmQyOWM0MzYzNzliMzk2MGQ3MmU4YzRiNjk1OTA2ZCJ9fX0='
+    slot: 13
+    name: '&4&l[!] &c&lRedstone bánya'
+    lore:
+      - ''
+      - '&7Bányák amiket bányászhatsz:'
+      - '&8▎ &7Szén bánya'
+      - '&8▎ &7Vas bánya'
+      - '&8▎ &7Arany bánya'
+      - '&8▎ &7Redstone bánya'
+      - ''
+      - '&4&lElőrehaladás'
+      - '{progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&4&lStatisztikák'
+      - '&8▎ &7Szint: &f{current-level}'
+      - '&8▎ &7Blokk kiszedve: &f{blocks-broken}'
+      - '&8▎ &7Mostani Csákány XP szint: &f{current-xp}'
+    mines:
+      - redstone_mine
+  '5':
+    pickaxe-level: 12
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTEwMDFiNDI1MTExYmZlMGFjZmY3MTBhOGI0MWVhOTVlM2I5MzZhODVlNWJiNjUxNzE2MGJhYjU4N2U4ODcwZiJ9fX0='
+    slot: 14
+    name: '&b&l[!] &9&lLapis lazuli bánya'
+    lore:
+      - ''
+      - '&7Bányák amiket bányászhatsz:'
+      - '&8▎ &7Szén bánya'
+      - '&8▎ &7Vas bánya'
+      - '&8▎ &7Arany bánya'
+      - '&8▎ &7Redstone bánya'
+      - '&8▎ &7Lapis lazuli bánya'
+      - ''
+      - '&b&lElőrehaladás'
+      - '{progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&b&lStatisztikák'
+      - '&8▎ &7Szint: &f{current-level}'
+      - '&8▎ &7Blokk kiszedve: &f{blocks-broken}'
+      - '&8▎ &7Mostani Csákány XP szint: &f{current-xp}'
+    mines:
+      - lapis_mine
+  '6':
+    pickaxe-level: 15
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTFlZDlhYmY1MWZlNGVhODRjZmNiMjcyOTdmMWJjNTRjZDM4MmVkZjg1ZTdiZDZlNzVlY2NhMmI4MDY2MTEifX19'
+    slot: 15
+    name: '&3&l[!] &b&lGyémánt bánya'
+    lore:
+      - ''
+      - '&7Bányák amiket bányászhatsz:'
+      - '&8▎ &7Szén bánya'
+      - '&8▎ &7Vas bánya'
+      - '&8▎ &7Arany bánya'
+      - '&8▎ &7Redstone bánya'
+      - '&8▎ &7Lapis lazuli bánya'
+      - '&8▎ &7Gyémánt bánya'
+      - ''
+      - '&3&lElőrehaladás'
+      - '{progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&3&lStatisztikák'
+      - '&8▎ &7Szint: &f{current-level}'
+      - '&8▎ &7Blokk kiszedve: &f{blocks-broken}'
+      - '&8▎ &7Mostani Csákány XP szint: &f{current-xp}'
+    mines:
+      - diamond_mine
+  '7':
+    pickaxe-level: 18
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDA1Mzg1MTUyN2M0YzllZjMwYTYxZmIwNjdlYmNlOTU3YzcyNmUxNjg3ZjhiNTMwZmI0YTZiZWViYTQzOGJkIn19fQ=='
+    slot: 16
+    name: '&2&l[!] &a&lEmerald bánya'
+    lore:
+      - ''
+      - '&7Bányák amiket bányászhatsz:'
+      - '&8▎ &7Szén bánya'
+      - '&8▎ &7Vas bánya'
+      - '&8▎ &7Arany bánya'
+      - '&8▎ &7Redstone bánya'
+      - '&8▎ &7Lapis lazuli bánya'
+      - '&8▎ &7Gyémánt bánya'
+      - '&8▎ &7Emerald bánya'
+      - ''
+      - '&2&lElőrehaladás'
+      - '{progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&2&lStatisztikák'
+      - '&8▎ &7Szint: &f{current-level}'
+      - '&8▎ &7Blokk kiszedve: &f{blocks-broken}'
+      - '&8▎ &7Mostani Csákány XP szint: &f{current-xp}'
+    mines:
+      - emerald_mine
+  '8':
+    pickaxe-level: 20
+    material: STONE
+    base64:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDRmMzI3MmExMmQwYTU1MTUzODA2NzAzZDYyNzRjNjZkYTE5NzJjZjBjOWNlYWVlZmRjOThkZjNlYzJiNCJ9fX0='
+    slot: 22
+    name: '&7&l[!] &f&lKvarc bánya'
+    lore:
+      - ''
+      - '&7Bányák amiket bányászhatsz:'
+      - '&8▎ &7Szén bánya'
+      - '&8▎ &7Vas bánya'
+      - '&8▎ &7Arany bánya'
+      - '&8▎ &7Redstone bánya'
+      - '&8▎ &7Lapis lazuli bánya'
+      - '&8▎ &7Gyémánt bánya'
+      - '&8▎ &7Emerald bánya'
+      - '&8▎ &7Kvarc bánya'
+      - ''
+      - '&f&lElőrehaladás'
+      - '{progress} &7(&f{percentage}%/100%&7)'
+      - ''
+      - '&f&lStatisztikák'
+      - '&8▎ &7Szint: &f{current-level}'
+      - '&8▎ &7Blokk kiszedve: &f{blocks-broken}'
+      - '&8▎ &7Mostani Csákány XP szint: &f{current-xp}'
+    mines:
+      - nether_mine
+Messages:
+  requirement:
+    - '&7'
+    - '&4&l[!] &cA csákányra szintre van szüksége &f&nkell&r &c ehhez a kőbányához!'
+    - '&4&l[!] &cA csákányra szintre van szüksége &fszintre {next-level} &cde, de a jelenlegi &fszintje &f{level}'
+    - '&7'

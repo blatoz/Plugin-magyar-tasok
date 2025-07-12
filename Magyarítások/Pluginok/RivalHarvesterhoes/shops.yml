@@ -1,0 +1,205 @@
+# Information About the Main Menu
+#  main:
+#    options:
+#      size: 45
+#      title: "&8Example Menu"
+#      default: true - If its the first menu that opens when you type /essence shop
+#    items:
+#      '1': // Can be anything but cant repeat
+#        material: 'STONE' // Material of the item shown in GUI
+#        amount: 1 // Amount of Item in the GUI
+#        name: "&bExample Name" // Name of the item in the GUI
+#        lore:          //Lore of the item in the GUI
+#          - "&7Example Lore"
+#        slot: 5       // What Slot will the item Appear in
+#        page: examplepage // When the item is clicked it will open the page defined Mostly used for Main Menu
+pages:
+  main:
+    options:
+      size: 45
+      title: '&8Elemental Network » Essencia Bolt'
+      default: true
+      filler:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+    items:
+      '13':
+        base64:
+          value: 'texture'
+          use: true
+        material: MAGMA_CREAM
+        amount: 1
+        name: '&6&l[!] &e&lESSENCIA'
+        lore:
+          - '&7Neked &6❋&e{essence} essenciád van'
+          - '&7Essenciát termények betakarításával szerezhetsz'
+          - '&7és essenciát használhatsz tárgyak vásárlására'
+          - '&7az &e/essence shop-ban'
+        slot: 13
+      '20':
+        material: MOB_SPAWNER
+        amount: 1
+        name: '&3&l<!> &b&lSpawner Bolt'
+        lore:
+          - ''
+          - ' &3● &bKategória: &fSpawnerek'
+          - ' &3● &bTartalom: &f1 Tárgy'
+          - ''
+        slot: 20
+        page: spawners
+      '21':
+        material: TRIPWIRE_HOOK
+        amount: 1
+        name: '&3&l<!> &b&lLáda Kulcs Bolt'
+        lore:
+          - ''
+          - ' &3● &bKategória: &fLáda Kulcsok'
+          - ' &3● &bTartalom: &f4 Tárgy'
+          - ''
+        slot: 22
+        page: keys
+      '22':
+        material: ENDER_CHEST
+        amount: 1
+        name: '&3&l<!> &b&lExkluzív Bolt'
+        lore:
+          - ''
+          - ' &3● &bKategória: &fExkluzív'
+          - ' &3● &bTartalom: &f1 Tárgy'
+          - ''
+        slot: 24
+        page: monthlycrates
+  spawners:
+    options:
+      size: 27
+      title: '&8Elemental Network » Spawner Bolt'
+      filler:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+    items:
+      '1':
+        material: MOB_SPAWNER
+        amount: 1
+        name: '&3&l[!] &b&lSilverfish Spawner'
+        lore:
+          - ''
+          - ' &3&l● &bÁr: &f400k Essencia'
+          - ''
+          - '&7&o(( Kattints ide a vásárláshoz ))'
+        commands:
+          use: true
+          commands:
+            - ws give {player} spawner Silverfish 1
+        price: 400000
+        slot: 13
+      '18':
+        material: BARRIER
+        amount: 1
+        name: '&c&lVissza a Kategóriákhoz'
+        lore:
+          - '&7&o(( Kattints ide a visszalépéshez ))'
+        slot: 22
+        page: main
+  keys:
+    options:
+      size: 27
+      title: '&8Elemental Network » Láda Kulcs Bolt'
+      filler:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+    items:
+      '11':
+        material: LIME_DYE
+        amount: 1
+        name: '&2&l[!] &a&lVote Láda Kulcs'
+        lore:
+          - ''
+          - ' &2&l● &aÁr: &f300k Essencia'
+          - ''
+          - '&7&o(( Kattints ide a vásárláshoz ))'
+        commands:
+          use: true
+          commands:
+            - crate give p Vote 1 {player}
+        price: 300000
+        slot: 11
+      '12':
+        material: LIGHT_BLUE_DYE
+        amount: 1
+        name: '&3&l[!] &b&lRare Láda Kulcs'
+        lore:
+          - ''
+          - ' &3&l● &bÁr: &f450k Essencia'
+          - ''
+          - '&7&o(( Kattints ide a vásárláshoz ))'
+        commands:
+          use: true
+          commands:
+            - crate give p Rare 1 {player}
+        price: 450000
+        slot: 12
+      '14':
+        material: PINK_DYE
+        amount: 1
+        name: '&5&l[!] &d&lUltra Láda Kulcs'
+        lore:
+          - ''
+          - ' &5&l● &dÁr: &f650k Essencia'
+          - ''
+          - '&7&o(( Kattints ide a vásárláshoz ))'
+        commands:
+          use: true
+          commands:
+            - crate give p Ultra 1 {player}
+        price: 650000
+        slot: 14
+      '15':
+        material: ORANGE_DYE
+        amount: 1
+        name: '&e&l[!] &6&lLegendary Láda Kulcs'
+        lore:
+          - ''
+          - ' &6&l● &eÁr: &f950k Essencia'
+          - ''
+          - '&7&o(( Kattints ide a vásárláshoz ))'
+        commands:
+          use: true
+          commands:
+            - crate give p Legendary 1 {player}
+        price: 950000
+        slot: 15
+      '18':
+        material: BARRIER
+        amount: 1
+        name: '&c&lVissza a Kategóriákhoz'
+        lore:
+          - '&7&o(( Kattints ide a visszalépéshez ))'
+        slot: 22
+        page: main
+  monthlycrates:
+    options:
+      size: 27
+      title: '&8Elemental Network » Exkluzív Essencia Bolt'
+      filler:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+    items:
+      '1':
+        material: ENDER_CHEST
+        amount: 1
+        name: '&6&l[!] &e&lHavi Láda'
+        lore:
+          - ''
+          - ' &6&l● &eÁr: &f15M Essencia'
+          - ''
+          - '&7&o(( Kattints ide a vásárláshoz ))'
+        commands:
+          use: true
+          commands:
+            - ac give {player} Monthly 1
+        price: 15000000
+        slot: 13
+      '18':
+        material: BARRIER
+        amount: 1
+        name: '&c&lVissza a Kategóriákhoz'
+        lore:
+          - '&7&o(( Kattints ide a visszalépéshez ))'
+        slot: 22
+        page: main

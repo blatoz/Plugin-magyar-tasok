@@ -1,0 +1,113 @@
+# Don't change this please
+config-version: 5
+
+# The method to fill multiple multiple parkour areas.
+# If you only have one, this option is ignored.
+#  Default: lowest
+area-selection: lowest
+
+# Whether to pick a random block each jump, or a random block at the start.
+#  Options: 'each' or 'start'.
+#  Default: each
+random-block-selection: each
+
+# This is the item to show in the selector GUI to represent the random block mode.
+#  Default: VINE
+random-item: VINE
+
+# This is the sound to play when a player makes a jump.
+# Here is a list for the latest spigot version: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html (the list starts below the orange box that says Enum Constants)
+#  Default: ENTITY_CHICKEN_EGG
+jump-sound: ENTITY_CHICKEN_EGG
+
+# The amount of players to show in /ajParkour top
+#  Default: 10
+top-shown: 10
+
+# The number of extra blocks to place ahead of the next jump.
+#  Default: 1
+jumps-ahead: 1
+
+# The sound to play when a player starts parkour. See jump-sound for more info.
+#  Default: NONE
+start-sound: NONE
+
+#The sound to play when a player falls. See jump-sound for more info.
+# Default: NONE
+end-sound: NONE
+
+# The number of particles to spawn when a new block is placed.
+#  Default: 25
+particle-count: 10
+
+# When to execute the reward commands.
+#  Options: 'earned', 'after'
+#  Default: 'earned'
+execute-reward-commands: after
+
+# If this is true, the player's inventory will be cleared while on the parkour, and reset after.
+# NOTICE: If one of your reward commands gives items, you need to set execute-reward-commands to 'after' or else they will lose the items.
+#  Default: false
+parkour-inventory: true
+
+# If a world is listed here, the /ajParkour start command will not be usable from that world.
+# World names are separated by commas (without spaces) and are case-sensitive!
+#  Example: 'disabledWorld1,disabledWorld2'
+start-disabled-worlds: disabledWorld1,disabledWorld2
+
+# How long, in seconds, after a player doesn't move should we kick them from the parkour?
+# Set to -1 to disable
+#  Default: 60
+kick-time: 60
+
+# Should we notify people with the permission ajparkour.update that an update is available?
+# They will then be able to download it using /ajParkour update
+#  Default: true
+notify-update: true
+
+# Should the score we tell the player to beat be per-area or global?
+# For example, if this is true and the player got 30 on another area but only 10 on this one, they will be told to beat their record of 10.
+#  Default: false
+begin-score-per-area: false
+
+# Should the portals be disabled?
+# If your server is lagging from this plugin without many people on parkour, try disabling this.
+# REQUIRES SERVER RESTART (not just config reload)
+#  Default: true
+enable-portals: true
+
+# Should we use a more optimized method to look if players are at a portal?
+# It may require the player to be in the block for a little longer
+# Enable this if you have a lot of people on your server and are experiencing lag.
+#  Default: true
+faster-portals: true
+
+# Should the updater be enabled?
+# If this is disabled, the plugin will not attempt to check for updates, and you will have to download new updates manually
+# Requires a restart
+#  Default: true
+enable-updater: true
+
+# Should we apply faster-portals to the afk detections?
+#  Default: true
+faster-afk-detection: true
+
+# The particle to use when a new block is placed.
+# See the list of particles here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+#  Default: CLOUD
+new-block-particle: CLOUD
+
+# Should we enable the block selector item in the parkour inventory?
+# If this is disabled, the parkour inventory will just be blank
+#  Default: true
+enable-block-selector-item: true
+
+# Should we require the player to have the ajparkour.selector permission to get the block selector item?
+# (for the parkour inventory)
+#  Default: false
+require-permission-for-block-selector-item: false
+
+
+# Some things that can help look for issues in the plugin
+#  Default: false
+debug: false

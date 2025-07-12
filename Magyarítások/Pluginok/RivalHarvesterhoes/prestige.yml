@@ -1,0 +1,102 @@
+Prestige:
+  main-menu-item:
+    enabled: true
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRjZmYxYWNjMTJmMTZkNDRhZWUxZjdlODQ0MTRjYjJlOGVhN2ViNDY0MmU3ZDI5MmQ3NmYxYzE3YjRiNDM0YSJ9fX0=
+    slot: 4
+    name: '&2&l[!] &a&lKapa Presztízs'
+    lore:
+      - '&7(( Kattints, hogy lásd az összes kapa presztízs bónuszt ))'
+  enchant-menu-item:
+    enabled: false
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRjZmYxYWNjMTJmMTZkNDRhZWUxZjdlODQ0MTRjYjJlOGVhN2ViNDY0MmU3ZDI5MmQ3NmYxYzE3YjRiNDM0YSJ9fX0=
+    slot: 4
+    name: '&2&l[!] &a&lKapa Presztízs'
+    lore:
+      - '&7(( Kattints, hogy lásd az összes kapa presztízs bónuszt ))'
+  prestige-info-menu-item:
+    slot: 3
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RjOTg1YTdhNjhjNTc0ZjY4M2MwYjg1OTUyMWZlYjNmYzNkMmZmYTA1ZmEwOWRiMGJhZTQ0YjhhYzI5YjM4NSJ9fX0=
+    name: '&2&l[!] &a&lPresztízs Infók'
+    lore:
+      - ''
+      - '&a&lJELENLEGI BÓNUSZOK'
+      - ''
+      - ' &6▎ &eEsszencia bónusz: &f{essence-boost}x'
+      - ' &2▎ &aPénz bónusz: &f{money-boost}x'
+      - ' &3▎ &bBűbáj aktiválás bónusz: &f{enchant-proc-boost}x'
+      - ' &f▎ &fTermény bónusz: &f{crop-boost}x'
+      - ''
+  prestige-button-no-requirement:
+    slot: 5
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQ3OGNjMzkxYWZmYjgwYjJiMzVlYjczNjRmZjc2MmQzODQyNGMwN2U3MjRiOTkzOTZkZWU5MjFmYmJjOWNmIn19fQ==
+    name: '&4&l[!] &c&lNem felesz meg a követelményeknek'
+    lore:
+      - ''
+      - ' &4▎ &cPresztízs követelmény: &f{requirement-level}. szintű aratókapa'
+      - ''
+  prestige-button-available:
+    material: SIGN
+    base64:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzExMDFjNDk4YWFhYzkzZTc2YjhmMTZkMjljYmZhNDczZWQyNGQ5YzZjNzU1NjNjMjdlZWRkNDljOTYzZTk4YiJ9fX0=
+    name: '&2&l[!] &a&lPrestige Available'
+    lore:
+      - ''
+      - '&a&lKÖVETKEZŐ PRESZTÍZS BÓNUSZOK'
+      - ''
+      - ' &6▎ &eEsszencia bónusz: &f{essence-boost}x'
+      - ' &2▎ &aPénz bónusz: &f{money-boost}x'
+      - ' &3▎ &bBűbáj aktiválás bónusz: &f{enchant-proc-boost}x'
+      - ' &f▎ &fTermény bónusz: &f{crop-boost}x'
+      - ''
+      - '&7&o(( Kattints, hogy presztízs szintet lépj a kapáddal! ))'
+Prestige-Menu:
+  size: 9
+  name: '&7Elemental Network » Kapa presztízs'
+  # A szerver nevét cseréld ki a sajátodra!
+Prestige-Settings:
+  money-boost-per-prestige: 0.2
+  essence-boost-per-prestige: 0.2
+  crop-boost-per-prestige: 0.15
+  enchant-proc-boost-per-prestige: 0.05
+  max-prestige: 10
+  xp-requirement-boost-per-prestige: 0.2
+  reset-all-enchants-on-prestige: true
+  reset-all-crystals-on-prestige: false
+  reset-all-abilities-on-prestige: false
+  reset-autosell: false
+  # Ability to execute commands, messages every prestige
+  prestige-actions: [ ]
+Messages:
+  max-prestige: '&2&l[!] &7Elérted a &amax &7presztízs szintet!'
+  need-level: '&2&l[!] &7Az aratókapa szintje legalább &f&n{required-level} &7kell legyen a presztízshez!'
+  hoe-prestiged:
+    - ''
+    - '&2&l[!] &aSikeresen &f&npresztízs szintet léptél&r &aaz aratókapa szintje most &f&l&n{prestige-level}&r &a!'
+    - ''
+    - '&a&lPRESZTÍZS &f{old-level} &8&l➜ &a&lPRESZTÍZS &f{new-level}'
+    - ''
+    - '&a&lBÓNUSZOK:'
+    - ' &6▎ &eEsszencia bónusz: &f{essence-boost}x'
+    - ' &2▎ &aPénz bónusz: &f{money-boost}x'
+    - ' &3▎ &bBűbáj aktiválás bónusz: &f{enchant-proc-boost}x'
+    - ' &f▎ &fTermény bónusz: &f{crop-boost}x'
+    - ''
+    - '&7&o(( Érd el a(z) &f&n{level} &7&oszintet, hogy újra presztízs szintet léphess az aratókapa-val! ))'
+Prestige-Rewards:
+  '3':
+    rewards:
+      - '[command]essence give {player} 5000'
+      - '[message]&2&l[!] &aElérted a(z) &f[3] &aés kaptál &f5000 &aEsszenciát!'
+      - '[message]&2&l[!] &aElérted a(z) &f[3] &apresztízs szintet és kaptál &f5000 &aEsszenciát!'
+Repeating-Rewards:
+  '10':
+    rewards:
+      - '[command]essence give {player} 10000'

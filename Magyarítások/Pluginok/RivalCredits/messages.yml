@@ -1,0 +1,90 @@
+# Messages Config
+prefix: "&b&l(!)"
+invalid-player: "&c&l(!) &cNem adtál meg egy érvényes játékos nevet!"
+invalid-page: "&c&l(!) &cNincs oldal ezzel a nevével"
+invalid-integer: "&c&l(!) &cNem adtál meg egy érvényes számot."
+inventory-full: "&c&l(!) &cAz inventoryd tele van."
+only-players: "&c&l(!) &cCsak játékosoknak lehet ezt csinálni."
+reload-files: "&b&l(!) &3Sikeresen betöltötted a konfigurációt"
+incorrect-usage: "&c&l(!) &cHibás használat: {command}"
+no-permission: "&c&l(!) &cNincs engedélyed ehhez."
+under-zero: "&c&l(!) &cNem használhatsz számokat alatt 1-et!"
+no-credits: "&c&l(!) &cNincs ennyi krediteid, ennyi krediteid van: &b{credits}"
+yourself: "&c&l(!) &cNem teheted krediteket önmagadnak."
+pay-delay: "&4&lVárakozz &f{time} &cszekkötött krediteket küldeni."
+
+discounts:
+  synced: false
+  # Enable for only 1 server.
+  main-instance: false
+  already-exists: '&4&l[!] &cEz a kedvezmény már létezik, válassz egy másik nevet.'
+  created: '&2&l[!] &aSikeresen létrehoztad a &f{name} &akedvezményt.'
+  removed: '&4&c[!] &cSikeresen törölted a &f{name} &ckedvezményt'
+  not-found: '&4&l[!] &cKedvezmény &f{name} &cnincs.'
+  usage-info:
+    - '&6&lKedvezmények parancsok'
+    - ' &6* &e/discount create &8- &7Létrehoz egy új kedvezményt'
+    - ' &6* &e/credits discount remove <name> &8- &7Töröld egy konkrét kedvezményt'
+    - ' &6* &e/credits discount removeall &8- &7Töröld minden aktív kedvezményt'
+    - ' &6* &e/credits discount list &8- &7Listázza az összes aktív kedvezményt'
+    - ''
+  usage-create: '&4&l[!] &cHasználat: /credits discount create <name> <percentage> <permanent:yyyy-MM-dd> [global] [category] [package or nothing]'
+  usage-remove: '&4&l[!] &cHasználat: /credits discount remove <name>'
+  usage-removeall: '&4&l[!] &cHasználat: /credits discount removeall'
+  no-active-discounts: '&cNincs aktív kedvezmény.'
+  active-discounts: '&6&lAktív kedvezmények:'
+  format:
+    active: "&6- &f{discount_key}: &f{discount_amount}%ról/ről &e{discount_global}&6{discount_category}&6{discount_package}, &7vége: &6{discount_duration}"
+    upcoming: "&6- &f{discount_key}: &f{discount_amount}%ról/ről &e{discount_global}&6{discount_category}&6{discount_package}, &7kezdés: &6{discount_start}"
+    permanent: "&6- &f{discount_key}: &f{discount_amount}%ról/ről &e{discount_global}&6{discount_category}&6{discount_package}, végleges"
+    expired: "&6- &f{discount_key}: &f{discount_amount}%ról/ről &e{discount_global}&6{discount_category}&6{discount_package}, &4&lLEJÁRT"
+    global-placeholder: ' &8(&fGlobal&8) '
+    category-placeholder: ' &7kategóriában &f '
+    package-placeholder: ' &7csomagban &f '
+
+credits:
+  open-credits-menu: "&b&l(!) &bA kreditek menüt nyitottál."
+  not-enough: "&c&l(!) &cNincs elég krediteid, hogy vásárolj ezt, szükséged van &f{needed} &cmég kreditekre."
+  successful-purchase: "&b&l(!) &bSikeresen vásároltál {package} &f{price} &bkreditért."
+
+set:
+  set-admin: "&b&l(!) &bBeállítottad &3{player}nak/nek &f{value} &bkreditet."
+  set-player: "&b&l(!) &bA krediteidet &f{value} &bbeállították."
+
+remove:
+  remove-admin: "&b&l(!) &bA kredited &3{player}nak/nek &ból &f{value} &bkreditet &belvettek."
+  remove-player: "&b&l(!) &f{value} &bkreditet &belvettél a krediteiből."
+
+give:
+  give-admin: "&b&l(!) &bA kreditet &3{player}nak/nek &badott &f{value} &bkreditet."
+  give-player: "&b&l(!) &bA kreditet &3{player}tól/től &bfkaptál &f{value} &bkreditet."
+pay:
+  paid-player: "&b&l(!) &bA kreditedből &3{player}nak/nek &bfizetél &f{value} &bkreditet."
+  player-that-paid: "&b&l(!) &bA krediteidet &3{player}nak/nek &bfizetett neked &f{value} &bkreditet."
+
+reset:
+  reset-admin: "&b&l(!) &bA krediteit &3{player}nak/nek &bvissza lett állítva."
+  reset-player: "&b&l(!) &bA krediteidet &bvissza lett állítva."
+
+balance:
+  player-balance-format:
+    - "&b&lA krediteid &8» &f{amount}"
+    - "&7Kattints rá a /buy linkre!"
+  others-balance-format:
+    - "&b&l{player}nak/nek &8» &f{amount} kreditje"
+    - "&7Kattints rá a /buy linkre!"
+
+command:
+  admin:
+    - "&b&l(!) &bKredit parancsok "
+    - " &8» &f/credits &7give <player> <amount>"
+    - " &8» &f/credits &7pay <player> <amount>"
+    - " &8» &f/credits &7set <player> <amount>"
+    - " &8» &f/credits &7remove <player> <amount>"
+    - " &8» &f/credits &7reset <player>"
+    - " &8» &f/credits &7balance <player>"
+    - " &8» &f/credits &7reload"
+  player:
+    - "&b&l(!) &bKredit parancsok "
+    - " &8» &f/credits &7balance <player>"
+    - " &8» &f/credits &7pay <player> <amount>"

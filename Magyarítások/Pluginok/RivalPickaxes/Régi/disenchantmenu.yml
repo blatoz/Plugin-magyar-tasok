@@ -1,0 +1,45 @@
+disenchanter-confirm-menu: true
+Menu-Settings:
+  name: '&8Biztos?'
+  size: 27
+  pickaxe-preview:
+    enabled: true
+    slot: 4
+Confirm:
+  slot: 12
+  material: LIME_STAINED_GLASS_PANE
+  name: '&2&l<!> &a&lIgen'
+  lore:
+    - ' &2&l▎ &a&lMennyiség: &f{amount}'
+    - ' &2&l▎ &a&lÉrték: &f{value}'
+    - ''
+    - ' &7&o(( Kattints a hogy disenchantolod {amount} szintet! ))'
+Cancel:
+  slot: 14
+  material: RED_STAINED_GLASS_PANE
+  name: '&4&l<!> &c&lMégsem'
+  lore:
+    - ''
+    - ' &7&o(( Kattints a hogy vissza menj! ))'
+Enchant-Display:
+  slot: 13
+  enabled: true
+  amount: 1
+  name: '&c&l- {amount} Enchant szint'
+  lore:
+    - ''
+    - ' &4&l▎ &cDisenchant szint: &f{amount}'
+    - ' &4&l▎ &cJelenlegi szint: &f{current_level}'
+    - ' &4&l▎ &cÉrték: &f{value}'
+    - ''
+Enchants:
+  KeyFinder:
+    name: '&c&l- {amount} Kulcs Kereső Enchant szint'
+    lore:
+      - '&8Egyedi Enchant'
+      - '&7&oValószínűség a kulcs kereső képesség aktiválására.'
+      - ' '
+      - ' &4&l▎ &cDisenchant szint: &f{amount}'
+      - ' &4&l▎ &cJelenlegi szint: &f{current_level}'
+      - ' &4&l▎ &cÉrték: &f{value}'
+      - ' '

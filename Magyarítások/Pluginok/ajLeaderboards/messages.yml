@@ -1,0 +1,77 @@
+signs:
+    top:
+        default:
+        - '&7&m       &r #{POSITION} &7&m       '
+        - '&6{NAME}'
+        - '&e{VALUE} {VALUENAME}'
+        - '&7&m                   '
+no-player-skin:
+    default: Superman00800
+formatted:
+    k: k
+    m: m
+    t: t
+    b: b
+    q: q
+    qi: qi
+    sx: sx
+    sp: sp
+    o: o
+    n: n
+    d: d
+    ud: ud
+time:
+    w: 'w '
+    d: 'd '
+    h: 'h '
+    m: 'm '
+    s: s
+noperm: '&cNincs engedélyed ehhez!'
+commands:
+    reload:
+        success: '&aKonfigurációk betöltve!'
+        fail: '&cEgy hiba történt a konfiguráció betöltése során. &7Lásd a konzolt.'
+    export:
+        fileexists: '&cA fájl &f{FILE}&c már létezik!'
+        starting: '&7Összes játékos lekérdezése a adatbázisból. Ez eltarthat egy kicsit.'
+        fail: '&cHiba történt a kimentés során. &7Lásd a konzolt.'
+        progress: '&eFolyamat: &f{DONE}&7/&f{TOTAL}&7 tábla lekérdezve'
+        success: '&aA cache exportálva lett a fájlba &f{FILE}&a!'
+    viewer:
+        success: |4
+
+            &aA cache nézhető a következő linken: &f <hover:show_text:'<yellow>Kattints a linkre&f {URL}'><click:open_url:'{URL}'><white><underlined>{URL}</click></hover>
+        uploading: '&7Feltöltés...'
+    import:
+        nofile: '&cA fájl &f{FILE}&c nem létezik!'
+        starting: '&7Betöltés az összes cache statisztikából &f{FILE}'
+        fail: '&cHiba történt a beimportálás során. &7Lásd a konzolt.'
+        insertprogress: '&eFolyamat: &f{DONE}&7/&f{TOTAL}&7 tábla importálva'
+        success: '&aA cache importálva lett a fájlból &f{FILE}ba&a!'
+no-data:
+    lb:
+        name: '---'
+        value: '---'
+    extra: '---'
+    rel:
+        position: '{POSITION}'
+        name: '---'
+        value: '---'
+loading:
+    text: Betöltés...
+    short: -?-
+    position: ..
+    size: '...'
+updater:
+    slow-feedback: '&7Frissítés keresése és letöltése...'
+    disabled: '&cA frissítés letöltő nincsen aktiválva! &7Kérlek aktiváld a frissítés letöltőt a konfigurációban.'
+    success: '&aFrissítés letöltve! &7Indítsd újra a szervert a frissítés alkalmazásához.'
+    warnings:
+        could-not-delete-old-jar: '&aFrissítés letöltve&e de a régi jar nem törölhető. &7Kérlek töröld a régi jar-t mielőtt újraindítod a szervert.'
+    errors:
+        no-update-available: '&aMár frissítve vagy!'
+        while-checking: '&eHiba történt a frissítés keresése során. &7Lásd a konzolt.'
+        already-downloaded: '&aMár letöltötted a frissítést! &7Indítsd újra a szervert.'
+        while-downloading: '&eHiba történt a frissítés letöltése során. &7Lásd a konzolt.'
+        unknown: '&eIsmeretlen hiba: {ERROR}'
+        uncaught: '&cHiba történt a parancs végrehajtása során. &7Lásd a konzolt.'

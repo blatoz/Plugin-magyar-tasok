@@ -1,0 +1,435 @@
+teleport-back: true
+teleport-radius: 15
+Mobs:
+  coal_mine:
+    spawn-time: 30
+    entity: SKELETON
+    amount: 3
+    max-health: 50
+    targeting-range: 16
+    name: '&7[T1] &0&lSzén &8&lVédő &c{health}&4❤&7/&c{max-health}&4❤'
+    rewards:
+      '1':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+1 Szavazati kulcs'
+          - 'crate give {player} vote 1'
+        chance: 2
+      '2':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+2 Szavazati kulcs'
+          - 'crate give {player} vote 2'
+        chance: 1
+    effects:
+      - 'SPEED:1:2000'
+    equipment:
+      weapon:
+        material: DIAMOND_SWORD
+        enchants:
+          - 'DAMAGE_ALL:10'
+      helmet:
+        base64:
+          enabled: true
+          value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1Nzk3NDhjNTg5ZTk3ZmY3YzA1NTQ2NDFiOWVlMzE4ODczNjk2MmNkODc4OGU2NjM5NjAwNmM0OGQzZmVhMCJ9fX0='
+        material: LEATHER_HELMET
+        color: 0,0,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        color: 0,0,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      leggings:
+        material: LEATHER_LEGGINGS
+        color: 0,0,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      boots:
+        material: LEATHER_BOOTS
+        color: 0,0,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+  iron_mine:
+    spawn-time: 30
+    entity: SKELETON
+    amount: 3
+    max-health: 50
+    targeting-range: 16
+    name: '&7[T2] &7&lVas &8&lVédő &c{health}&4❤&7/&c{max-health}&4❤'
+    rewards:
+      '1':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+1 Szavazati kulcs'
+          - 'crate give {player} vote 1'
+        chance: 2
+      '2':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+2 Szavazati kulcs'
+          - 'crate give {player} vote 2'
+        chance: 1
+    effects:
+      - 'SPEED:1:2000'
+    equipment:
+      weapon:
+        material: DIAMOND_SWORD
+        enchants:
+          - 'DAMAGE_ALL:10'
+      helmet:
+        base64:
+          enabled: true
+          value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1Nzk3NDhjNTg5ZTk3ZmY3YzA1NTQ2NDFiOWVlMzE4ODczNjk2MmNkODc4OGU2NjM5NjAwNmM0OGQzZmVhMCJ9fX0='
+        material: LEATHER_HELMET
+        color: 192,192,192
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        color: 192,192,192
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      leggings:
+        material: LEATHER_LEGGINGS
+        color: 192,192,192
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      boots:
+        material: LEATHER_BOOTS
+        color: 192,192,192
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+  gold_mine:
+    spawn-time: 30
+    entity: SKELETON
+    amount: 3
+    max-health: 50
+    targeting-range: 16
+    name: '&7[T3] &e&lArany &6&lVédő &c{health}&4❤&7/&c{max-health}&4❤'
+    rewards:
+      '1':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+1 Szavazati kulcs'
+          - 'crate give {player} vote 1'
+        chance: 2
+      '2':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+2 Szavazati kulcs'
+          - 'crate give {player} vote 2'
+        chance: 1
+    effects:
+      - 'SPEED:1:2000'
+    equipment:
+      weapon:
+        material: DIAMOND_SWORD
+        enchants:
+          - 'DAMAGE_ALL:10'
+      helmet:
+        base64:
+          enabled: true
+          value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1Nzk3NDhjNTg5ZTk3ZmY3YzA1NTQ2NDFiOWVlMzE4ODczNjk2MmNkODc4OGU2NjM5NjAwNmM0OGQzZmVhMCJ9fX0='
+        material: LEATHER_HELMET
+        color: 255,215,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        color: 255,215,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      leggings:
+        material: LEATHER_LEGGINGS
+        color: 255,215,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      boots:
+        material: LEATHER_BOOTS
+        color: 255,215,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+  redstone_mine:
+    spawn-time: 30
+    entity: SKELETON
+    amount: 3
+    max-health: 50
+    targeting-range: 16
+    name: '&7[T4] &c&lRedstone &4&lVédő &c{health}&4❤&7/&c{max-health}&4❤'
+    rewards:
+      '1':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+1 Szavazati kulcs'
+          - 'crate give {player} vote 1'
+        chance: 2
+      '2':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+2 Szavazati kulcs'
+          - 'crate give {player} vote 2'
+        chance: 1
+    effects:
+      - 'SPEED:1:2000'
+    equipment:
+      weapon:
+        material: DIAMOND_SWORD
+        enchants:
+          - 'DAMAGE_ALL:10'
+      helmet:
+        base64:
+          enabled: true
+          value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1Nzk3NDhjNTg5ZTk3ZmY3YzA1NTQ2NDFiOWVlMzE4ODczNjk2MmNkODc4OGU2NjM5NjAwNmM0OGQzZmVhMCJ9fX0='
+        material: LEATHER_HELMET
+        color: 227,34,39
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        color: 227,34,39
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      leggings:
+        material: LEATHER_LEGGINGS
+        color: 227,34,39
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      boots:
+        material: LEATHER_BOOTS
+        color: 227,34,39
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+  lapis_mine:
+    spawn-time: 30
+    entity: SKELETON
+    amount: 3
+    max-health: 50
+    targeting-range: 16
+    name: '&7[T5] &9&lLaplis lazuli &3&lVédő &c{health}&4❤&7/&c{max-health}&4❤'
+    rewards:
+      '1':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+1 Szavazati kulcs'
+          - 'crate give {player} vote 1'
+        chance: 2
+      '2':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+2 Szavazati kulcs'
+          - 'crate give {player} vote 2'
+        chance: 1
+    effects:
+      - 'SPEED:1:2000'
+    equipment:
+      weapon:
+        material: DIAMOND_SWORD
+        enchants:
+          - 'DAMAGE_ALL:10'
+      helmet:
+        base64:
+          enabled: true
+          value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1Nzk3NDhjNTg5ZTk3ZmY3YzA1NTQ2NDFiOWVlMzE4ODczNjk2MmNkODc4OGU2NjM5NjAwNmM0OGQzZmVhMCJ9fX0='
+        material: LEATHER_HELMET
+        color: 0,0,255
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        color: 0,0,255
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      leggings:
+        material: LEATHER_LEGGINGS
+        color: 0,0,255
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      boots:
+        material: LEATHER_BOOTS
+        color: 0,0,255
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+  diamond_mine:
+    spawn-time: 30
+    entity: SKELETON
+    amount: 3
+    max-health: 50
+    targeting-range: 16
+    name: '&7[T6] &b&lGyémánt &3&lVédő &c{health}&4❤&7/&c{max-health}&4❤'
+    rewards:
+      '1':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+1 Szavazati kulcs'
+          - 'crate give {player} vote 1'
+        chance: 2
+      '2':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+2 Szavazati kulcs'
+          - 'crate give {player} vote 2'
+        chance: 1
+    effects:
+      - 'SPEED:1:2000'
+    equipment:
+      weapon:
+        material: DIAMOND_SWORD
+        enchants:
+          - 'DAMAGE_ALL:10'
+      helmet:
+        base64:
+          enabled: true
+          value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1Nzk3NDhjNTg5ZTk3ZmY3YzA1NTQ2NDFiOWVlMzE4ODczNjk2MmNkODc4OGU2NjM5NjAwNmM0OGQzZmVhMCJ9fX0='
+        material: LEATHER_HELMET
+        color: 137,207,240
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        color: 137,207,240
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      leggings:
+        material: LEATHER_LEGGINGS
+        color: 137,207,240
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      boots:
+        material: LEATHER_BOOTS
+        color: 137,207,240
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+  emerald_mine:
+    spawn-time: 30
+    entity: SKELETON
+    amount: 3
+    max-health: 50
+    targeting-range: 16
+    name: '&7[T7] &a&lEmerald &2&lVédő &c{health}&4❤&7/&c{max-health}&4❤'
+    rewards:
+      '1':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+1 Szavazati kulcs'
+          - 'crate give {player} vote 1'
+        chance: 2
+      '2':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+2 Szavazati kulcs'
+          - 'crate give {player} vote 2'
+        chance: 1
+    effects:
+      - 'SPEED:1:2000'
+    equipment:
+      weapon:
+        material: DIAMOND_SWORD
+        enchants:
+          - 'DAMAGE_ALL:10'
+      helmet:
+        base64:
+          enabled: true
+          value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1Nzk3NDhjNTg5ZTk3ZmY3YzA1NTQ2NDFiOWVlMzE4ODczNjk2MmNkODc4OGU2NjM5NjAwNmM0OGQzZmVhMCJ9fX0='
+        material: LEATHER_HELMET
+        color: 0,255,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        color: 0,255,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      leggings:
+        material: LEATHER_LEGGINGS
+        color: 0,255,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      boots:
+        material: LEATHER_BOOTS
+        color: 0,255,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+  nether_mine:
+    spawn-time: 30
+    entity: WITHER_SKELETON
+    amount: 3
+    max-health: 100
+    targeting-range: 16
+    name: '&7[T8] &c&lNether &4&lVédő &c{health}&4❤&7/&c{max-health}&4❤'
+    rewards:
+      '1':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+1 Szavazati kulcs'
+          - 'crate give {player} vote 1'
+        chance: 2
+      '2':
+        commands:
+          - '[sound]LEVEL_UP;1;1'
+          - '[message] &a&l+2 Szavazati kulcs'
+          - 'crate give {player} vote 2'
+        chance: 1
+    effects:
+      - 'SPEED:1:2000'
+    equipment:
+      weapon:
+        material: DIAMOND_SWORD
+        enchants:
+          - 'DAMAGE_ALL:10'
+      helmet:
+        base64:
+          enabled: true
+          value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1Nzk3NDhjNTg5ZTk3ZmY3YzA1NTQ2NDFiOWVlMzE4ODczNjk2MmNkODc4OGU2NjM5NjAwNmM0OGQzZmVhMCJ9fX0='
+        material: LEATHER_HELMET
+        color: 0,255,0
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      chestplate:
+        material: LEATHER_CHESTPLATE
+        color: 227,34,39
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      leggings:
+        material: LEATHER_LEGGINGS
+        color: 255,255,255
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'
+      boots:
+        material: LEATHER_BOOTS
+        color: 227,34,39
+        enchants:
+          - 'DURABILITY:10'
+          - 'PROTECTION_ENVIRONMENTAL:5'

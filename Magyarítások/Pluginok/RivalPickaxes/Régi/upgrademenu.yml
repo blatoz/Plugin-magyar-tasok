@@ -1,0 +1,84 @@
+new-upgrade-menu: true #If true will use this upgrade menu, else it will use the default one
+Menu-Settings:
+  name: '&8Csákány Frissítések'
+  size: 27
+  pickaxe-preview:
+    enabled: true
+    slot: 4
+Back-Item:
+  enabled: true
+  slot: 18
+  material: BARRIER
+  name: '&4&l<!> &c&lVissza'
+  lore:
+    - ' &7&o(( Kattints a főmenüre! ))'
+PurchaseEnchantItem:
+  name: '&a&l+ {amount} Enchant Szint'
+  lore:
+    - ' '
+    - ' &2&l▎ &a&lJelenlegi Szint: &f{current_level}'
+    - ' &2&l▎ &a&lÚj Szint: &f{next_level}'
+    - ' &2&l▎ &a&lÁr: &f{cost}'
+    - ' '
+    - ' &7&o(( Tip: Kattints a frissítéséhez! ))'
+PurchaseEnchantMaxItem:
+  enabled: true
+  slot: 22
+  material: IRON_BARS
+  name: '&a&l+ {amount} Enchant Szint'
+  lore:
+    - ' '
+    - ' &2&l▎ &a&lJelenlegi Szint: &f{current_level}'
+    - ' &2&l▎ &a&lÚj Szint: &f{next_level}'
+    - ' &2&l▎ &a&lÁr: &f{cost}'
+    - ' '
+    - ' &7&o(( Tip: Kattints a frissítéséhez! ))'
+Menu-Items:
+  '1':
+    slot: 9
+    amount : 1
+    levels: 1
+  '2':
+    slot: 10
+    amount: 2
+    levels: 5
+  '3':
+    slot: 11
+    amount: 3
+    levels: 10
+  '4':
+    slot: 12
+    amount: 4
+    levels: 25
+  '5':
+    slot: 13
+    amount: 5
+    levels: 50
+  '6':
+    slot: 14
+    amount: 6
+    levels: 100
+  '7':
+    slot: 15
+    amount: 7
+    levels: 250
+  '8':
+    slot: 16
+    amount: 8
+    levels: 500
+  '9':
+    slot: 17
+    amount: 9
+    levels: 1000
+Enchants:
+  KeyFinder:
+    name: '&a&l+ {amount} Enchant Szint'
+    lore:
+      - '&8Egyedi Enchant'
+      - '&7&oValószínűség a készlet kulcsok megtalálására.'
+      - ' '
+      - ' &2&l▎ &a&lJelenlegi Szint: &f{current_level}'
+      - ' &2&l▎ &a&lÚj Szint: &f{next_level}'
+      - ' &2&l▎ &a&lÁr: &f{cost}'
+      - ' '
+      - ' &7&o(( Tip: Kattints a frissítéséhez! ))'

@@ -1,0 +1,57 @@
+################################################################################
+#  _     _____    _    ____  _____ ____  ____   ___    _    ____  ____  ____   #
+# | |   | ____|  / \  |  _ \| ____|  _ \| __ ) / _ \  / \  |  _ \|  _ \/ ___|  #
+# | |   |  _|   / _ \ | | | |  _| | |_) |  _ \| | | |/ _ \ | |_) | | | \___ \  #
+# | |___| |___ / ___ \| |_| | |___|  _ <| |_) | |_| / ___ \|  _ <| |_| |___) | #
+# |_____|_____/_/   \_|____/|_____|_| \_|____/ \___/_/   \_|_| \_|____/|____/  #
+#                                                                              #
+################################################################################
+
+# Configuration for the Bamboo Top Leaderboard
+Blocks:
+  hologram-no-player: Nincsen Játékos
+  name: '&8ElementalNetwork » Blokkok Top'
+  display:
+    your-rank: '&5&l[!] &d&Helyezésed: &f&l#{rank} '
+    your-lore:
+      - ''
+      - '&5&l▏ &dBlokkok amit szedtél: &f{amount}'
+    name: '&5&l[!] &f&l#{rank} &d&l{player}'
+    lore:
+      - ''
+      - '&5&l▏ &dBlokkok amit szedtél: &f{amount}'
+    name-invalid: '&4&l[!]  &f&l#{rank} &c&l?????'
+    lore-invalid:
+      - ''
+      - '&7&o(( Nincsen játékos ))'
+# Configuration for the Essence Top Leaderboard
+Essence:
+  hologram-no-player: Nincsen Játékos
+  name: '&8ElementalNetwork » Esszencék Top'
+  display:
+    your-rank: '&6&l[!] &e&lHelyezésed: &f&l#{rank} '
+    your-lore:
+      - ''
+      - '&6&l▏ &e&lEsszencék amit szedtél: &6❋&e{amount}'
+    name: '&6&l<!> &f&l#{rank} &e&l{player}'
+    lore:
+      - ''
+      - '&5&l▏ &eEsszencék amit szedtél: &6❋&e{amount}'
+    name-invalid: '&4&l<!>  &f&l#{rank} &c&l?????'
+    lore-invalid:
+      - ''
+      - '&7&o(( Nincsen játékos ))'
+Data:
+  # Save all Data - Time in seconds
+  save-data: 300
+  leaderboard-update: 60
+
+# Configuration for the Blocks Balance Command
+Balance:
+  Blocks:
+    player-balance-format:
+      - '&5&lBlokkok amit szedtél &8» &f{amount}'
+      - '&7Szedd a kőzeteket a kőzetekben és versenyezd a /block top leaderboardokon'
+    others-balance-format:
+      - '&5&l{player}''s Blokkok amit szedtél &8» &f{amount}'
+      - '&7Szedd a kőzeteket a kőzetekben és versenyezd a /block top leaderboardokon'

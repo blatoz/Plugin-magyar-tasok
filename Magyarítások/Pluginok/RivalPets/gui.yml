@@ -1,0 +1,535 @@
+GUI:
+  Main-Menu:Inventory:
+    size: 27
+    name: '&8&nHáziállatok'
+    display-slots:
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+    custom-items:
+      '1':
+        material: BLACK_STAINED_GLASS_PANE
+        name: '&7'
+        slot: 0-26
+    upgrades:
+      enabled: true
+      slot: 0
+    fusion:
+      enabled: true
+      slot: 9
+    bin:
+      enabled: true
+      slot: 18
+    items:
+      slot-locked:
+        material: BARRIER
+        name: '&4&l[!] &cLezárt Slot'
+        lore:
+          - '&7&oTöbb kisállat-helyre van szüksége'
+          - '&cEz a slot zárolva van'
+      slot-unlocked:
+        material: LIME_STAINED_GLASS_PANE
+        name: '&2&l[!] &aFeloldott Slot'
+        lore:
+          - '&7&oEgy új slot a Háziálltodnak!'
+          - '&a&oEz a slot fel van oldva.'
+      upgrades:
+        material: EXPERIENCE_BOTTLE
+        name: '&2&l[!] &a&lHáziállat &2&lFejlesztések'
+        lore:
+          - '&7&oEngedje szabadjára a bennünk rejlő potenciált!'
+          - '&a&oNövelje kedvence képességeit!'
+          - ''
+          - '&eKattints a fejlesztések megtekintéséhez!'
+      fusion:
+        material: BEACON
+        name: '&3&l[!] &b&lHáziállat &3&lFúzió'
+        lore:
+          - '&7&oHasználja ki a fúzió erejét!'
+          - '&b&oHasználd a háziállatodat magsabb sziten!'
+          - ''
+          - '&eKattints a fúzió opciók megtekintéséhez!'
+      bin:
+        material: HONEYCOMB
+        name: '&6&l[!] &e&lHáziállat &6&lKuka'
+        lore:
+          - '&7&oBúcsúzzon el társaitól.'
+          - '&e&oMegszabadulni a nem kívánt háziállatoktól édességért!'
+          - ''
+          - '&eKattintson a háziállatok tárolójának megnyitásához!'
+      current-page:
+        slot: 22
+        material: CLOCK
+        name: '&e&lInformation'
+        lore:
+          - '&7Tekintse meg a háziállatok maximális számát'
+          - '&7felszerelve lehet '
+          - ''
+          - ' &6┣ &eFelszerelve: &f{equipped} &8/ &f{equipped-max} '
+          - ''
+          - '&e&lNÖVELÉS'
+          - '&6További slotokat vásárolhatsz a'
+  - '&6boltunkban: store.servername.com'
+  Main-Menu:Virtual:
+    size: 54
+    name: '&8&nHáziállatok'
+    display-slots:
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+    custom-items:
+      '1':
+        material: LIGHT_GRAY_STAINED_GLASS_PANE
+        name: '&7'
+        slot: 0-53
+      '2':
+        material: BLACK_STAINED_GLASS_PANE
+        name: '&7'
+        slot: 0-8
+      '3':
+        material: BLACK_STAINED_GLASS_PANE
+        name: '&7'
+        slot: 45-53
+    sort-settings:
+      enabled: true
+      slot: 53
+    upgrades:
+      enabled: true
+      slot: 45
+    fusion:
+      enabled: true
+      slot: 46
+    bin:
+      enabled: true
+      slot: 47
+    delete:
+      enabled: true
+      slot: 52
+    delete-bulk:
+      enabled: true
+      slot: 51
+    items:
+      delete-select-pet:
+        material: RED_DYE
+        glow: true
+      delete-bulk:
+        material: REDSTONE
+        name: '&c&lTömeges &4&lTörlés'
+        lore:
+          - '&7&oHáziállatok végleges törlése ritkaság szerint.'
+          - ''
+          - '&6&oKattints a törlő menü megnyitásához.'
+      delete-confirm:
+        sound: BLAZE_HIT:1:5
+        material: RED_DYE
+        name: '&4&lMegerősítés &c&lTörlés'
+        lore:
+          - '&7&oHáziállatok végleges törlése.'
+          - '&7&oVálassz ki háziállatokat és erősítsd meg'
+          - ''
+          - '&6&oKattints a kijelölt háziállatok törléséhez.'
+    delete:
+        sound: 'ANVIL_LAND:1:1'
+        material: GLOWSTONE_DUST
+        name: '&e&lHáziállatok &6&lTörlése'
+        lore:
+          - '&7&oHáziállatok végleges törlése.'
+          - ''
+          - '&6&oKattints a törlés módba lépéshez.'
+    upgrades:
+      material: EXPERIENCE_BOTTLE
+      name: '&2&l[!] &a&lHáziállat &2&lFejlesztések'
+      lore:
+        - '&7&oSzabadítsd fel a bennük rejlő potenciált!'
+        - '&a&oFejleszd a háziállatod képességeit!'
+        - ''
+        - '&eKattints a fejlesztések megtekintéséhez!'
+    fusion:
+      material: BEACON
+      name: '&3&l[!] &b&lHáziállat &3&lFúzió'
+      lore:
+        - '&7&oHasználd ki a fúzió erejét!'
+        - '&b&oEgyesítsd a háziállatokat magasabb szintért!'
+        - ''
+        - '&eKattints a fúzió lehetőségeihez!'
+    bin:
+      material: HONEYCOMB
+      name: '&6&l[!] &e&lHáziállat &6&lKuka'
+      lore:
+        - '&7&oBúcsúzz el a társaidtól.'
+        - '&e&oNem kívánt háziállatok cukorkára váltása!'
+        - ''
+        - '&eKattints a kuka megnyitásához!'
+    sort-level:
+      sound: BLAZE_HIT:1:5
+      material: REDSTONE
+      name: '&4&l[!] &c&lRendezési &4&lMód'
+      lore:
+        - '&7&oÁllítsd be, hogyan legyenek rendezve a háziállataid.'
+        - ''
+        - '&4&lJelenlegi mód:'
+        - '&2➥ &aSzint szerint'
+        - '&4➥ &cNév szerint'
+        - '&4➥ &cRitkaság szerint'
+        - '&4➥ &cUtoljára használt szerint'
+        - ''
+        - '&e&oKattints a rendezési mód váltásához.'
+    sort-name:
+      sound: BLAZE_HIT:1:5
+      material: REDSTONE
+      name: '&4&l[!] &c&lRendezési &4&lMód'
+      lore:
+        - '&7&oÁllítsd be, hogyan legyenek rendezve a háziállataid.'
+        - ''
+        - '&4&lJelenlegi mód:'
+        - '&4➥ &cSzint szerint'
+        - '&2➥ &aNév szerint'
+        - '&4➥ &cRitkaság szerint'
+        - '&4➥ &cUtoljára használt szerint'
+        - ''
+        - '&e&oKattints a rendezési mód váltásához.'
+    sort-tier:
+      sound: BLAZE_HIT:1:5
+      material: REDSTONE
+      name: '&4&l[!] &c&lRendezési &4&lMód'
+      lore:
+        - '&7&oÁllítsd be, hogyan legyenek rendezve a háziállataid.'
+        - ''
+        - '&4&lJelenlegi mód:'
+        - '&4➥ &cSzint szerint'
+        - '&4➥ &cNév szerint'
+        - '&2➥ &aRitkaság szerint'
+        - '&4➥ &cUtoljára használt szerint'
+        - ''
+        - '&e&oKattints a rendezési mód váltásához.'
+    sort-usage:
+      sound: BLAZE_HIT:1:5
+      material: REDSTONE
+      name: '&4&l[!] &c&lRendezési &4&lMód'
+      lore:
+        - '&7&oÁllítsd be, hogyan legyenek rendezve a háziállataid.'
+        - ''
+        - '&4&lJelenlegi mód:'
+        - '&4➥ &cSzint szerint'
+        - '&4➥ &cNév szerint'
+        - '&4➥ &cRitkaság szerint'
+        - '&2➥ &aUtoljára használt szerint'
+        - ''
+        - '&e&oKattints a rendezési mód váltásához.'
+    same-type:
+      material: BARRIER
+      name: '&4&l[!] &cAzonos típus'
+      lore:
+        - ''
+        - '&7&oNem szerelhetsz fel azonos típusú háziállatokat'
+    no-slots:
+      material: BARRIER
+      name: '&4&l[!] &cNincs háziállat slot'
+      lore:
+        - ''
+        - '&7&oTöbb slotra van szükséged ehhez a háziállathoz. &7({current}/{max})'
+    on-cooldown:
+      material: BARRIER
+      name: '&4&l[!] &cÚjratöltés alatt'
+      lore:
+        - ''
+        - '&7&oEz a háziállat még &f{time} ideig újratöltés alatt van'
+    max-pets:
+      material: BARRIER
+      name: '&4&l[!] &cMaximális háziállat'
+      lore:
+        - ''
+        - '&7&oElérted a felszerelhető háziállatok maximális számát'
+    slot-locked:
+      material: BARRIER
+      name: '&4&l[!] &cZárolt slot'
+      lore:
+        - '&7&oTöbb slotra van szükséged'
+        - '&cEz a slot zárolva van'
+    slot-unlocked:
+      material: LIME_STAINED_GLASS_PANE
+      name: '&2&l[!] &aFeloldott slot'
+      lore:
+        - '&7&oEgy új slot várja a háziállatod!'
+        - '&a&oEz a slot fel van oldva.'
+    next-page:
+      slot: 50
+      sound: LEVEL_UP:1:2
+      material: TIPPED_ARROW
+      flags:
+        HIDE_ATTRIBUTES: true
+        HIDE_POTION_EFFECTS: true
+      potion:
+        type: LUCK
+        extended: false
+      upgraded: false
+      name: '&a&lKövetkező oldal &2&l-->'
+      lore:
+        - '&7&oUgrás a következő oldalra.'
+        - '&a&oKattints a továbblépéshez.'
+    last-page:
+      slot: 48
+      sound: LEVEL_UP:1:2
+      material: TIPPED_ARROW
+      flags:
+        HIDE_ATTRIBUTES: true
+        HIDE_POTION_EFFECTS: true
+      potion:
+        type: INSTANT_HEAL
+        extended: false
+        upgraded: true
+      name: '&4&l<-- &c&lElőző oldal'
+      lore:
+        - '&7&oVissza az előző oldalra.'
+        - '&c&oKattints a visszalépéshez.'
+    current-page:
+      slot: 49
+      material: CLOCK
+      name: '&e&lInformáció &6[Oldal #{page}&e/&6#{max}]'
+      lore:
+        - '&7Nézd meg a maximális háziállatszámot'
+        - '&7amit a tárolódban tarthatsz'
+        - ''
+        - ' &6┣ &eFelszerelve: &f{equipped} &8/ &f{equipped-max} '
+        - ' &6┣ &eTároló: &f{storage} &8/ &f{storage-max} '
+        - ''
+        - '&e&lNÖVELÉS'
+        - '&6További tárolóhelyet vagy slotot vásárolhatsz a'
+        - '&6boltunkban: store.servername.com'
+    no-page:
+      material: BARRIER
+      name: '&4&l[!] &cNincs oldal'
+      lore:
+        - ''
+        - '&7&oNem található oldal'
+
+  size: 27
+  name: '&8&nTömeges törlés'
+  custom-items:
+    '1':
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&7'
+      slot: 0-26
+  tiers:
+    "Common":
+      slot: 11
+      material: DIAMOND
+      name: '&7&lÁtlagos kedvencek'
+      lore:
+        - '&7Törli az összes Átlagos ritkaságú kedvencet'
+        - ' &f┣ &7Mennyiség: &f{amount}'
+        - ''
+        - '&4&lFigyelem! &cEz véglegesen törli az összes ilyen szintű kedvencet'
+    "Rare":
+      slot: 13
+      material: LIGHT_BLUE_DYE
+      name: '&9&lRitka kedvencek'
+      lore:
+        - '&7Törli az összes Ritka ritkaságú kedvencet'
+        - ' &f┣ &7Mennyiség: &f{amount}'
+        - ''
+        - '&4&lFigyelem! &cEz véglegesen törli az összes ilyen szintű kedvencet'
+    "Epic":
+      slot: 15
+      material: PURPLE_DYE
+      name: '&d&lEpikus kedvencek'
+      lore:
+        - '&7Törli az összes Epikus ritkaságú kedvencet'
+        - ' &f┣ &7Mennyiség: &f{amount}'
+        - ''
+        - '&4&lFigyelem! &cEz véglegesen törli az összes ilyen szintű kedvencet'
+
+
+Upgrades-Menu:
+  size: 27
+  name: '&8&nKedvenc Fejlesztések'
+  custom-items:
+    '1':
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&7'
+      slot: 0-26
+Fusion-Menu:Inventory:
+  size: 36
+  name: '&8&nKedvenc Fúzió'
+  pet-1-slot: 11
+  pet-2-slot: 15
+  custom-items:
+    '1':
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&7'
+      slot: 0-35
+  items:
+    current-page:
+      slot: 49
+      material: CLOCK
+      name: '&e&lInformáció'
+      lore:
+        - '&7Nézd meg a maximális felszerelhető kedvencek számát'
+        - '&7amit egyszerre használhatsz'
+        - ''
+        - ' &6┣ &eFelszerelve: &f{equipped} &8/ &f{equipped-max} '
+        - ''
+        - '&e&lNÖVELÉS'
+        - '&6További helyeket vásárolhatsz a'
+        - '&6boltunkban: store.servername.com'
+    no-pet:
+      slot: 35
+      material: BARRIER
+      name: '&4&l[!] &c&lNincs kiválasztott kedvenc'
+      lore:
+        - '&7&oVálassz ki 2 azonos szintű kedvencet a fúzióhoz!'
+        - ''
+    confirm-fusion:
+      slot: 30
+      sound: LEVEL_UP:1:2
+      material: COMPASS
+      name: '&2&l[!] &a&lMegerősítés &2&lFúzió'
+      lore:
+        - '&7&oKattints a megerősítéshez és a kiválasztott kedvencek összeolvasztásához!'
+        - ''
+        - '&eKattints a művelet befejezéséhez!'
+    quick-fusion:
+      slot: 32
+      sound: LEVEL_UP:1:2
+      material: BEACON
+      name: '&2&l[!] &a&lGyors &2&lFúzió'
+      lore:
+        - '&7&oKattints a megerősítéshez és az összes alkalmas kedvenc összeolvasztásához!'
+        - ''
+        - '&eKattints a művelet befejezéséhez!'
+    display-two-selected:
+      slot: 13
+      sound: LEVEL_UP:1:2
+      material: END_PORTAL_FRAME
+      name: '&2&l[!] &a&lKedvenc &2Fúzió'
+      lore:
+        - '&7&oKét kedvencet választottál ki,'
+        - '&7&okattints a megerősítéshez a fúzióhoz'
+        - ''
+        - '&eKattints a művelet befejezéséhez!'
+    display-not-selected:
+      slot: 13
+      sound: LEVEL_UP:1:2
+      material: BEACON
+      name: '&2&l[!] &a&lKedvenc &2Fúzió'
+      lore:
+        - '&7&oVálassz ki két azonos szintű kedvencet, hogy magasabb szintűvé olvaszd őket!'
+        - ''
+        - '&eKattints a művelet befejezéséhez!'
+Fusion-Menu:Virtual:
+  size: 54
+  name: '&8&nKedvenc Fúzió'
+  pet-1-slot: 2
+  pet-2-slot: 6
+  custom-items:
+    '1':
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: '&7'
+      slot: 0-53
+    '2':
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&7'
+      slot: 0-8
+    '3':
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&7'
+      slot: 45-53
+  items:
+    current-page:
+      slot: 49
+      material: CLOCK
+      name: '&e&lInformáció &6[Oldal #{page}&e/&6#{max}]'
+      lore:
+        - '&7Nézd meg a maximális kedvencszámot'
+        - '&7amit a tárolódban tarthatsz'
+        - ''
+        - ' &6┣ &eFelszerelve: &f{equipped} &8/ &f{equipped-max} '
+        - ' &6┣ &eTároló: &f{storage} &8/ &f{storage-max} '
+        - ''
+        - '&e&lNÖVELÉS'
+        - '&6További tárolóhelyet vagy slotot vásárolhatsz a'
+        - '&6boltunkban: store.servername.com'
+no-page:
+  material: BARRIER
+  name: '&4&l[!] &cNincs oldal'
+  lore:
+    - ''
+    - '&7&oNem található oldal'
+next-page:
+  slot: 50
+  sound: LEVEL_UP:1:2
+  material: TIPPED_ARROW
+  flags:
+    HIDE_ATTRIBUTES: true
+    HIDE_POTION_EFFECTS: true
+  potion:
+    type: LUCK
+    extended: false
+  upgraded: false
+  name: '&a&lKövetkező oldal &2&l-->'
+  lore:
+    - '&7&oUgrás a következő oldalra.'
+    - '&a&oKattints a továbblépéshez.'
+last-page:
+  slot: 48
+  sound: LEVEL_UP:1:2
+  material: TIPPED_ARROW
+  flags:
+    HIDE_ATTRIBUTES: true
+    HIDE_POTION_EFFECTS: true
+  potion:
+    type: INSTANT_HEAL
+    extended: false
+    upgraded: true
+  name: '&4&l<-- &c&lElőző oldal'
+  lore:
+    - '&7&oVissza az előző oldalra.'
+    - '&c&oKattints a visszalépéshez.'
+no-pet:
+  slot: 46
+  material: BARRIER
+  name: '&4&l[!] &c&lNincs kiválasztott kedvenc'
+  lore:
+    - '&7&oVálassz ki 2 azonos szintű kedvencet a fúzióhoz!'
+    - ''
+confirm-fusion:
+  slot: 46
+  sound: LEVEL_UP:1:2
+  material: COMPASS
+  name: '&2&l[!] &a&lMegerősítés &2&lFúzió'
+  lore:
+    - '&7&oKattints a megerősítéshez és a kiválasztott kedvencek összeolvasztásához!'
+    - ''
+    - '&eKattints a művelet befejezéséhez!'
+quick-fusion:
+  slot: 52
+  sound: LEVEL_UP:1:2
+  material: BEACON
+  name: '&2&l[!] &a&lGyors &2&lFúzió'
+  lore:
+    - '&7&oKattints a megerősítéshez és minden alkalmas kedvenc összeolvasztásához!'
+    - ''
+    - '&eKattints a művelet befejezéséhez!'
+display-two-selected:
+  slot: 4
+  sound: LEVEL_UP:1:2
+  material: END_PORTAL_FRAME
+  name: '&2&l[!] &a&lKedvenc &2Fúzió'
+  lore:
+    - '&7&oKét kedvencet választottál ki,'
+    - '&7&okattints a megerősítéshez a fúzió befejezéséhez'
+    - ''
+    - '&eKattints a művelet befejezéséhez!'
+display-not-selected:
+  slot: 4
+  sound: LEVEL_UP:1:2
+  material: BEACON
+  name: '&2&l[!] &a&lKedvenc &2Fúzió'
+  lore:
+    - '&7&oVálassz ki két azonos szintű kedvencet, hogy magasabb szintűvé olvaszd őket!'
+    - ''
+    - '&eKattints a művelet befejezéséhez!'

@@ -1,0 +1,192 @@
+#
+#
+# This is the messsages file.
+# You can change any messages that are in this file
+#
+# If you want to reset a message back to the default,
+# delete the entire line the message is on and restart the server.
+# 	
+# 	
+
+prefix: ''
+alreadyin: '&cMár benne vagy a parkourban!'
+start:
+  score: '&aElkezdted a parkourt! &7Próbáld meg elérni a rekordodat, ami &r{SCORE}&7!'
+  first: '&aElkezdted a parkourt!'
+  no-area-player: '&cNincs pálya vagy játékos neve ''{INPUT}''!'
+  unknown-player: '&cNincs ilyen játékos!'
+  unknown-area: '&cNincs ilyen pálya!'
+  started-other: '&aElkezdted a parkourt {PLY}!'
+  started-other-area: '&aElkezdted a parkourt {PLY} a pályán &l&f{AREA}&r&a!'
+noperm: '&cNincs jogod ennek a parancsra!'
+score: '&7Pont &r&l{SCORE}'
+beatrecord: '&aGratulálok!&7 Elérted a rekordodat, ami &f{SCORE}&7!'
+beatrecord-ingame: '&aGratulálok!&7 Elérted a rekordodat, ami &f{SCORE}&7! Folytatd a játékot!'
+disabledworld: '&cNincs jogod a parkourból ebben a világban!'
+block:
+  potion: '&cNope!'
+  place: '&cNope!'
+  break: '&cNope!'
+numberformatexception: '&cEz nem egy érvényes szám!'
+areafull: '&cNem tudtam elkezdeni a parkourt, mert a pálya tele van! &7Próbáld újra később.'
+must-be-ingame: '&cEhhez be kell lépned a játékba!'
+not-in-game: '&cEhhez a paranccsól konzolról kell használni!'
+couldnt-find-player: '&cNincs ilyen játékos!'
+list:
+  header: '&9Játékosok a parkourban:'
+  format: '&6{NAME} &7- &e{SCORE} ugrás'
+  none: '&7Nincs'
+nobodys-played-yet: '&cNincs senki a parkourban!'
+first-position: '&eElső pozició beállítva!'
+second-position: '&eMásodik pozició beállítva!'
+setup-done: '&aMost már elkezdeni a parkourt! &2/ajParkour start&a'
+reload:
+  usage: '&cHasználat: /{CMD} reload <file>&7 Fájlok: {POSS}'
+fallpos:
+  set: '&aLehullási pozició beállítva!'
+  removed: '&aLehullási pozició eltávolítva!'
+top:
+  header: '&9Top pontok:'
+  header-area: '&9Top pontok a {AREA} pályán:'
+  format: '&a{#}. &6{NAME} &e{SCORE} ugrás'
+fall:
+  normal: '&cLe estél! &7A pontod &r{SCORE}'
+  force:
+    base: '&cA parkour játékod véget ért, mert '
+    reasons:
+      teleport: teleportáltál
+      afk: AFK lettél.
+errors:
+  blocknotair:
+    base: '&c&lHiba történt:&r&c A blokk nem levegő!'
+    player: '&6Tudj egy adminnak, és próbáld újra később.'
+    admin: '&6Győződj meg róla, hogy a parkour területen csak levegő van, és hogy a plugin helyesen van beállítva a /{CMD} setup paranccsal.'
+  notsetup:
+    base: '&cajParkour még nincs beállítva.'
+    player: '&6Kérdezd meg egy adminisztrátort, hogy beállítsa!'
+    admin: '&6A beállításához a /{CMD} setup paranccsal.'
+  too-many-players: '&cMost játékos van a parkourban. Próbáld újra később.'
+migrate:
+  more-args: '&cKérlek adj meg egy forrást, amelyről át kell másolni!'
+  success: '&aÁt lett másolva {COUNT} pont!'
+  error: '&cValami hiba történt. Valószínűleg több információ van a konzolban.'
+placeholders:
+  stats:
+    no-data: '---'
+    time-format: '{m}m {s}s'
+  current:
+    no-data: '0'
+commands:
+  help:
+    header: '&aajParkour készítette &2ajgeiss0702&a!'
+    start: '&6 /{CMD} start &7- &9Parkour elkezdése!'
+    startarea: '&6 /{CMD} start <area> &7- &9Parkour elkezdése egy adott területen.'
+    startothers: '&6 /{CMD} start <player> [area] &7- &9Parkour elkezdése egy másik játékosnak egy adott területen.'
+    top: '&6 /{CMD} top &7- &9Lásd a top 10 játékosokat!'
+    list: '&6 /{CMD} list &7- &9Lásd mindenkit, aki a parkourban játszik, és a jelenlegi pontjait.'
+    setup: '&6 /{CMD} setup &7- &9A parancsok a plugin beállításához. &7(szükséges jog: ajparkour.setup)'
+    portals: '&6 /{CMD} portals &7- &9A parancsok a portálok beállításához.'
+    areas: '&6 /{CMD} areas &7- &9Lásd minden területet, amely betöltött.'
+  setup:
+    header: '&aajParkour&2 beállítási parancsok'
+    create: '&6 /{CMD} setup create &7- &9Terület létrehozása'
+    pos1: '&6 /{CMD} setup pos1 &7- &9Első pozició beállítása'
+    pos2: '&6 /{CMD} setup pos2 &7- &9Második pozició beállítása'
+    we: '&6 /{CMD} setup we &7- &9Első és második pozició beállítása WorldEdit-tel'
+    fallpos: '&6 /{CMD} setup fallpos &7- &9Lehullási pozició beállítása'
+    edit: '&6 /{CMD} edit &7- &9Betölti a meglévő területet a szerkesztési sorrendbe.'
+    info: '&6 /{CMD} setup info &7- &9Lásd, hogy melyik poziciókat állítottad be eddig!'
+    diff: '&6 /{CMD} setup difficulty &7- &9A terület nehézségének beállítása'
+    max: '&6 /{CMD} setup max &7- &9A területen engedélyezett játékosok maximális számának beállítása'
+    save: '&6 /{CMD} setup save &7- &9A terület mentése és engedélyezése. (Ezt utoljára kell tennünk)'
+  portals:
+    header: '&aajParkour&2 portál parancsok'
+    list: '&6 /{CMD} portals list &7- &9Lásd minden portált.'
+    create: '&6 /{CMD} portals create &7- &9Portál létrehozása.'
+    remove: '&6 /{CMD} portals remove &7- &9Portál eltávolítása.'
+  listareas:
+    header: '&9Betöltött parkour területek:'
+    format: '&7 - &a{NAME} &7Nehézség: &9{DIFFICULTY}'
+    none: '&7Nincs betöltött terület!'
+  not-on-whitelist: '&cEzt a parancsot nem használhatod, ha a parkourban vagy!'
+not-from-console: '&cEzt a parancsot nem használhatod a konzolról!'
+setup:
+  no-name: '&cA területnek kell egy neve!'
+  invalid-name: '&cEzt a területet nem nevezheted el így.'
+  edit:
+    no-name: '&cKérlek adj meg egy terület nevét a szerkesztéshez!'
+    loaded: '&aTerület betöltve a szerkesztéshez! &2/ajParkour setup&a'
+    no-area: '&cNincs ilyen terület!'
+  need-to-create: '&aElőbb létre kell hoznod egy területet, hogy szerkeszthesd!'
+  we:
+    not-installed: '&cWorldEdit telepítve kell lennie a parancs használatához!&7
+      Próbáld a beépített pos1 és pos2 beállítási parancsokat.'
+    incomplete-selection: '&cElőbb be kell választanod a területet!'
+  created: '&aTerület létrehozva és hozzáadva a szerkesztési sorrendhez. &2/ajParkour setup&a
+    vagy lásd a plugin oldalát a beállítás lépéseiről!'
+  already-creating: '&cEgy terület jelenleg beállítva. &aKérlek vagy mented ezt a területet, vagy használd újra a parancsot.'
+  info:
+    header: '&6Színek: &aBeállítva &7Nem beállítva (opcionális) &cNem beállítva (szükséges)'
+  set:
+    pos1: '&aElső pozició beállítva!'
+    pos2: '&aMásodik pozició beállítva!'
+    fallpos: '&aLehullási pozició beállítva!'
+    we: '&aPoziciók beállítva!'
+    diff: '&aNehézség beállítva!'
+    max: '&aJátékosok száma beállítva!'
+  max:
+    need-args: '&cKérlek adj meg egy számot!'
+  diff:
+    not-valid: '&cÉrvénytelen nehézség! &7Érvényes nehézségek: &feasy&7, &fmedium&7, &fhard&7, &fexpert&7, és &fbalanced&7.'
+    need-args: |-
+      &cKérlek adj meg egy nehézséget! &7Érvényes nehézségek: &feasy&7, &fmedium&7, &fhard&7, &fexpert&7, és &fbalanced&7.
+      &aBalanced nehézség a játékos pontjai növelésével a parkour nehézségét növeli.
+  save:
+    not-done: '&cNincs beállítva a szükséges beállítás! &7Lásd &f/{CMD} setup info&7, hogy mit kell még beállítanod.'
+    success: '&aTerület {NAME} mentve és betöltve!'
+  area:
+    too-small: |-
+      &cA területed, amit most létrehoztál, nem elégíti ki a minimális ajánlott méretet 20x20x20!
+      &7Folytathatod a terület létrehozását, de tudod, hogy előfordulhat, hogy a játékosok összetűrődnek, és a parkour kimenekül a területeden!
+      &7A területed mérete: {l}x{w}x{h} (XxZxY)
+portals:
+  list:
+    header: '&2Parkour portálok'
+    format:
+      area: '&2{NAME} &7- &a{COORDS} &7- &a{AREA}'
+      no-area: '&2{NAME} &7- &a{COORDS}'
+  create:
+    help: '&cUsage: /{CMD} portals create <name> [area]'
+    success: '&aCreated a portal named ''{NAME}'' at your current location! &7You
+      might have to restart the server for the portal to start working.'
+  remove:
+    help: '&cKérlek adj meg a portál nevét, amit el szeretnél távolítani!'
+    cannot-find: '&cNincs ilyen portál! &7Győződj meg róla, hogy helyesen írtad be a nevét, és hogy ugyanazt a betűtípust használtad.'
+    success: '&aPortál eltávolítva! &7A portál neve: {NAME}'
+    no-portals: '&cNincs portál beállítva! &7Előbb létre kell hoznod egy portált.'
+gui:
+  selector:
+    title: '&rVéletlenszerű blokkok'
+    items:
+      random:
+        title: '&rVéletlenszerű blokkok'
+        lore: '&7Véletlenszerűen kiválaszt egy blokkot.'
+      selected:
+        lore: '&aJelenleg kiválasztva'
+      nextpage:
+        name: '&a&lKövetkező oldal'
+      prevpage:
+        name: '&a&lElőző oldal'
+items:
+  blockselector:
+    name: '&aBlokk kiválasztó'
+reset:
+  usage: '&cHasználat: /{CMD} reset <játékos>'
+  success: '&aA játékos pontját 0-ra állítva!'
+blockselector:
+  openedfor: '&aA blokk kiválasztó megnyitva {JÁTÉKOS}'
+areas:
+  remove:
+    help: '&cKérlek adj meg a terület nevét, amit el szeretnél távolítani!'
+    cannot-find: '&cNincs ilyen terület! &7Győződj meg róla, hogy helyesen írtad be a nevét, és hogy ugyanazt a betűtípust használtad.'
+    success: '&aA terület eltávolítva! &7A terület neve: {NAME}'

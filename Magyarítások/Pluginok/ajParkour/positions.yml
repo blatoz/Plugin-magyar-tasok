@@ -1,0 +1,13 @@
+#  This is where the plugin stores all the areas and portals.
+#  Be careful when editing this file, it could cause some areas or portals to fail to load!
+
+areas:
+  Parkourt:
+    difficulty: EASY
+    max: 2147483647
+    pos1: world,-37,125,54,49.67554,50.400005
+    pos2: world,40,112,-19,28.975487,28.350044
+portals:
+  asd:
+    area: Parkourt
+    loc: world,-6,99,27,60.025883,90.0
