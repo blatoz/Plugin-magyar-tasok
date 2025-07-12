@@ -1,0 +1,168 @@
+# NOTE: Remember to check each update for language file changes or you may receive 'null' messages in chat.
+
+could-not-find-user: '&7Nem található a felhasználó &e%player%'
+no-permission: '&7Nincs jogosultságod ehhez a parancsra.'
+inventory-full: '&cAz inventoryd tele van.'
+disallowed-permission: '&7Nincs jogosultságod a Battlepass használatához.' # Ez használatos, ha egy felhasználónak adod a battlepass.block-ot, hogy megakadályozzuk a battlepass használatát.
+collectable-rewards-notification: '&e&lHEY! &eVan követelhető jutalmad.
+  Check them out in /bp open rewards.'
+
+daily-quest-reset: '&eNéhány napilépés vissza lett állítva.'
+
+week-status-locked: '&cZárolva'
+week-status-unlocked: '&aFeloldva'
+
+season-finished-message: '&aBefejezve' # Ez a %week% jelenik meg, ha a szezon befejeződött. Távolítsd el ezt a sort, hogy a minimum hét jelenik meg.
+
+progress-bar:
+  complete-color: '&a'
+  incomplete-color: '&c'
+  symbol: '|'
+
+boosters:
+  points: Pontok
+  progress: Lépések
+  rewards: Jutalmak
+  serverStarted: '&7&l+&a&l%percent%% &6&l%type% &r&eszerverek boostert indított &6&l%time%&7.
+    &eEzzel érinti &6&l%affects%'
+  playerStarted: '&7&l+&a&l%percent%% &6&l%type% &r&ebooster indítva &6&l%time%&7.
+    &eEzzel érinti &6&l%affects%'
+  serverEnded: '&7&l+&a&l%percent%% &4&l%type% &r&cszerverek boostert véget ért. &cEzzel érinti
+    &6&l%affects%'
+  playerEnded: '&7&l+&a&l%percent%% &4&l%type% &r&cbooster véget ért. &cEzzel érinti
+    &6&l%affects%'
+  menu: '&6✰ &2&l+%booster%% &a%type% booster'
+  command:
+    booster: '&6✰ &2&l+%booster%% &a%type% booster, amely &2&l%affects% &7(&c%time%&7)'
+    server: '&7» &2&lSzerver boosterek'
+    player: '&7» &2&lJátékos boosterek'
+  affects:
+    join: '&r&f, '
+    all: minden
+    daily: napilépések
+    week: hét
+    n-week: hét %num%
+    tier: tier %tier%
+
+bpa:
+  command:
+  - ''
+  - '&bBattlePass Admin segítség:'
+  - /bpa - Ez az oldal.
+  - /bpa reload - Újraindítja az összes újraindítható fájlt.
+  - /bpa editor - Megnyitja a beépített quest szerkesztőt.
+  - /bpa set pass <player/online/all> <pass type> - Beállítja a játékos/játékosok pass típusát.
+  - /bpa set points <player> <points> - Beállítja a játékos pontjait.
+  - /bpa give points <player> <points> - Ad pontokat egy játékosnak.
+  - /bpa delete user <player> - Törli a játékos összes adatát.
+  - /bpa quest ids <week> - Listázza a hét questek ID-jait és nevüket.
+  - /bpa daily quest ids - Listázza a napilépések ID-jait és nevüket.
+  - /bpa reset quest <player> <week> <id> - Visszaállítja a játékos egy adott questjét.
+  - /bpa progress quest <player> <week> <quest id> <amount> - Előrehaladtatja a játékos egy adott
+    questjét.
+  - /bpa progress daily quest <player> <quest id> <amount> - Előrehaladtatja a játékos egy adott
+    napilépését.
+  - /bpa refresh daily quests - Frissíti a napilépéseket.
+  - /bpa new season - Visszaállítja a játékosok tierjét, várakozó jutalmakat és pontokat.
+  - /bpa material <block/item> - A jelenleg tartott blokk vagy item konfigurációs nevét adja meg.
+  - /bpa bypass locked quests <player> - Lehetővé teszi a játékosnak, hogy átkösse a hét zárolásokat és
+    elvégezze a questeket.
+  - /bpa boosters add <player/all> <PROGRESS/POINTS/REWARDS> <percent> <hours> <affects>
+    - Hozzáad egy booster-t.
+  - /bpa boosters clear <player/all> - Eltávolítja a boostereket.
+  - /bpa close menu <player> - Bezárja a játékosnak nyitott menüt.
+  internal-balance:
+  - /bpa give balance <player> <amount> - Ad beléptetési pontokat.
+  - /bpa remove balance <player> <amount> - Eltávolít beléptetési pontokat.
+  - /bpa set balance <player> <amount> - Beállít beléptetési pontokat.
+
+help-command: # /bp help
+  - ''
+  - '&eBattlePass &7AdvancedPlugins által készítve.'
+  - '&e/battlepass - Megnyitja a portál menüt.'
+  - '&e/battlepass stats - Nézze meg a BattlePass statisztikáit.'
+  - '&e/battlepass open <portal/daily/quests/rewards> - Közvetlenül megnyitja a menüt.'
+  - ''
+
+stats-command:
+- '&eA téged jellemző BattlePass statisztikák:'
+- '  &8- &ePass típus: &f%pass_type%'
+- '  &8- &eTier: &f%tier%'
+- '  &8- &eÖsszes pont: &f%total_points%'
+# - '  &8- &eBalance: &f%balance%' # Only used if you use internal for excess points in the settings.yml
+
+daily-quest-time-format: # A napilépések lejáratáig eltelt idő formátuma.
+  with-months-weeks: '%dmo %dw %dd %dh %dm %ds'
+  with-weeks-days: '%dw %dd %dh %dm %ds'
+  with-days-hours: '%dd %dh %dm %ds'
+  with-hours-minutes: '%dh %dm %ds'
+  with-minutes-seconds: '%dm %ds'
+  with-seconds: '%ds'
+
+quests:
+  # A base message lesz használva az összes questhez, kivéve ha egy másik message van beállítva.
+  base-message-progressed: '&8[&eKüldetések&8] &7Előrehaladtál a küldetésen &e%quest_name%
+    &8(&e%progress%&7/&8&e%required_progress%&8)'
+  base-message-completed: '&8[&eKüldetések&8] &7Előrehaladtál a küldetésen &e%quest_name%'
+  
+  boss-bar-message-progressed: '&7&e%quest_name% Quest előrehaladt &8(&e%progress%&7/&8&e%required_progress%&8)'
+  boss-bar-message-completed: '&7&e%quest_name% Quest befejezve'
+  
+  # A message set below lesz a base message aláírásának felülírására.
+  # <quest name>-progressed: "<Your  message>"
+  # <quest-name>-completed: "<Your Message>"
+  # Ezek itt csak példák, és tetszés szerint többet is beállíthatsz.
+  askyblock_createisland-progressed: '&eKüldetések >> &7Egyedi ASkyblock előrehaladás üzenet
+    :D. &8(&e%progress%&7/&8%required_progress%&8)'
+  askyblock_createisland-completed: '&eKüldetések >> &7Egyedi ASkyblock befejezés üzenet'
+  
+  steps:
+    completed-info: '&7Már befejezve'
+    base-message-step-completed: '&8[&eKüldetések&8] &7Előrehaladtál a küldetésen &e%quest_name%'
+    boss-bar-message-step-completed: '&7&e%quest_name% Lépés befejezve'
+
+quest-select:
+  cancel: '&cKattints LMB-re a küldetés megszakításához'
+  select: '&aKattints LMB-re a küldetés kiválasztásához'
+  limit: '&cNem választhatsz több küldetést!'
+
+daily-quests:
+  # This section will only be used if the quest is daily. If messages aren't present here but are in the quest section, it will fall back onto that message.
+  # This section is coded so you can remove it entirely and only use the quests messages if you wish.
+  base-message-progressed: '&8[&eKüldetések&8] &7Előrehaladtál a küldetésen &e%quest_name%
+    &8(&e%progress%&7/&8&e%required_progress%&8)'
+  base-message-completed: '&8[&eKüldetések&8] &7Előrehaladtál a küldetésen &e%quest_name%'
+  
+  boss-bar-message-progressed: '&7&e%quest_name% Küldetés előrehaladt &8(&e%progress%&7/&8&e%required_progress%&8)'
+  boss-bar-message-completed: '&7&e%quest_name% Küldetés befejezve'
+  
+  askyblock_createisland-progressed: '&8[&eKüldetések&8] &7ASkyblock napilépések előrehaladtak.
+    &8(&e%progress%&7/&8%required_progress%&8)'
+  askyblock_createisland-completed: '&8[&eKüldetések&8] &7Előrehaladtál a ASkyblock
+    napilépésen!'
+  
+  steps:
+    base-message-step-completed: '&8[&eKüldetések&8] &7Előrehaladtál a napilépésen &e%quest_name%'
+    boss-bar-message-step-completed: '&7&e%quest_name% Lépés befejezve'
+
+
+leaderboard-command:
+  tier-leaderboard:
+  - '&7&m=====&r&7[ &2Tier lista &7]&m====='
+  - '&7>> &b1. &r&a%battlepass_top_tier_name_1% &7- &2%battlepass_top_tier_value_1%'
+  - '&7>> &b2. &r&a%battlepass_top_tier_name_2% &7- &2%battlepass_top_tier_value_2%'
+  - '&7>> &b3. &r&a%battlepass_top_tier_name_3% &7- &2%battlepass_top_tier_value_3%'
+  - '&7>> &b4. &r&a%battlepass_top_tier_name_4% &7- &2%battlepass_top_tier_value_4%'
+  - '&7>> &b5. &r&a%battlepass_top_tier_name_5% &7- &2%battlepass_top_tier_value_5%'
+  - '&7>> ...'
+  - '&7>> &aYour score: &2%battlepass_top_tier_value_me% &7(&2&b%battlepass_top_tier_place_me%&r&7)'
+  quests-leaderboard:
+  - '&7&m=====&r&7[ &2Befejezett küldetések lista &7]&m====='
+  - '&7>> &b1. &r&a%battlepass_top_quests_name_1% &7- &2%battlepass_top_quests_value_1%'
+  - '&7>> &b2. &r&a%battlepass_top_quests_name_2% &7- &2%battlepass_top_quests_value_2%'
+  - '&7>> &b3. &r&a%battlepass_top_quests_name_3% &7- &2%battlepass_top_quests_value_3%'
+  - '&7>> &b4. &r&a%battlepass_top_quests_name_4% &7- &2%battlepass_top_quests_value_4%'
+  - '&7>> &b5. &r&a%battlepass_top_quests_name_5% &7- &2%battlepass_top_quests_value_5%'
+  - '&7>> ...'
+  - '&7>> &aYour score: &2%battlepass_top_quests_value_me% &7(&2&b%battlepass_top_quests_place_me%&r&7)'
+last-config-update: 4.5.7
