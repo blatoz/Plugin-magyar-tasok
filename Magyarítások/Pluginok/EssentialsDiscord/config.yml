@@ -15,8 +15,7 @@
 token: "Bot tokened"
 
 # The ID of your server.
-guild: 1325810002954289152
-
+guild: Szerver ID-ja
 # The Discord invite URL that will be shown when a player when using the /discord command or in other areas.
 discord-url: "Saját discord linked"
 
@@ -80,7 +79,7 @@ console:
   # The channel ID (or webhook URL) to send the console output to.
   # If the channel ID/webhook URL is invalid or set to 'none', the console relay will be disabled.
   # Note: If you use a channel ID, the bot must have the "Manage Webhooks" permission in Discord or else the console relay will not work.
-  channel: 0
+  channel: Saját channel ID
   # The format of the console message. The following placeholders can be used:
   # - {timestamp}: Timestamp in HH:mm:ss format
   # - {level}: The console logging level
@@ -185,7 +184,7 @@ commands:
     # List of user IDs or role names/IDs allowed to use this command (or * to allow anyone to access it).
     allowed-roles:
       - "Admins"
-      - "123456789012345678"
+      - "Saját role ID"
   # The msg command allows for Discord users to message MC players from Discord.
   msg:
     # Set to true if you do not want this command to show up on the Discord command selector.
@@ -202,7 +201,7 @@ commands:
     # and message players who disable messages.
     admin-roles:
       - "Admins"
-      - "123456789012345678"
+      - "Saját role ID"
   # The list command allows Discord users to see a list of players currently online on Minecraft.
   list:
     # Set to true if you do not want this command to show up on the Discord command selector.
@@ -218,7 +217,7 @@ commands:
     # on Discord would be allowed to see vanished players (and therefore expose they are actually online).
     admin-roles:
       - "Admins"
-      - "123456789012345678"
+      - "Saját role ID"
 
 # Whether or not links to attachments in Discord messages should be displayed in chat or not.
 # If this is set to true and a message from Discord only contains an image/file and not any text, nothing will be sent.
@@ -292,7 +291,7 @@ messages:
   # - {prefix}: The prefix of the player sending the message
   # - {suffix}: The suffix of the player sending the message
   # ... PlaceholderAPI placeholders are also supported here too!
-  mc-to-discord-local: "**[Local]** {displayname}: {message}"
+  mc-to-discord-local: "**[Lokális]** {displayname}: {message}"
   # This is the message that is used to relay questions from minecraft chat in Discord.
   # The following placeholders can be used here:
   # - {username}: The username of the player sending the message
@@ -302,7 +301,7 @@ messages:
   # - {prefix}: The prefix of the player sending the message
   # - {suffix}: The suffix of the player sending the message
   # ... PlaceholderAPI placeholders are also supported here too!
-  mc-to-discord-question: "**[Question]** {displayname}: {message}"
+  mc-to-discord-question: "**[Kérdés]** {displayname}: {message}"
   # This is the message that is used to relay minecraft global chat in Discord.
   # The following placeholders can be used here:
   # - {username}: The username of the player sending the message
@@ -312,7 +311,7 @@ messages:
   # - {prefix}: The prefix of the player sending the message
   # - {suffix}: The suffix of the player sending the message
   # ... PlaceholderAPI placeholders are also supported here too!
-  mc-to-discord-shout: "**[Shout]** {displayname}: {message}"
+  mc-to-discord-shout: "**[Kiabálás]** {displayname}: {message}"
   # This is the message sent to Discord when a player is temporarily muted in minecraft.
   # The following placeholders can be used here:
   # - {username}: The username of the player being muted
