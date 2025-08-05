@@ -1,0 +1,92 @@
+# Plugin prefix
+plugin-prefix: '#FF7070&lEladó#CDCDCD&lLádák &8>>'
+# The inventory title of the screen when someone right-clicks a AutoSellChest
+info-screen-title: '&8&lLáda információ'
+# The inventory title of the chest settings menu
+chest-settings-title: '&8&lLáda beállítások'
+# This message shows how many items a single chest has sold
+sold-items-info: <gradient:#FF4A4A>Összesen item eladva:</gradient:#FFDBDB> &a%amount%
+# This will display the current amount of money they player has made using this chest
+income-info: <gradient:#FF4A4A>Összesen profit termelve:</gradient:#FFDBDB> &a%profit%
+# Displays the current profit the player can claim
+claim-able-info: <gradient:#55FF55>Kattintson a nem igényelt nyereségek megtekintéséhez.</gradient:#FFFFFF>
+# Available profit
+available-profit: <gradient:#FFAA00>Kattints hogy begyűjsd</gradient:#FFE7B6> &a%profit%&6&l.
+# The inventory title of the claim-able profits menu
+available-profit-menu-title: '&8&lElérhető profitok'
+# Message send to player when a sellchest has been placed
+sellchest-placed: '&aSikeresen elhelyezett egy #FF7070Eladó#CDCDCDLádát&a, Bal kattints ha szeretnél több információt.'
+# Action bar shown above the players inventory quick-slots which shows the amount of chests the player currently has placed
+placed-sell-chests-action-bar: '&6&lLehelyezett Eladó ládák: &c%amount%&c&4/&c%limit%'
+# Boss bar shown on top of screen which shows the amount of chests the player currently has placed
+placed-sell-chests-boss-bar: '&a&lLehelyezett Eladó ládák:'
+# Action bar message that is shown to players which can place unlimited amount of chests
+placed-sell-chests-action-bar-max: ∞
+# Message send to player when a sellchest is broken
+sellchest-broken: '&cFelvetted a #FF7070Eladó#CDCDCDLádát'
+# Message send to player when the maximum amount of sell chests placed has been reached
+max-sellchests-reached: '&cElérted a limitett &a%maxSellChests% &caz eladóládákból. Többet nem helyezhetsz le'
+# Direct message send to player when items have been sold using a chest
+items-sold-player-log: '&a&lA %chest-name% &a&leladott &6%amount% &a&litem(et) ennyiért: &6%profit%'
+# Message send to console when the configured interval for chest logging is set
+items-sold-console-interval: 'Befejeztem a %count% eladási intervallum(ot) ennyi ládával: %chests%. Betöltött Eladó ládával és eladott %items% itemekkel a %interval% intervallumban.'
+# Message send to console when items are sold using a player's sell chest
+items-sold-console-log: 'Az eladóládá ezzel a idval: ''%id%''. Játékos: %player% Helyszín: %location% eladott %amount% item(et) ennyiért: %profit%'
+# When player tries to use a command, place a chest, ... without permissions
+no-permissions: '&cEhhez nincsenek jogosultságaid'
+# Message that gets logged when a player is given a chest
+sell-chest-given-log: '%player_name% was given %amount% AutoSellChests'
+# Message send to player when they receive a sell chest
+player-sell-chest-given: '&cAdtak neked &7%amount% #FF7070Eladó#CDCDCDLádát'
+# Message sent to player when given a sell chest, but they don't have enough inventory space
+not-enough-inventory-space: '&cNincsen eléh leltár helyed'
+# Option to destroy the sell chest when inside the information screen
+destroy-chest: '#FF7070Eladó#CDCDCDLáda<gradient:#FF4A4A>Felszedése</gradient:#FFDBDB>'
+# The displayname of the block information item inside the info screen
+sell-chest-block-info: <gradient:#FF4A4A>Láda infórmáció:</gradient:#FFDBDB>
+# The owner of the sell chest
+sell-chest-owner: '&eTulajdonosa: #FF7070%player_name%'
+# The location of the sell chest
+sell-chest-location: '&eHely: #FF7070%loc%'
+# The internal id of the sell chest
+sell-chest-id: '&eLáda ID: #FF7070%id%'
+# The current interval upgrade of this chest
+sell-chest-interval: '&eJelenlegi intervallum: #FF7070%interval-name%'
+# The current price multiplier of this chest
+sell-chest-multiplier: '&eJelenlegi szorzó: #FF7070%multiplier-name%'
+# The next interval the chest is selling its contents
+sell-chest-next-sell: '&eKövetkező eladási intervallum: #FF7070%time%'
+# The displayname of the chest settings item in the info screen
+sell-chest-settings: <gradient:#FF4A4A>Ládak beállítások</gradient:#FFDBDB>
+# The displayname of the chest upgrades item in the info screen
+sell-chest-upgrades: <gradient:#FF4A4A>Láda fejlesztések</gradient:#FFDBDB>
+# Toggle sold items logging
+toggle-sold-items-logging: <gradient:#FF4A4A>Eladott tételek naplózásának váltása</gradient:#FFDBDB>
+# The current value for a toggle able action
+current-value: '&eJelenlegi értéke: &a%value%'
+# Change the chest name
+change-chest-name: <gradient:#FF4A4A>Kattintson a láda nevének frissítéséhez</gradient:#FFDBDB>
+# The current name of the AutoSellChest
+current-displayname: '&eJelenlegi: &a%chest-name%'
+# When a sell chest is placed against a regular chest
+cannot-form-double-chest: '&cAz eladó láda nem helyezhető el egy nem eladó ládával szemben.'
+# When a sell chest is placed against someone else's sell chest
+cannot-place-sell-chest-here: '&cSzerintem ide nem tehetsz #FF7070Eladó#CDCDCDLádát'
+# When a sell chest is placed against a different sell chest with different upgrades
+cannot-form-double-chest-mismatch: '&cNem lehet dupla eladási ládát képezni különböző fejlesztésekkel'
+# When a regular chest is placed against a sell chest
+cannot-place-chest-against-sell-chest: '&cEz a láda nem helyezhető eladási ládával szemben'
+# When a player tries to remove someone's else's sell chest and doesn't have permissions
+cannot-remove-sell-chest: '&cNincs meg a szükséges jogosultsága az eladott láda eltávolításához'
+# The message format for locations
+location-format: Világ '%world%', x%pos_x%, y%pos_y%, z%pos_z%
+# Inventory title of the upgrades menu
+chest-upgrade-title: '&8&lFejlesztések'
+# The player does not have enough money to purchase this upgrade
+insufficient-funds-upgrade: '&cYou do not have enough %ecoType% to purchase this upgrade.'
+# Player purchases an interval upgrade
+chest-interval-upgraded: '&aMegvetted a %upgrade-name% &f%upgrade-cost%&a ért, ez a láda mostantól eladja a tartalmát minden &e%interval% ban'
+# Player purchases a multiplier upgrade
+chest-multiplier-upgraded: '&aMegvetted a %upgrade-name% &f%upgrade-cost%&a ért, ez a láda mostantól a tárgyakat megemelt áron fogja eladni &ex%multiplier%'
+# Player does not have the required permission to upgrade to next upgrade
+no-upgrade-permissions: '&cNem rendelkezik a szükséges engedéllyel a frissítés megvásárlásához.'
