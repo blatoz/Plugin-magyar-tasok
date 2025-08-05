@@ -6,7 +6,7 @@
 | GrimAC      | :white_check_mark: |
 | ViaVersion  | :white_check_mark: |
 | LandClaiming | :white_check_mark: |
-| AutoSellChest | Fordítás alatt van |
+| AutoSellChest | :white_check_mark: |
 | RivalCredits | :white_check_mark: |
 | RivalPets | :white_check_mark: |
 | RivalPickaxes | :white_check_mark: |
