@@ -1,0 +1,60 @@
+help:
+- ' '
+- <gradient:#FF8800:#CC0055><b>AxAFKZone</b></gradient> &#FF8855Segítség &7»
+- ' &7- &f/axafkzone reload &7| &#FF8855Plugin újratöltése'
+- ' &7- &f/axafkzone wand &7| &#FF8855Wand lekérése'
+- ' &7- &f/axafkzone create <zóna> &7| &#FF8855Zóna készítése'
+- ' &7- &f/axafkzone delete <zóna> &7| &#FF8855Zóna törlése'
+- ' &7- &f/axafkzone redefine <zóna> &7| &#FF8855A zóna területének újradefiniálása'
+- ' '
+
+reload:
+  success: '&#33FF33A plugin sikeresen újratöltödött!'
+  failed: '&#FF3333Nem sikerült a plugin újratöltése! Valami hibavan a &f%file%&#FF3333 fájlban, nézd meg a konzolt a további információkért és a yaml validátorért!(Ha nem férsz hozzá szólj a Tulajdonostól a Fő managerig)'
+
+time:
+  second: ms
+  minute: p
+  hour: ó
+  day: n
+
+selection-wand:
+  material: GOLDEN_AXE
+  name: '&#CC0055&lKiválasztó wand'
+  lore:
+  - ' '
+  - '&#CC0055Bal kattintás'
+  - ' &7- &fPozició kiválasztása #1'
+  - ' '
+  - '&#CC0055Jobb kattintás'
+  - ' &7- &fPozició kiválasztása #2'
+  - ' '
+
+zone:
+  created: '&#FF8855Létrehoztál egy zónát ezzel a névvel: &#CC0055%name%&#FF8855!'
+  deleted: '&#FF8855Kitörölted a zónát ezzel a névvel: &#CC0055%name%&#FF8855!'
+  not-found: '&#FF8855Nem találtam a zónát ezzel a névvel &#CC0055%name%&#FF8855!'
+  already-exists: '&#FF8855Zóna ezzel a névvel &#CC0055%name% &#FF8855már létezik!'
+  ip-limit: '&#FF8855Nem lehet több fiókod ebben a zónában az IP-címedről..'
+  redefined: '&#FF8855Újradefiniálta a következő zónát &#CC0055%name%&#FF8855!'
+
+selection:
+  pos1: '&#FFBB00Kiválasztva &#CC0055Pozició #1 &7- &#DDDDDD%location%'
+  pos2: '&#FFBB00Kiválasztva &#CC0055Pozició #2 &7- &#DDDDDD%location%'
+  no-selection: '&#CC0055Egy új zóna létrehozásához 2 sarkot kell kiválasztania a /axafkzone wand paranaccsal!'
+  small-selection: '&#CC0055A kiválasztott zóna magassága csak 1, győződjön meg róla, hogy nem csak a talajszintet választotta ki.!'
+
+commands:
+  invalid-value: '&#FF0000Érvénytelen paraméter: &#BB0000%value%'
+  invalid-command: '&#FF0000Érvénytelen parancs vagy alparancs!'
+  missing-argument: '&#FF0000Hiányzó argumentum! Megkell adnod az értéket ennek &#BB0000%value%&#FF0000.'
+  no-permission: '&#FF0000Nincsen jogod a parancs használatához!'
+  out-of-range: '&#FF0000A &#BB0000%number% &#FF0000közötte kell lennie &#BB0000%min% &#FF0000és &#BB0000%max%&#FF0000!'
+  player-only: '&#FF0000Ezt konzolból nem futatható!'
+  invalid-player: '&#FF0000A játékos &#BB0000%player% &#FF0000nem található!'
+  invalid-selector: '&#FF0000Ezt a szelektort nem használhatja ebben a parancsban.!'
+
+update-notifier: '&#FFAA77Van egy frissítés a AxAFKZonera! &#DDDDDD(&#FFFFFFJelenlegi: &#FF0000%current% &#DDDDDD| &#FFFFFFLegújabb: &#00FF00%latest%&#DDDDDD)'
+
+# do not change this
+version: 2
