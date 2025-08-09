@@ -1,0 +1,108 @@
+# Represents the main menu of a sell chest
+sell-chest-menu:
+  # The title of the inventory
+  title: '%translations-info-screen-title%'
+  # The size of the inventory defined in rows
+  # Possible values 1-6
+  gui-rows: 5
+  # The item to fill empty slots with inside the inventory
+  # Set to AIR to disable this
+  fill-item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: ' '
+  # The items inside the inventory
+  items:
+    # The item which displays info about this sell chest
+    info-item:
+      material: ARROW
+      name: '%translations-sell-chest-block-info%'
+      lore:
+      - '%translations-sell-chest-owner%'
+      - '%translations-sell-chest-location%'
+      - '%translations-sell-chest-id%'
+      - '%translations-sell-chest-interval%'
+      - '%translations-sell-chest-multiplier%'
+      - '%translations-sell-chest-next-sell%'
+      slot: 14
+    # The item which opens the upgrade menu when clicked
+    # This item will only be displayed when either the interval/multiplier upgrade feature is enabled
+    upgrade-item:
+      material: BEACON
+      name: '%translations-sell-chest-upgrades%'
+      slot: 32
+    # The item which opens the sell chest settings menu
+    settings-item:
+      material: REDSTONE
+      name: '%translations-sell-chest-settings%'
+      slot: 29
+    destroy-item:
+      material: BARRIER
+      name: '%translations-destroy-chest%'
+      slot: 35
+    # Shows the total amount of profit this chest has made
+    income-item:
+      material: GOLD_INGOT
+      name: '%translations-income-info%'
+      slot: 17
+    # Shows the total amount of items this chest sold
+    sold-item:
+      material: HOPPER
+      name: '%translations-sold-items-info%'
+      slot: 11
+    # The item which is only displayed once the chest sold shop items with a ITEM sell price
+    # So the player can then claim their profit
+    claimable-item:
+      material: DIAMOND
+      name: '%translations-claim-able-info%'
+      enchantment-glint: true
+      slot: 23
+
+# Represents the settings menu of a chest
+settings-menu:
+  # The title of the inventory
+  title: '%translations-chest-settings-title%'
+  # The size of the inventory defined in rows
+  # Possible values 1-6
+  gui-rows: 1
+  # The item to fill empty slots with inside the inventory
+  # Set to AIR to disable this
+  fill-item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: ' '
+  # The items inside the inventory
+  items:
+    logging-item:
+      material: WRITABLE_BOOK
+      name: '%translations-toggle-sold-items-logging%'
+      lore:
+      - '%translations-current-value%'
+      slot: 3
+    rename-item:
+      material: NAME_TAG
+      name: '%translations-change-chest-name%'
+      lore:
+      - '%translations-current-displayname%'
+      slot: 7
+
+# Represents the settings menu of a chest
+upgrade-menu:
+  # The title of the inventory
+  title: '%translations-chest-upgrade-title%'
+  # The size of the inventory defined in rows
+  # Possible values 1-6
+  gui-rows: 3
+  # The item to fill empty slots with inside the inventory
+  # Set to AIR to disable this
+  fill-item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: ' '
+  # The items inside the inventory
+  items:
+    # Item only enabled if interval upgrades are enabled
+    # The actual item is configured inside the upgrade settings in the config.yml
+    interval-upgrade-item:
+      slot: 12
+    # Item only enabled if multiplier upgrades are enabled
+    # The actual item is configured inside the upgrade settings in the config.yml
+    multiplier-upgrade-item:
+      slot: 16

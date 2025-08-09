@@ -1,0 +1,219 @@
+# Do not change this value as it might end up in a plugin that does not work
+config-version: 1.1.0
+
+# This is the interval for when a sell chest should sell its contents
+# For example, you can use '1d 2h 3m 4s' where the interval then would be 1 day, 2 hours, 3 minutes and 4 seconds
+autosell-interval: 10m
+
+# The holograms above the SellChest showing info about the chest
+# This feature requires DecentHolograms
+chest-holograms:
+    enabled: true
+    lines:
+    - '%chest-name%'
+    - 'Következő eladás: %next-interval%'
+
+# When disabled, the option to upgrade the interval per chest will be disabled and the sell interval specified above will be used
+enable-interval-upgrades: true
+
+# The list of upgrades where the first upgrade in this track is always the default upgrade for new chests
+interval-upgrades:
+    lvl1:
+      item: COAL
+      weight: 10
+      price: 0
+      name: '&7&lIntervallum szint &f&lI'
+      lore:
+      - '&aKattintson a fejlesztéshez &e&lszintre &f&lII'
+      - ' '
+      - '&8Fejlesztés információ:'
+      - '&8Eladási intervallum: &f&m5m&r &f2m'
+      - '&8Költség: &f%next-upgrade-cost%'
+      enchanted: true
+      interval: 5m
+    lvl2:
+      item: IRON_INGOT
+      weight: 20
+      price: 15000
+      name: '&7&lIntervallum szint &f&lII'
+      lore:
+      - '&aKattintson a fejlesztéshez &e&lszintre &f&lIII'
+      - ' '
+      - '&8Fejlesztés információ:'
+      - '&8SEladási intervallum: &f&m2m&r &f1m'
+      - '&8Költség: &f%next-upgrade-cost%'
+      enchanted: true
+      interval: 2m
+      permission: ''
+    lvl3:
+      item: GOLD_INGOT
+      weight: 30
+      price: 35000
+      name: '&7&lIntervallum szint &f&lIII'
+      lore:
+      - '&aKattintson a fejlesztéshez &e&lszintre &f&lIV'
+      - ' '
+      - '&8Fejlesztés információ:'
+      - '&8Eladási intervallum: &f&m1m&r &f30s'
+      - '&8Költség: &f%next-upgrade-cost%'
+      enchanted: true
+      interval: 1m
+    lvl4:
+      item: DIAMOND
+      weight: 40
+      price: 60000
+      name: '&7&lIntervallum szint &f&lIV'
+      lore:
+      - '&cMár a max szinten van, nem lehet fejleszteni tovább.'
+      enchanted: true
+      interval: 30s
+
+# When disabled, the option to upgrade the multiplier of the chest is disabled and all chests will use the default prices of items
+enable-multiplier-upgrades: true
+
+# The list of upgrades where the first upgrade in this track is always the default upgrade for new chests
+multiplier-upgrades:
+    lvl1:
+      item: GOLD_NUGGET
+      weight: 10
+      price: 0
+      name: '&7&lSzorzó szint &f&lI'
+      lore:
+      - '&aKattintson a fejlesztéshez &e&lszintre &f&lII'
+      - ' '
+      - '&8Fejlesztés információ:'
+      - '&8Árszorzótényező: &a&m+&f&m15%&r &a+&f25%'
+      - '&8Költség: &f%next-upgrade-cost%'
+      enchanted: true
+      multiplier: '1'
+    lvl2:
+      item: GOLD_INGOT
+      weight: 20
+      price: 45000
+      name: '&7&lSzorzó szint &f&lII'
+      lore:
+      - '&aKattintson a fejlesztéshez &e&lszintre &f&lIII'
+      - ' '
+      - '&8Fejlesztés információ:'
+      - '&8Árszorzótényező: &a&m+&f&m15%&r &a+&f25%'
+      - '&8Költség: &f%next-upgrade-cost%'
+      enchanted: true
+      multiplier: '1.1'
+      permission: ''
+    lvl3:
+      item: GOLDEN_CARROT
+      weight: 30
+      price: 75000
+      name: '&7&lSzorzó szint &f&lIII'
+      lore:
+      - '&aKattintson a fejlesztéshez &e&lszintre &f&lIV'
+      - ' '
+      - '&8Fejlesztés információ:'
+      - '&8Árszorzótényező: &a&m+&f&m15%&r &a+&f25%'
+      - '&8Költség: &f%next-upgrade-cost%'
+      enchanted: true
+      multiplier: '1.15'
+    lvl4:
+      item: GOLDEN_APPLE
+      weight: 40
+      price: 110000
+      name: '&7&lSzorzó szint &f&lIV'
+      lore:
+      - '&cMár a max szinten van, nem lehet fejleszteni tovább.'
+      enchanted: true
+      multiplier: '1.25'
+
+# By default players can actively use 5 sell chests, but this can be overriden using permissions
+# Example: Players with permission 'autosellchests.maxchests.donator' will be able to use 15 sell chests at a time
+# A player that has two or more overrides(permissions), will use the highest value
+max-sellchests:
+    default: 5
+    override:
+      vip: 10
+      donator: 15
+      devs: 20
+
+
+# Whether the owner of the chest needs to be online for the chest to sell its contents
+online-chest-owner: true
+# Note that permissions for selling items to shop will not be checked, NOR item discounts + any sell multipliers when the player is offline
+# Also note that this plugin will not load chunks, meaning if the sell chest is located in a unloaded chunk, the plugin will skip that chest
+
+# Custom crafting recipe for a basic sell chest
+# The items needed for the custom recipe are defined by <symbol>::<material> in the ingredients list
+# Whereas the layout of how the items should be put into the crafting table is basically a grid of 9, as defined in the pattern
+# where each symbol corresponds to the item type defined in the ingredients list
+crafting:
+    enabled: true
+    custom-recipe:
+      ingredients:
+      - 'A::REDSTONE'
+      - 'B::CHEST'
+      - '*::AIR'
+      pattern:
+      - '* A *'
+      - 'A B A'
+      - '* A *'
+# A list of all items which can be used as ingredients are listed here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+# AFK Prevention
+# When enabled, this prevents sell chests to sell whenever the owner is AFK
+afk-prevention: false
+# Note: currently AFK is detected by CMI or Essentials
+
+# The title/item name of a sell chest
+sellchest-name: '&7&lEladó láda'
+
+# The default chest name for displaying in chat, ...
+# The chest name can be changed in chest settings
+# Using '%id%' you can get the sell chest ID
+default-chest-name: '#FF7070Eladó#CDCDCDLáda'
+
+# The lore of a sell chest item
+sellchest-lore:
+- '&cEz a láda eladja tartalmát.'
+- '&cminden: &e%interval%'
+- '&aHelyezze le ezt a ládát, és'
+- '&aKattintson rá a bal egérgombbal, hogy további információkat kapjon.'
+
+# A visual effect shown to the player when they place a sell chest,
+# this is additional to the message that is sent to the player that shows the maximum amount of chests they have placed/can place
+# Available options are: 'NONE', 'BOSS_BAR' and 'ACTION_BAR'
+chest-confirmation-effect: BOSS_BAR
+
+# Additionally you can set the boss bar color
+# Available colors are 'PINK', 'BLUE', 'RED', 'GREEN', 'YELLOW', 'PURPLE' and 'WHITE'
+chest-confirmation-boss-bar-color: GREEN
+
+# The sound effects played when a player places/breaks a SellChest
+# You can visit this page for all available sound effects: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+# To disable a sound effect you can empty out the string like ""
+sound-effects:
+    volume: 1
+    pitch: 1
+    pickup-chest: ENTITY_ENDERMAN_TELEPORT
+    place-chest: ENTITY_SPLASH_POTION_BREAK
+    upgrade-chest: ENTITY_PLAYER_LEVELUP
+
+# Controls settings for when the plugin should log sell intervals to console
+# If no interval has been set and this option is enabled, the plugin will log after each sell chest sells its contents
+interval-logs:
+    enable: true
+    interval: 10m
+
+# Enable or disable messages send to player when their sell chest has sold items
+sold-items-logging-player: true
+# This setting is also configurable per chest in the settings menu,
+# but when this option is disabled, it will override the per chest setting
+
+# The fill item which fills empty spots inside any GUI
+fill-item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: ' '
+
+# Compatibility mode enables support for chests which are created before plugin version v2.4.0
+# Do not enable this option for any other reason, there is a reason this is disabled by default.
+compatibility-mode: false
+
+# Debug mode logs extra messages to console for better debugging
+debug: false
