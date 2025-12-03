@@ -4,7 +4,7 @@ prefix: '&#00ffdd&lAxTrade &7» '
 
 # format: language_COUNTRY
 # after changing this, the server will download the default item names
-language: en_US
+language: hu
 
 # you must define at least 1
 # reloading will add new commands, however a restart is recommended when editing this
