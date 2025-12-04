@@ -1,0 +1,8 @@
+{
+  "embed": {
+    "color": "cyan",
+    "title": "Hibajegy Megnyitva",
+    "description": "Hamarosan érkezik egy staff tag.\nKattints a  `Hibajegy bezárása` hogy bezárd a hibajegyet\n**Panel Neve: **[panel.name]"
+  },
+  "content": "[user.asMention] Itt a hibajegyed."
+}

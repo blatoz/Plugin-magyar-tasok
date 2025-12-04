@@ -1,0 +1,10 @@
+{
+  "embed": {
+    "thumbnail": {
+      "url": "[user.effectiveAvatarUrl]"
+    },
+    "color": "cyan",
+    "title": "Új Tag!",
+    "description": "🔸 **Üdvzőllek [user.name] a szerveren!**\n\n\n🔸 **Szerver ip** | Saját szerver ip címed:portja\n\n\n Meghívta **${#inviter == null ? \"Ismeretlen\" : #inviter.getAsTag()}**"
+  }
+}

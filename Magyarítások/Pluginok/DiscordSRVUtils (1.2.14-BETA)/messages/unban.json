@@ -1,0 +1,11 @@
+{
+  "embed": {
+    "title": "Játékos Kitiltása Feloldva",
+    "description": "Játékos `[punishment.name]` fel lett oldva a kitiltása ezzel az indokkal: `[punishment.reason]`",
+    "color": 10771377,
+    "footer": {
+      "icon_url": "https://i.imgur.com/9IkDPIr.png",
+      "text": "[punishment.operator]"
+    }
+  }
+}

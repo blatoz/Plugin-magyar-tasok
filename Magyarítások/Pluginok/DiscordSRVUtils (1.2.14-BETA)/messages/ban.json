@@ -1,0 +1,11 @@
+{
+  "embed": {
+    "title": "Játékos Kitiltva",
+    "description": "Játékos `[punishment.name]` ki lett **tiltva** ezért `[punishment.reason]`\nLejárat: `[punishment.duration]`",
+    "color": 14169911,
+    "footer": {
+      "icon_url": "https://i.imgur.com/YzMFeax.png",
+      "text": "[punishment.operator]"
+    }
+  }
+}

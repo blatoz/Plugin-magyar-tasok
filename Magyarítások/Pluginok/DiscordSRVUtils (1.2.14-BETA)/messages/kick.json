@@ -1,0 +1,11 @@
+{
+  "embed": {
+    "title": "Játékos Kirúgva",
+    "description": "Játékos `[punishment.name]` ki lett **rúgva** ezért `[punishment.reason]`",
+    "color": 14169911,
+    "footer": {
+      "icon_url": "https://i.imgur.com/YzMFeax.png",
+      "text": "[punishment.operator]"
+    }
+  }
+}

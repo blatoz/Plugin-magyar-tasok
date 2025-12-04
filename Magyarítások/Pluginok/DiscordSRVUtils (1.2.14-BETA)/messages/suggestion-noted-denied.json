@@ -1,0 +1,35 @@
+{
+  "embed": {
+    "thumbnail": {
+      "url": "[submitter.effectiveAvatarUrl]"
+    },
+    "color": "red",
+    "fields": [
+      {
+        "name": "Szavazási eredmények",
+        "value": ":white_check_mark: [suggestion.yesCount]\n:x: [suggestion.noCount]"
+      },
+      {
+        "name": "Beküldő",
+        "value": "[submitter.asMention]"
+      },
+      {
+        "name": "Ötlet",
+        "value": "[suggestion.text]"
+      },
+      {
+        "name": "Staff Jegyzet",
+        "value": "[note.text]"
+      },
+      {
+        "name": "Staff Tag",
+        "value": "[staff.asMention]"
+      },
+      {
+        "name": "Elutasította",
+        "value": "[approver.asMention]"
+      }
+    ],
+    "title": "Ötlet Száma: [suggestion.number]"
+  }
+}

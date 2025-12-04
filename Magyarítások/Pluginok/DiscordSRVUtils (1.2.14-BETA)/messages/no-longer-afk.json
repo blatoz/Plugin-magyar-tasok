@@ -1,0 +1,11 @@
+{
+  "embed": {
+    "color": "orange",
+    "title": "Játékos AFK",
+    "description": "`[player.name]` már nem AFK.",
+    "author": {
+      "icon_url": "https://api.creepernation.net/avatar/[player.name]",
+      "name": "[player.name]"
+    }
+  }
+}

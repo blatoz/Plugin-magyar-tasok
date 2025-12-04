@@ -1,0 +1,19 @@
+{
+  "embed": {
+    "thumbnail": {
+      "url": "[submitter.effectiveAvatarUrl]"
+    },
+    "color": "orange",
+    "fields": [
+      {
+        "name": "Beküldő",
+        "value": "[submitter.asMention]"
+      },
+      {
+        "name": "Ötlet",
+        "value": "[suggestion.text]"
+      }
+    ],
+    "title": "Ötlet Száma: [suggestion.number]"
+  }
+}

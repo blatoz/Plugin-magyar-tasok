@@ -1,0 +1,11 @@
+{
+  "embed": {
+    "title": "Játékos AFK",
+    "description": "`[player.name]` most AFK.",
+    "color": "orange",
+    "author": {
+      "icon_url": "https://api.creepernation.net/avatar/[player.name]",
+      "name": "[player.name]"
+    }
+  }
+}

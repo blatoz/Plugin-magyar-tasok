@@ -1,0 +1,7 @@
+{
+  "embed": {
+    "color": "cyan",
+    "title": "Hibajegy Újra Megnyitva",
+    "description": "A hibajegyet újranyitotta [user.asMention]"
+  }
+}

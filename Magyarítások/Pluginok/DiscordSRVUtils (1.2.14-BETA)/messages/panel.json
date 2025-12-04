@@ -1,0 +1,8 @@
+{
+  "embed": {
+    "color": "cyan",
+    "description": "Kattints hogy megnyisd a hibajgyet csak akkor nyiss ha valamit szeretnél kérdezni, jelentkezni, jelenteni egy játékost.",
+    "title": "[panel.name]"
+    
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "embed": {
+    "title": ":green_circle: Online",
+    "description": "",
+    "color": "green",
+    "timestamp": "now",
+    "footer": {
+      "text": "A Szerver online"
+    },
+    "thumbnail": {
+      "url": "https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png"
+    },
+    "fields": [
+      {
+        "name": "Játékosok",
+        "value": "[server.onlineCount]/[server.maxPlayers]"
+      },
+      {
+        "name": "Verzió",
+        "value": "Amit a te szervered használ."
+      },
+      {
+        "name": "Szerver IP",
+        "value": "Saját szerver IP címed."
+      }
+    ]
+  }
+}
