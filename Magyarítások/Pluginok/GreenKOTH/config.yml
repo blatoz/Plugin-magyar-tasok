@@ -1,0 +1,12 @@
+#koth timer in seconds.
+koth-timer: 1
+#commands executed after koth timer runs out and winner(s) is(are) found. %player% will be replaced with winner(s)
+#give command generator https://www.gamergeeks.net/apps/minecraft/give-command-generator
+reward-commands:
+  - give %player% diamond 1
+#check language.yml for win message & broadcasts
+placeholders:
+  time:
+    hours: "órák"
+    minutes: "percek"
+    seconds: "másodpercek"

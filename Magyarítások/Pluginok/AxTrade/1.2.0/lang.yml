@@ -1,0 +1,101 @@
+player-help:
+- ' '
+- '&#00FFDD&lTrade &7»'
+- ' &7- &f/trade <játékos> &7| &#00FFDDtrade felkérés'
+- ' &7- &f/trade accept <játékos> &7| &#00FFDDTrade felkérés elfogadása'
+- ' &7- &f/trade deny <játékos> &7| &#00FFDDTrade felkérés elutasítása'
+- ' '
+
+admin-help:
+- ' '
+- '&#00FFDD&lAxTrade &7»'
+- ' &7- &f/axtrade <player> &7| &#00FFDDElküldtél egy csereajánlatot'
+- ' &7- &f/axtrade accept <player> &7| &#00FFDDCsereajánlat elfogadása'
+- ' &7- &f/axtrade deny <player> &7| &#00FFDDCsereajánlat elutasítása'
+- ' &7- &f/axtrade reload &7| &#00FFDDPlugin újratöltése'
+- ' &7- &f/axtrade force <player> &7| &#00FFDDKöveteled a csere indítását'
+- ' '
+
+reload:
+  success: '&#33FF33Sikeresen újratöltötted a plugint!'
+  failed: '&#FF3333A plugin újratöltése sikertelen! Valami probléma van a &f%file%&#FF3333 fájlban, nézd meg a konzolt, vagy használd a yaml validátort a hibák kijavításához!'
+
+trade:
+  started: '&#CCFFEEElindítottál egy trade-et vele: &#00FFDD%player%&#CCFFEE!'
+  completed: '&#CCFFEEA trade-ed &#00FFDD%player% játékos-al &#CCFFEEsikeres volt!'
+  aborted: '&#CCFFEEA trade-ed &#00FFDD%player% játékos-al &#CCFFEEmeg lett szakítva!'
+  blacklisted-item: '&#CCFFEEEzt az itemet, nem rakhatod be a trade-be!'
+
+# summary after a successful trade
+summary:
+  get:
+    item: '&#00FF00&l+ &#00FF00%amount%x %item%'
+    currency: '&#00FF00&l+ &#00FF00%amount% %currency%'
+  give:
+    item: '&#FF0000&l- &#FF0000%amount%x %item%'
+    currency: '&#FF0000&l- &#FF0000%amount% %currency%'
+
+currency-editor:
+  success: '&#CCFFEESikeresen megváltoztattad az értéket!'
+  failed: '&#CCFFEEÉrvénytelen érték!'
+  not-enough: '&#CCFFEENincs elég pénzed ebből a pénznemből!'
+
+request:
+  sent-sender: '&#CCFFEESikeresen elküldtél egy trade felkérést neki: &#00FFDD%player%&#CCFFEE!'
+  sent-receiver: |
+    &#CCFFEEKaptál egy trade felkérést tőle: &#00FFDD%player%&#CCFFEE!
+    &#00FF00<click:run_command:'/trade accept %player%'>/trade accept %player%</click>
+    &#FF0000<click:run_command:'/trade deny %player%'>/trade deny %player%</click>
+  no-request: '&#CCFFEENincsen trade felkérésed tőle: &#00FFDD%player%&#CCFFEE!'
+  deny-sender: '&#CCFFEEA trade felkérésed ellett utasítva általa: &#00FFDD%player%&#CCFFEE!'
+  deny-receiver: '&#CCFFEEElutasítottad a trade felkérését neki: &#00FFDD%player%&#CCFFEE'
+  cant-trade-self: '&#CCFFEENem küldhetsz saját magad-nak trade felkérést!'
+  already-in-trade: '&#CCFFEEEz a játékos már trade-el valakivel!'
+  already-sent: '&#CCFFEEMár elküldted a trade felkérést neki: &#00FFDD%player%&#CCFFEE!'
+  too-far: '&#CCFFEETúl messze vagy tőle: &#00FFDD%player% &#CCFFEE, ahhoz hogy kereskedj vele.'
+  not-accepting: '&#CCFFEEEz a játékos nem fogad el trade felkéréseket!'
+  disallowed-gamemode: '&#CCFFEEVagy te, vagy a másik játékos tiltott játékmódban van!'
+  blacklisted-world: '&#CCFFEEA kereskedelem ebben a világban tiltott!'
+
+# this must be 4 lines
+# note: currently the first line must be left empty
+currency-editor-sign:
+- ''
+- '-----------'
+- Write the new value
+- in the first line
+
+# list of sounds: https://www.digminecraft.com/lists/sound_list_pc.php
+# set to "" to disable
+sounds:
+  # trade sounds
+  started: entity.player.levelup
+  completed: entity.player.levelup
+  aborted: block.anvil.destroy
+  # trade requests
+  deny: block.anvil.land
+  requested: entity.experience_bottle.throw
+  # gui sounds
+  accept: ui.button.click
+  countdown: ui.button.click
+  cancel: ui.button.click
+
+# can be used in the gui title as %own-status% and %partner-status%
+placeholders:
+  ready: Készen áll
+  waiting: Várakozik
+
+# do not change this
+version: '2'
+
+update-notifier: '&#AAFFCCVan egy újabb verzió elérhető a pluginból! &#DDDDDD(&#FFFFFFJelenlegi: &#FF0000%current% &#DDDDDD| &#FFFFFFLegújabb: &#00FF00%latest%&#DDDDDD)'
+
+commands:
+  invalid-value: '&#FF0000Érvénytelen paraméter: &#BB0000%value%'
+  invalid-command: '&#FF0000Érvénytelen parancs vagy alparancs!'
+  missing-argument: '&#FF0000Hiányzó argumentum! Meg kell adnod az értéket ennek: &#BB0000%value%&#FF0000.'
+  no-permission: '&#FF0000Nincsen jogod a parancs használatához!'
+  out-of-range: '&#FF0000A számnak &#BB0000%number% &#FF0000közötte kell legyen &#BB0000%min% &#FF0000és &#BB0000%max%&#FF0000!'
+  player-only: '&#FF0000Játékosnak kell lenned hogy végrehajtasd a parancsot!'
+  invalid-player: '&#FF0000A játékos &#BB0000%player% &#FF0000nem található!'
+  invalid-selector: '&#FF0000Ezt a szelektort nem használhatja ebben a parancsban.!'

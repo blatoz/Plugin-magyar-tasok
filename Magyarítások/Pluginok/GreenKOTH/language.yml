@@ -1,0 +1,50 @@
+# add the "$" symbol at the beginning of message to use MiniMessage format
+
+only-player-command: "&cEzt a parancsot csak játékos hajthatja végre!"
+
+command-usage: "&cHasználat: /%command%"
+
+no-perm: "&cNincs jogosultságod ehhez a parancshoz!"
+
+update-available: "&6[GreenKOTH] &aElérhető egy frissítés &6%newversion% &averzióban. Töltsd le innen: &bhttps://www.spigotmc.org/resources/114685/"
+admin:
+  reload:
+    all-config-reloaded: "&aA Top területek, a nyelvi fájl és az alap konfiguráció újratöltve!"
+  help:
+    - "&aGreenKOTH Admin Parancsok:"
+    - "&e/greenkoth &7- &bMegjeleníti ezt a súgót."
+    - "&e/greenkoth createarea <területNév> &7- &bÚj KOTH terület létrehozása."
+    - "&e/greenkoth setareapos <területNév> pos<1/2> &7- &bA terület sarokpontjainak beállítása."
+    - "&e/greenkoth deletearea &7- &bMegadott terület törlése."
+    - "&e/greenkoth reload &7- &bKonfiguráció újratöltése."
+  area-list:
+    meaning: "&aZöld &7- &2Aktív &f| &4Piros &7- &cInaktív"
+    #minimessage
+    list-format:
+      inactive: "$<gray>-</gray> <red>%area%</red> <gray>(</gray><color:#00f299><click:run_command:'/greenkoth setareapos %area% pos1'><hover:show_text:'<blue>Kattints a pos1 beállításához!</blue>'>Pos1</hover></click></color><gray>)</gray> <gray>(</gray><color:#00f299><click:run_command:'/greenkoth setareapos %area% pos2'><hover:show_text:'<color:#cc00cc>Kattints a pos2 beállításához!</color>'>Pos2</hover></click></color><gray>)</gray> <gray>(</gray><color:#ff1900><click:run_command:'/greenkoth deletearea %area%'><hover:show_text:'<aqua>Kattints a törléshez!</aqua>'>Törlés</hover></click></color><gray>)</gray>"
+      active: "$<gray>-</gray> <green>%area%</green> <gray>(</gray><color:#00f299><click:run_command:'/greenkoth setareapos %area% pos1'><hover:show_text:'<blue>Kattints a pos1 beállításához!</blue>'>Pos1</hover></click></color><gray>)</gray> <gray>(</gray><color:#00f299><click:run_command:'/greenkoth setareapos %area% pos2'><hover:show_text:'<color:#cc00cc>Kattints a pos2 beállításához!</color>'>Pos2</hover></click></color><gray>)</gray> <gray>(</gray><color:#ff1900><click:run_command:'/greenkoth deletearea %area%'><hover:show_text:'<aqua>Kattints a törléshez!</aqua>'>Törlés</hover></click></color><gray>)</gray>"
+    list: "&aTerületek listája:"
+    no-areas-available: "&cJelenleg nincs elérhető KOTH terület."
+  set-pos:
+    success: "&a%pos% &bsikeresen beállítva!"
+    area-loaded: "&aA terület beállítása sikeresen befejezve. &6A terület betöltve."
+    wrong-area: "&cIlyen nevű terület nem létezik. Hozz létre egyet ezzel: &6/greenkoth createarea <név>"
+    wrong-pos: "&cHibás pozíció! pos1 vagy pos2-t kell megadni. (pos1 az első, pos2 a második sarokpont)"
+  create-area:
+    already-exists: "&cIlyen nevű terület már létezik. Ha módosítani szeretnéd, használd: &6/greenkoth setareapos&c. Új területhez: &6/greenkoth createarea <név>&c."
+    success: "&aA(z) &b%area%&a terület sikeresen létrehozva! Állítsd be a pozícióit ezzel: &6/greenkoth setareapos"
+  delete-area:
+    doesnt-exists: "&cIlyen nevű terület nem létezik."
+    success: "&aA(z) &6%area%&a terület sikeresen törölve!"
+  set-spawn:
+    success: "&aA spawn hely sikeresen beállítva!"
+koth:
+  #message broadcasted when someone wins. leave this as "someone-won: []" to disable this feature.
+  someone-won:
+    - "&7-------------------------"
+    - "&6%player% &amegnyerte a &bKOTH&t!"
+    - "&7-------------------------"
+  you-won:
+    - "&7-------------------------"
+    - "&6Gratulálok! Megnyerted a &bKOTH&t!"
+    - "&7-------------------------"
