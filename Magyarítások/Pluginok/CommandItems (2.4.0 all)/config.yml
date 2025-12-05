@@ -1,0 +1,103 @@
+#########################################
+#                                       #
+#       Command Items by Yamakaja       #
+#                                       #
+#########################################
+
+items:
+  fly:
+    item:
+      type: FEATHER
+      name: "&a&lRepülési Token"
+      lore: [ "&1Kattints 10 másodperc repülésre!", "&kMásodik egy random sor." ]
+      glow: true
+    consumed: true
+    cooldown: 20
+    actions:
+      - { action: COMMAND, by: CONSOLE, command: "fly {player} on" }
+      - { action: MESSAGE, to: PLAYER, message: "&aRepülés engedélyezve van!" }
+      - { action: REPEAT, from: 9, to: 1, increment: -1, delay: 20, period: 20, actions: [ { action: MESSAGE, to: PLAYER, message: "&a{i} másodperc múlva repülés letiltva!" } ] }
+      - { action: WAIT, duration: 200, actions: [
+        { action: COMMAND, by: CONSOLE, command: "fly {player} off" },
+        { action: MESSAGE, to: PLAYER, message: "&cRepülés letiltva!" }
+      ] }
+
+  jumper:
+    item:
+      type: DIAMOND_PICKAXE
+      name: "&aUgráló Csákány"
+      lore: [ "&1Kattints a függőleges elmozduláshoz ..." ]
+      glow: true
+      unbreakable: true
+      damage: 50
+    parameters:
+      fixedHeight: 10
+      randomOffset: 5
+    consumed: true
+    cooldown: 20
+    actions:
+      - { action: MATH_EXPR, target: "YOFF", expr: "rand() * randomOffset + fixedHeight", actions: [
+        { action: COMMAND, by: PLAYER_PRIVILEGED, perm: minecraft.command.teleport, command: "tp ~ ~{YOFF} ~" },
+        { action: MATH_EXPR, round: true, target: "YOFF", expr: "YOFF", actions: [
+          { action: MESSAGE, to: PLAYER, message: "&aUgrás sikeres! (Függőleges elmozdulás: {YOFF}m)" }
+        ] }
+      ] }
+
+  toomanyzombies:
+    item:
+      type: PLAYER_HEAD
+      name: "&c&lZombik"
+      lore: [ "&1Győződj meg róla, hogy készen állsz a zombieknek!" ]
+      glow: true
+      skullUser: Zombie
+    consumed: true
+    cooldown: 30
+    parameters:
+      range: 10
+    actions:
+      - { action: REPEAT, from: 0, to: 31, increment: 1, delay: 0, period: 4, actions: [
+        { action: MATH_EXPR, target: xoff, expr: "x + range * sin(2*pi * i/32) + randn()*range/5", actions: [
+          { action: MATH_EXPR, target: zoff, expr: "z + range * cos(2*pi * i/32) + randn()*range/5", actions: [
+            { action: COMMAND, by: PLAYER_PRIVILEGED, perm: minecraft.command.summon, command: "summon minecraft:zombie {xoff} ~ {zoff}" }
+          ] }
+        ] }
+      ] }
+
+  helpstick:
+    item:
+      type: STICK
+      name: "&a&lSegítség Bot"
+      lore: [ "&1Kattints a moderátoroknak küldeni egy segédkéréset!" ]
+      glow: true
+    consumed: false
+    cooldown: 60
+    actions:
+      - { action: MESSAGE, to: PERMISSION, perm: group.moderator, message: "&6{player} &akért segítséget!" }
+      - { action: MESSAGE, to: PLAYER, message: "&aModerátoroknak értesítve!" }
+
+  xpparty:
+    item:
+      type: EXPERIENCE_BOTTLE
+      name: "&a&lEXP PARTI"
+    consumed: true
+    sneaking: true
+    actions:
+      - { action: REPEAT, period: 1, delay: 0, from: 0, to: 99, actions: [
+        { action: ITER, what: ONLINE_PLAYERS, actions: [
+          { action: CALC, a: "{iter_locY}", b: "4", op: ADD, target: "y", actions: [
+            { action: COMMAND, by: CONSOLE, command: "minecraft:summon minecraft:experience_bottle {iter_locX} {y} {iter_locZ}" } ] } ] } ] }
+      - { action: MESSAGE, to: EVERYBODY, message: "&a&l{player} elindított egy XP partit!" }
+
+  10000$:
+    item:
+      type: PAPER
+      name: "&a&l10,000$"
+      lore:
+        - "&1Jobbkattolj a jutalom beváltásához!"
+        - "&kJOBB KATT!"
+      glow: true
+    consumed: true
+    cooldown: 20
+    actions:
+      - { action: COMMAND, by: CONSOLE, command: "eco give {player} 10000" }
+      - { action: MESSAGE, to: PLAYER, message: "&aBeváltottad!" }
